@@ -9,7 +9,6 @@
 <script setup>
 import Header from '@/components/common/Header.vue';
 import Footer from '@/components/common/Footer.vue';
-import Community from '@/components/community/Community.vue'; // 커뮤니티 메인
 
 import Bar from './components/Bar.vue'; // Bar 컴포넌트 임포트
 </script>

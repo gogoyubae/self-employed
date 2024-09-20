@@ -2,7 +2,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '@/pages/Home.vue';
 import Shop from '@/pages/Shop.vue';
-import Community from '../components/community/Community.vue';
+import Community from '@/pages/community/Community.vue';
 
 const router = createRouter({
     history: createWebHistory(),
