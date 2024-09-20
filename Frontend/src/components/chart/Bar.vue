@@ -2,13 +2,13 @@
   <div class="container">
     <div class="row">
       <div class="col-6">
-        <canvas id="bar-chart" style="height: 200px"></canvas>
+        <canvas id="bar-chart" class="chart" />
       </div>
       <div class="col-6">
         <Doughnut
           :data="doughnutData"
-          :options="options"
-          style="height: 200px"
+          :options="doughnutOptions"
+          class="chart"
         />
       </div>
     </div>
@@ -18,7 +18,12 @@
 <script setup>
 import { onMounted, ref } from 'vue';
 import { Chart } from 'chart.js/auto';
-import { data_bar, data_doughnut, options } from '@/chartConfig'; // data_doughnut 추가
+import {
+  data_bar,
+  data_doughnut,
+  barOptions,
+  doughnutOptions,
+} from '@/chartConfig.js'; // 옵션 가져오기
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from 'vue-chartjs';
 
@@ -35,7 +40,7 @@ onMounted(() => {
   chartInstance.value = new Chart(ctx, {
     type: 'bar',
     data: data_bar, // bar 차트 데이터 사용
-    options,
+    options: barOptions, // 바 차트 전용 옵션 사용
   });
 });
 
@@ -44,8 +49,8 @@ const doughnutData = data_doughnut; // chartConfig.js에서 가져온 도넛 차
 </script>
 
 <style scoped>
-canvas {
+.chart {
   max-width: 100%;
-  height: auto;
+  height: 200px; /* 높이 설정 */
 }
 </style>
