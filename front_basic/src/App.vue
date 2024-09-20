@@ -9,8 +9,6 @@
 <script setup>
 import Header from '@/components/common/Header.vue';
 import Footer from '@/components/common/Footer.vue';
-
-import Bar from './components/Bar.vue'; // Bar 컴포넌트 임포트
 </script>
 
 <style>
