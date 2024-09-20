@@ -21,7 +21,7 @@ export const data_doughnut = {
 // barOptions
 export const barOptions = {
   responsive: true,
-  maintainAspectRatio: false, // CSS 높이 사용
+  maintainAspectRatio: false,
   scales: {
     x: {
       grid: {
@@ -29,16 +29,22 @@ export const barOptions = {
         lineWidth: 1,
       },
       ticks: {
-        autoSkip: true, // 레이블 자동 생략
-        maxRotation: 0, // 최대 회전 각도 (0도: 수평)
-        minRotation: 0, // 최소 회전 각도 (0도: 수평)
-        padding: 10, // 레이블과 x축 사이의 간격 (픽셀)
-        // callback: function (value) {
-        //   return value; // 원래 값으로 반환
-        // },
+        autoSkip: true,
+        maxRotation: 0,
+        minRotation: 0,
+        padding: 10,
       },
     },
   },
+  // 막대 두께 조정
+  elements: {
+    bar: {
+      borderWidth: 2, // 막대 테두리 두께 조정
+    },
+  },
+  // 막대 너비 및 카테고리 비율 조정
+  barPercentage: 0.5, // 0.0 - 1.0 범위로 너비 조정
+  categoryPercentage: 0.5, // 카테고리 내에서 막대 비율 조정
 };
 
 // doughnutOptions
