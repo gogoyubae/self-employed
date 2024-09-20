@@ -1,10 +1,5 @@
 <template>
-  <div class="container">
-    Home!!!
-    <Bar />
-  </div>
+  <div class="container">Home!!!</div>
 </template>
 
-<script setup>
-import Bar from '../components/chart/Bar.vue';
-</script>
+<script setup></script>

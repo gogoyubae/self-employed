@@ -28,7 +28,7 @@
               <li class="nav-item">
                 <a
                   class="fw-bold nav-link rounded-pill"
-                  href="/"
+                  href="/report"
                   aria-current="page"
                   >시뮬레이션</a
                 >
