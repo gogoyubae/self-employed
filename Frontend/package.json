@@ -21,6 +21,7 @@
     "vue": "^3.4.37",
     "vue_front": "file:",
     "vue-awesome-paginate": "^1.2.0",
+    "vue-chartjs": "^5.3.1",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
