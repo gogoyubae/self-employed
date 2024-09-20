@@ -1,9 +1,10 @@
 <template>
   <header>
     <div
-      class=" mx-2 mx-lg-auto position-relative z-2 px-lg-3 py-0 rounded-3 rounded-lg-pill bg-white"
-      style="width: 90%">
-      <nav class="navbar navbar-expand-lg navbar-black p-0 " id="navbar">
+      class="mx-2 mx-lg-auto position-relative z-2 px-lg-3 py-0 rounded-3 rounded-lg-pill bg-white"
+      style="width: 90%"
+    >
+      <nav class="navbar navbar-expand-lg navbar-black p-0" id="navbar">
         <div class="container px-sm-0">
           <a class="navbar-brand d-inline-block w-lg-64" href="#"
             ><img
@@ -25,29 +26,37 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav gap-2 mx-lg-auto">
               <li class="nav-item">
-                <a class="fw-bold nav-link rounded-pill" href="/" aria-current="page"
+                <a
+                  class="fw-bold nav-link rounded-pill"
+                  href="/"
+                  aria-current="page"
                   >시뮬레이션</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="fw-bold nav-link rounded-pill" href="/pages/dashboard.html"
-                  >가계관리</a
                 >
               </li>
               <li class="nav-item">
                 <a
                   class="fw-bold nav-link rounded-pill"
-                  href="/community"
+                  href="/pages/dashboard.html"
+                  >가계관리</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="fw-bold nav-link rounded-pill" href="/community"
                   >커뮤니티</a
                 >
               </li>
               <li class="nav-item">
-                <a class="fw-bold nav-link rounded-pill" href="/pages/page-list.html"
-                  >정보광장</a
+                <router-link
+                  class="fw-bold nav-link rounded-pill"
+                  to="/infoPlaza"
+                  >정보광장</router-link
                 >
               </li>
               <li class="nav-item">
-                <a class="fw-bold nav-link rounded-pill" href="/pages/page-table-listing.html">
+                <a
+                  class="fw-bold nav-link rounded-pill"
+                  href="/pages/page-table-listing.html"
+                >
                   마이페이지
                 </a>
               </li>
@@ -55,7 +64,7 @@
             <div
               class="navbar-nav align-items-lg-center justify-content-end gap-2 ms-lg-4 w-lg-64"
             >
-            <a
+              <a
                 href="/pages/register.html"
                 class="btn fw-bold btn-sm btn-warning bg-hover border-0 rounded-pill w-100 w-lg-auto mb-4 mb-lg-0"
                 >회원가입</a
@@ -65,7 +74,6 @@
                 href="/pages/login.html"
                 >로그인</a
               >
-              
             </div>
           </div>
         </div>
