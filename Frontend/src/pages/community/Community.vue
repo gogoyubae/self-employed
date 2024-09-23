@@ -28,378 +28,76 @@
       </div>
           <div class="border-top">
               <div class="table-responsive">
-                <table class="table table-hover table-striped table-nowrap">
+                <table class="table table-nowrap text-center">
                   <thead>
                     <tr>
-                      <th scope="col">Name</th>
-                      <th class="w-md-32" scope="col">Price</th>
-                      <th class="w-md-32 d-none d-sm-table-cell" scope="col">1H</th>
-                      <th class="w-md-32" scope="col">24H</th>
-                      <th class="w-md-32 d-none d-lg-table-cell" scope="col">7D</th>
-                      <th class="w-md-32 d-none d-sm-table-cell" scope="col">Volume</th>
-                      <th class="w-md-32 d-none d-xl-table-cell" scope="col">Last 7 Days</th>
-                      <th class="w-md-20 d-none d-sm-table-cell"></th>
+                      <th scope="col">번호</th>
+                      <th scope="col">제목</th>
+                      <th scope="col">작성자</th>
+                      <th scope="col">조회</th>
+                      <th scope="col">추천</th>
+                      <th scope="col">작성일</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td>
-                        <div class="d-flex align-items-center gap-3">
-                          <img src="../../img/crypto/color/btc.svg" class="avatar avatar-sm rounded-circle" alt="..." />
-                          <div class="">
-                            <a class="d-inline-block text-sm text-heading fw-semibold" href="/pages/trade/details.html">
-                              Bitcoin
-                            </a>
-                            <span class="d-block text-xs text-muted">BTC</span>
-                          </div>
-                        </div>
+                        3
                       </td>
                       <td>
-                        $17,044.22
-                      </td>
-                      <td class="d-none d-sm-table-cell">
-                        <span class="text-success fw-semibold">+7.4%</span>
+                        <a href="#">제목공간제목공간</a>
                       </td>
                       <td>
-                        <span class="text-success fw-semibold">+7.4%</span>
+                        누구
                       </td>
-                      <td class="d-none d-lg-table-cell">
-                        <span class="text-danger fw-semibold">-2.3%</span>
+                      <td>
+                        1234
                       </td>
-                      <td class="d-none d-sm-table-cell">
-                        $4.97M
+                      <td>
+                        4
                       </td>
-                      <td class="d-none d-xl-table-cell">
-                        <div class="w-rem-32">
-                          <div data-toggle="spark-chart" data-type="line" data-height="36" data-color="success" data-dataset="[22, 21, 20, 18, 26, 65, 31, 47, 10, 44, 45, 22, 21, 20, 18, 26, 65, 31, 47, 10, 44, 45]"></div>
-                        </div>
-                      </td>
-                      <td class="text-end d-none d-sm-table-cell">
-                        <a href="/pages/page-details.html" class="btn btn-xs btn-neutral">Trade</a>
+                      <td>
+                        2024-07-29
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <div class="d-flex align-items-center gap-3">
-                          <img src="../../img/crypto/color/eth.svg" class="avatar avatar-sm rounded-circle" alt="..." />
-                          <div class="">
-                            <a class="d-inline-block text-sm text-heading fw-semibold" href="/pages/trade/details.html">
-                              Ethereum
-                            </a>
-                            <span class="d-block text-xs text-muted">ETH</span>
-                          </div>
-                        </div>
+                        2
                       </td>
                       <td>
-                        $17,044.22
-                      </td>
-                      <td class="d-none d-sm-table-cell">
-                        <span class="text-success fw-semibold">+7.4%</span>
+                        <a href="#">제목공간제목공간</a>
                       </td>
                       <td>
-                        <span class="text-success fw-semibold">+7.4%</span>
+                        누구
                       </td>
-                      <td class="d-none d-lg-table-cell">
-                        <span class="text-danger fw-semibold">-2.3%</span>
+                      <td>
+                        1234
                       </td>
-                      <td class="d-none d-sm-table-cell">
-                        $4.97M
+                      <td>
+                        2
                       </td>
-                      <td class="d-none d-xl-table-cell">
-                        <div class="w-rem-32">
-                          <div data-toggle="spark-chart" data-type="line" data-height="36" data-color="success" data-dataset="[22, 21, 20, 18, 26, 65, 31, 47, 10, 44, 45, 22, 21, 20, 18, 26, 65, 31, 47, 10, 44, 45]"></div>
-                        </div>
-                      </td>
-                      <td class="text-end d-none d-sm-table-cell">
-                        <a href="/pages/page-details.html" class="btn btn-xs btn-neutral">Trade</a>
+                      <td>
+                        2024-07-29
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <div class="d-flex align-items-center gap-3">
-                          <img src="../../img/crypto/color/ada.svg" class="avatar avatar-sm rounded-circle" alt="..." />
-                          <div class="">
-                            <a class="d-inline-block text-sm text-heading fw-semibold" href="/pages/trade/details.html">
-                              Cardano
-                            </a>
-                            <span class="d-block text-xs text-muted">ADA</span>
-                          </div>
-                        </div>
+                        1
                       </td>
                       <td>
-                        $17,044.22
-                      </td>
-                      <td class="d-none d-sm-table-cell">
-                        <span class="text-success fw-semibold">+7.4%</span>
+                        <a href="#">제목공간제목공간</a>
                       </td>
                       <td>
-                        <span class="text-success fw-semibold">+7.4%</span>
-                      </td>
-                      <td class="d-none d-lg-table-cell">
-                        <span class="text-danger fw-semibold">-2.3%</span>
-                      </td>
-                      <td class="d-none d-sm-table-cell">
-                        $4.97M
-                      </td>
-                      <td class="d-none d-xl-table-cell">
-                        <div class="w-rem-32">
-                          <div data-toggle="spark-chart" data-type="line" data-height="36" data-color="success" data-dataset="[22, 21, 20, 18, 26, 65, 31, 47, 10, 44, 45, 22, 21, 20, 18, 26, 65, 31, 47, 10, 44, 45]"></div>
-                        </div>
-                      </td>
-                      <td class="text-end d-none d-sm-table-cell">
-                        <a href="/pages/page-details.html" class="btn btn-xs btn-neutral">Trade</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex align-items-center gap-3">
-                          <img src="../../img/crypto/color/bnb.svg" class="avatar avatar-sm rounded-circle" alt="..." />
-                          <div class="">
-                            <a class="d-inline-block text-sm text-heading fw-semibold" href="/pages/trade/details.html">
-                              Binance
-                            </a>
-                            <span class="d-block text-xs text-muted">BNB</span>
-                          </div>
-                        </div>
+                        누구
                       </td>
                       <td>
-                        $17,044.22
-                      </td>
-                      <td class="d-none d-sm-table-cell">
-                        <span class="text-success fw-semibold">+7.4%</span>
+                        1234
                       </td>
                       <td>
-                        <span class="text-success fw-semibold">+7.4%</span>
-                      </td>
-                      <td class="d-none d-lg-table-cell">
-                        <span class="text-danger fw-semibold">-2.3%</span>
-                      </td>
-                      <td class="d-none d-sm-table-cell">
-                        $4.97M
-                      </td>
-                      <td class="d-none d-xl-table-cell">
-                        <div class="w-rem-32">
-                          <div data-toggle="spark-chart" data-type="line" data-height="36" data-color="success" data-dataset="[22, 21, 20, 18, 26, 65, 31, 47, 10, 44, 45, 22, 21, 20, 18, 26, 65, 31, 47, 10, 44, 45]"></div>
-                        </div>
-                      </td>
-                      <td class="text-end d-none d-sm-table-cell">
-                        <a href="/pages/page-details.html" class="btn btn-xs btn-neutral">Trade</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex align-items-center gap-3">
-                          <img src="../../img/crypto/color/chain.svg" class="avatar avatar-sm rounded-circle" alt="..." />
-                          <div class="">
-                            <a class="d-inline-block text-sm text-heading fw-semibold" href="/pages/trade/details.html">
-                              Linkchain
-                            </a>
-                            <span class="d-block text-xs text-muted">CHAIN</span>
-                          </div>
-                        </div>
+                        4
                       </td>
                       <td>
-                        $17,044.22
-                      </td>
-                      <td class="d-none d-sm-table-cell">
-                        <span class="text-success fw-semibold">+7.4%</span>
-                      </td>
-                      <td>
-                        <span class="text-success fw-semibold">+7.4%</span>
-                      </td>
-                      <td class="d-none d-lg-table-cell">
-                        <span class="text-danger fw-semibold">-2.3%</span>
-                      </td>
-                      <td class="d-none d-sm-table-cell">
-                        $4.97M
-                      </td>
-                      <td class="d-none d-xl-table-cell">
-                        <div class="w-rem-32">
-                          <div data-toggle="spark-chart" data-type="line" data-height="36" data-color="success" data-dataset="[22, 21, 20, 18, 26, 65, 31, 47, 10, 44, 45, 22, 21, 20, 18, 26, 65, 31, 47, 10, 44, 45]"></div>
-                        </div>
-                      </td>
-                      <td class="text-end d-none d-sm-table-cell">
-                        <a href="/pages/page-details.html" class="btn btn-xs btn-neutral">Trade</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex align-items-center gap-3">
-                          <img src="../../img/crypto/color/btc.svg" class="avatar avatar-sm rounded-circle" alt="..." />
-                          <div class="">
-                            <a class="d-inline-block text-sm text-heading fw-semibold" href="/pages/trade/details.html">
-                              Bitcoin
-                            </a>
-                            <span class="d-block text-xs text-muted">BTC</span>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        $17,044.22
-                      </td>
-                      <td class="d-none d-sm-table-cell">
-                        <span class="text-success fw-semibold">+7.4%</span>
-                      </td>
-                      <td>
-                        <span class="text-success fw-semibold">+7.4%</span>
-                      </td>
-                      <td class="d-none d-lg-table-cell">
-                        <span class="text-danger fw-semibold">-2.3%</span>
-                      </td>
-                      <td class="d-none d-sm-table-cell">
-                        $4.97M
-                      </td>
-                      <td class="d-none d-xl-table-cell">
-                        <div class="w-rem-32">
-                          <div data-toggle="spark-chart" data-type="line" data-height="36" data-color="success" data-dataset="[22, 21, 20, 18, 26, 65, 31, 47, 10, 44, 45, 22, 21, 20, 18, 26, 65, 31, 47, 10, 44, 45]"></div>
-                        </div>
-                      </td>
-                      <td class="text-end d-none d-sm-table-cell">
-                        <a href="/pages/page-details.html" class="btn btn-xs btn-neutral">Trade</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex align-items-center gap-3">
-                          <img src="../../img/crypto/color/eth.svg" class="avatar avatar-sm rounded-circle" alt="..." />
-                          <div class="">
-                            <a class="d-inline-block text-sm text-heading fw-semibold" href="/pages/trade/details.html">
-                              Ethereum
-                            </a>
-                            <span class="d-block text-xs text-muted">ETH</span>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        $17,044.22
-                      </td>
-                      <td class="d-none d-sm-table-cell">
-                        <span class="text-success fw-semibold">+7.4%</span>
-                      </td>
-                      <td>
-                        <span class="text-success fw-semibold">+7.4%</span>
-                      </td>
-                      <td class="d-none d-lg-table-cell">
-                        <span class="text-danger fw-semibold">-2.3%</span>
-                      </td>
-                      <td class="d-none d-sm-table-cell">
-                        $4.97M
-                      </td>
-                      <td class="d-none d-xl-table-cell">
-                        <div class="w-rem-32">
-                          <div data-toggle="spark-chart" data-type="line" data-height="36" data-color="success" data-dataset="[22, 21, 20, 18, 26, 65, 31, 47, 10, 44, 45, 22, 21, 20, 18, 26, 65, 31, 47, 10, 44, 45]"></div>
-                        </div>
-                      </td>
-                      <td class="text-end d-none d-sm-table-cell">
-                        <a href="/pages/page-details.html" class="btn btn-xs btn-neutral">Trade</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex align-items-center gap-3">
-                          <img src="../../img/crypto/color/ada.svg" class="avatar avatar-sm rounded-circle" alt="..." />
-                          <div class="">
-                            <a class="d-inline-block text-sm text-heading fw-semibold" href="/pages/trade/details.html">
-                              Cardano
-                            </a>
-                            <span class="d-block text-xs text-muted">ADA</span>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        $17,044.22
-                      </td>
-                      <td class="d-none d-sm-table-cell">
-                        <span class="text-success fw-semibold">+7.4%</span>
-                      </td>
-                      <td>
-                        <span class="text-success fw-semibold">+7.4%</span>
-                      </td>
-                      <td class="d-none d-lg-table-cell">
-                        <span class="text-danger fw-semibold">-2.3%</span>
-                      </td>
-                      <td class="d-none d-sm-table-cell">
-                        $4.97M
-                      </td>
-                      <td class="d-none d-xl-table-cell">
-                        <div class="w-rem-32">
-                          <div data-toggle="spark-chart" data-type="line" data-height="36" data-color="success" data-dataset="[22, 21, 20, 18, 26, 65, 31, 47, 10, 44, 45, 22, 21, 20, 18, 26, 65, 31, 47, 10, 44, 45]"></div>
-                        </div>
-                      </td>
-                      <td class="text-end d-none d-sm-table-cell">
-                        <a href="/pages/page-details.html" class="btn btn-xs btn-neutral">Trade</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex align-items-center gap-3">
-                          <img src="../../img/crypto/color/bnb.svg" class="avatar avatar-sm rounded-circle" alt="..." />
-                          <div class="">
-                            <a class="d-inline-block text-sm text-heading fw-semibold" href="/pages/trade/details.html">
-                              Binance
-                            </a>
-                            <span class="d-block text-xs text-muted">BNB</span>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        $17,044.22
-                      </td>
-                      <td class="d-none d-sm-table-cell">
-                        <span class="text-success fw-semibold">+7.4%</span>
-                      </td>
-                      <td>
-                        <span class="text-success fw-semibold">+7.4%</span>
-                      </td>
-                      <td class="d-none d-lg-table-cell">
-                        <span class="text-danger fw-semibold">-2.3%</span>
-                      </td>
-                      <td class="d-none d-sm-table-cell">
-                        $4.97M
-                      </td>
-                      <td class="d-none d-xl-table-cell">
-                        <div class="w-rem-32">
-                          <div data-toggle="spark-chart" data-type="line" data-height="36" data-color="success" data-dataset="[22, 21, 20, 18, 26, 65, 31, 47, 10, 44, 45, 22, 21, 20, 18, 26, 65, 31, 47, 10, 44, 45]"></div>
-                        </div>
-                      </td>
-                      <td class="text-end d-none d-sm-table-cell">
-                        <a href="/pages/page-details.html" class="btn btn-xs btn-neutral">Trade</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex align-items-center gap-3">
-                          <img src="../../img/crypto/color/chain.svg" class="avatar avatar-sm rounded-circle" alt="..." />
-                          <div class="">
-                            <a class="d-inline-block text-sm text-heading fw-semibold" href="/pages/trade/details.html">
-                              Linkchain
-                            </a>
-                            <span class="d-block text-xs text-muted">CHAIN</span>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        $17,044.22
-                      </td>
-                      <td class="d-none d-sm-table-cell">
-                        <span class="text-success fw-semibold">+7.4%</span>
-                      </td>
-                      <td>
-                        <span class="text-success fw-semibold">+7.4%</span>
-                      </td>
-                      <td class="d-none d-lg-table-cell">
-                        <span class="text-danger fw-semibold">-2.3%</span>
-                      </td>
-                      <td class="d-none d-sm-table-cell">
-                        $4.97M
-                      </td>
-                      <td class="d-none d-xl-table-cell">
-                        <div class="w-rem-32">
-                          <div data-toggle="spark-chart" data-type="line" data-height="36" data-color="success" data-dataset="[22, 21, 20, 18, 26, 65, 31, 47, 10, 44, 45, 22, 21, 20, 18, 26, 65, 31, 47, 10, 44, 45]"></div>
-                        </div>
-                      </td>
-                      <td class="text-end d-none d-sm-table-cell">
-                        <a href="/pages/page-details.html" class="btn btn-xs btn-neutral">Trade</a>
+                        2024-07-29
                       </td>
                     </tr>
                   </tbody>
@@ -408,7 +106,6 @@
               <div class="py-4 px-6">
                 <div class="row align-items-center justify-content-between">
                   <div class="col-md-6 d-none d-md-block">
-                    <span class="text-muted text-sm">Showing 10 items out of 250 results found</span>
                   </div>
                   <div class="col-md-auto">
                     <nav aria-label="Page navigation example">

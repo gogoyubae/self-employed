@@ -1,22 +1,25 @@
-import { createRouter, createWebHistory } from 'vue-router';
-import Home from '@/pages/Home.vue';
-import Shop from '@/pages/Shop.vue';
-import Community from '@/pages/community/Community.vue';
-import InfoPlaza from '@/pages/InfoPlaza/InfoPlaza.vue';
-import PopularIndustry from '@/pages/InfoPlaza/PopularIndustry.vue';
-import StoreInfo from '@/pages/InfoPlaza/StoreInfo.vue';
-import Education from '@/pages/InfoPlaza/Education.vue';
-import LoanInfo from '@/pages/InfoPlaza/LoanInfo.vue';
-import news from '@/pages/InfoPlaza/news.vue';
-import Report from '@/pages/report/Report.vue';
+import { createRouter, createWebHistory } from "vue-router";
+import Home from "@/pages/Home.vue";
+import Shop from "@/pages/Shop.vue";
+import Community from "@/pages/community/Community.vue";
+import InfoPlaza from "@/pages/InfoPlaza/InfoPlaza.vue";
+import BoardCreate from '@/pages/community/BoardCreate.vue';
+import PopularIndustry from "@/pages/InfoPlaza/PopularIndustry.vue";
+import StoreInfo from "@/pages/InfoPlaza/StoreInfo.vue";
+import Education from "@/pages/InfoPlaza/Education.vue";
+import LoanInfo from "@/pages/InfoPlaza/LoanInfo.vue";
+import news from "@/pages/InfoPlaza/news.vue";
+import Report from "@/pages/report/Report.vue";
+import MyStore from "@/pages/asset/MyStore.vue";
 
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: '/', name: 'Home', component: Home },
-    { path: '/shop', name: 'Shop', component: Shop },
-    { path: '/community', name: 'Community', component: Community },
-    { path: '/infoPlaza', name: 'InfoPlaza', component: InfoPlaza },
+    { path: "/", name: "Home", component: Home },
+    { path: "/shop", name: "Shop", component: Shop },
+    { path: "/community", name: "Community", component: Community },
+    { path: "/community/create", name: "BoardCreate", component: BoardCreate },
+    { path: "/infoPlaza", name: "InfoPlaza", component: InfoPlaza },
     {
       path: '/infoPlaza/industry',
       name: 'Industry',
