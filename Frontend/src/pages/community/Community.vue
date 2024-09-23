@@ -1,32 +1,31 @@
 <template>
   <div>
-    <img src="@/assets/img/community/talking.png" class="result-image">
+    <img src="@/assets/img/community/talking.png" class="result-image mb-10">
     <div class="container">
         <div class="result-text">커뮤니티</div>
         <div class="overlay">
           <div class="overlay-text">
-            <div class="text-center">
-              <div class="d-inline-block mx-10">
-                <a href="#"><img src="@/assets/img/community/food.png" alt=""><h4>음식/음료</h4></a> 
+              <div class="text-center d-flex justify-content-center">
+                  <div class="d-flex w-100" style="max-width: 1000px;">
+                      <div class="flex-item">
+                          <a href="#"><h4>음식/음료</h4></a>
+                      </div>
+                      <div class="flex-item">
+                          <a href="#"><h4>유통</h4></a>
+                      </div>
+                      <div class="flex-item">
+                          <a href="#"><h4>패션/뷰티</h4></a>
+                      </div>
+                      <div class="flex-item">
+                          <a href="#"><h4>의료</h4></a>
+                      </div>
+                      <div class="flex-item">
+                          <a href="#"><h4>여가/오락</h4></a>
+                      </div>
+                  </div>
               </div>
-              <div class="d-inline-block mx-10">
-                <!-- <a href="#"><img src="@/assets/img/community/convenience_store.png" alt=""><h4>유통</h4></a> -->
-              </div>
-              <div class="d-inline-block mx-10">
-                <!-- <a href="#"><img src="@/assets/img/community/fassion.png" alt=""><h4>패션/뷰티</h4></a> -->
-              </div>
-              <div class="d-inline-block mx-10">
-                <!-- <a href="#"><img src="@/assets/img/community/medication.png" alt=""><h4>의료</h4></a> -->
-              </div>
-              <div class="d-inline-block mx-10">
-                <!-- <a href="#"><img src="@/assets/img/community/media.png" alt=""><h4>여가/오락</h4></a> -->
-              </div>
-            </div>
-
           </div>
-        </div>
-        <div class="blank">
-        </div>
+      </div>
           <div class="border-top">
               <div class="table-responsive">
                 <table class="table table-hover table-striped table-nowrap">
@@ -498,6 +497,7 @@
 }
 .overlay-text {
   color: black; /* 텍스트 색상 */
+  width: 100%;
 
   font-size: 24px; /* 텍스트 크기 조정 */
   margin: 2% 0; /* 위아래에 10%의 여백 추가 */
@@ -509,12 +509,12 @@
   margin-top: 20px; /* 테이블이 overlay와 겹치지 않도록 여백 추가 */
 }
 
-.blank{
-  width:100px;
-  height:100px;
-}
-
 .container {
   padding: 0px 80px 0px 80px;
+}
+
+.flex-item {
+  flex: 1;
+  text-align: center;
 }
 </style>
