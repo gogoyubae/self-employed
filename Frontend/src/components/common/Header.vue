@@ -48,7 +48,7 @@
               <li class="nav-item">
                 <router-link
                   class="fw-bold nav-link rounded-pill"
-                  to="/infoPlaza"
+                  to="/infoPlaza/industry"
                   >정보광장</router-link
                 >
               </li>

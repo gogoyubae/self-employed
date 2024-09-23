@@ -1,8 +1,7 @@
 <template>
   <div class="container">
-    <!-- 탭 메뉴 -->
     <InfoPlazaHeader />
-    <router-view></router-view>
+    대출 정보
   </div>
 </template>
 
