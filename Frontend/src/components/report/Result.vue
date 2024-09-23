@@ -12,7 +12,12 @@
         <br />
         월세 1000만원 이하 | 보증금 1000만원 이하 | 거주지 인근 30km 교육
         <br />
-        필요함| 대출 계획 있음
+        <div class="d-flex">
+          <div class="question">교육</div>
+          <div class="answer">필요함</div>
+          <div class="question">대출 계획</div>
+          <div class="answer">있음</div>
+        </div>
       </div>
     </div>
   </div>
@@ -55,7 +60,7 @@
 .result-text2 {
   color: white; /* 텍스트 색상 */
   padding: 10px; /* 여백 추가 */
-
+  font-weight: 700;
   font-size: 50px;
   flex-grow: 1; /* 오른쪽 영역이 늘어나도록 설정 */
   margin-left: 10px; /* 텍스트 간격 */
@@ -76,7 +81,20 @@
 
 .overlay-text {
   color: black; /* 텍스트 색상 */
-  font-size: 28px; /* 텍스트 크기 조정 */
+  font-size: 20px; /* 텍스트 크기 조정 */
+  font-weight: 600;
   margin: 2% 2%; /* 위아래에 10%의 여백 추가 */
+}
+.question {
+  color: black; /* 텍스트 색상 */
+  font-size: 20px; /* 텍스트 크기 조정 */
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+.answer {
+  color: black; /* 텍스트 색상 */
+  font-size: 20px; /* 텍스트 크기 조정 */
+  font-weight: 100;
+  margin-right: 1rem;
 }
 </style>
