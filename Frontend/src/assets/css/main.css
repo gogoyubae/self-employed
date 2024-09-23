@@ -192,10 +192,10 @@
 }
 :root,
 [data-bs-theme='light'] {
-  --x-font-display: Satoshi, sans-serif, ui-sans-serif, system-ui, -apple-system,
-    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans,
-    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
-    Noto Color Emoji;
+  --x-font-display: Pretendard-Regular, sans-serif, ui-sans-serif, system-ui,
+    -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
+    Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
   --x-font-serif: ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
 }
 :root .logo-light,
@@ -365,7 +365,7 @@ h1,
   color: var(--x-heading-color);
   margin-top: 0;
   margin-bottom: 0;
-  font-family: Satoshi, sans-serif;
+  font-family: Pretendard-Regular, Satoshi, sans-serif;
   font-weight: 600;
   line-height: 1.3;
 }
@@ -387,6 +387,7 @@ h2,
   h2,
   .h2 {
     font-size: 1.75rem;
+    font-weight: 500;
   }
 }
 h3,
@@ -402,6 +403,7 @@ h3,
 h4,
 .h4 {
   font-size: 1.125rem;
+  font-weight: 600;
 }
 h5,
 .h5 {

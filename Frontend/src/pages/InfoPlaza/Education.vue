@@ -1,7 +1,7 @@
 <template>
+  <InfoPlazaHeader />
   <div class="container mw-screen-xl">
-    <InfoPlazaHeader />
-
+    <h2>검색 옵션</h2>
     <form class="form-horizontal">
       <div class="row mb-3">
         <!-- 사업주기별 -->
@@ -332,5 +332,11 @@ function toggleAll(source) {
 }
 .cards {
   margin: 60px 0px;
+}
+.container {
+  padding: 0px 80px 0px 80px;
+}
+.col-form-label {
+  font-weight: 500;
 }
 </style>
