@@ -28,183 +28,32 @@
       </div>
       <div class="flex-fill overflow-y-lg-auto scrollbar bg-body rounded-top-4 rounded-top-start-lg-4 rounded-top-end-lg-0 border-top border-lg shadow-2">
         <main class="container-fluid px-6 pb-10">
-          <header class="py-4 border-bottom">
-            <div class="row align-items-center">
-              <div class="col">
-                <div class="d-flex align-items-center gap-4">
-                  <div>
-                    <button type="button" class="btn-close text-xs" aria-label="Close"></button>
-                  </div>
-                  <div class="vr opacity-20 my-1"></div>
-                  <h1 class="h4 ls-tight">Add a new asset</h1>
-                </div>
-              </div>
-              <div class="col-auto d-none d-md-block">
-                <div class="hstack gap-2 justify-content-end">
-                  <a href="#!" class="text-sm text-muted text-primary-hover fw-semibold me-2 d-none d-md-block">
-                    <i class="bi bi-question-circle-fill"></i>
-                    <span class="d-none d-sm-inline ms-2">Need help?</span>
-                  </a>
-                  <button type="button" class="btn btn-sm btn-neutral">
-                    <span>Save and create another</span>
-                  </button>
-                  <button type="button" class="btn btn-sm btn-primary">
-                    <span>Save</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </header>
           <div class="row align-items-center g-3 mt-6">
-            <div class="col-md-2">
-              <label class="form-label mb-0">Asset name</label>
-            </div>
-            <div class="col-md-8 col-xl-5">
-              <input type="text" class="form-control" placeholder="Asset name" />
+            
+            <div class="col-md-12 col-xl-12">
+              <input type="text" class="form-control" placeholder="제목을 입력하세요." />
             </div>
           </div>
           <hr class="my-6" />
           <div class="row align-items-center g-3">
-            <div class="col-md-2">
-              <h6 class="fw-semibold">Description</h6>
-            </div>
-            <div class="col-md-8 col-xl-5">
-              <label class="visually-hidden">Description</label>
-              <textarea class="form-control" placeholder="Asset description ..." rows="2"></textarea>
-              <span class="d-block mt-2 text-sm text-muted">Make it unique.</span>
+            
+              <label class="visually-hidden">내용</label>
+            <div class="col-md-12 col-xl-12">
+            <Editor />
             </div>
           </div>
           <hr class="my-6" />
-          <div class="row align-items-center g-3">
-            <div class="col-md-2">
-              <label class="form-label mb-0">Select type</label>
-            </div>
-            <div class="col-md-8 col-xl-5">
-              <div class="d-flex gap-3 scrollable-x">
-                <div class="form-item-checkable">
-                  <input class="form-item-check" type="radio" name="asset-type" id="asset-type-crypto" checked="checked">
-                  <label class="form-item cursor-pointer" for="asset-type-crypto">
-                    <span class="form-item-click d-inline-flex flex-column gap-3 align-items-center justify-content-center form-control w-rem-24 h-rem-24 text-center text-muted">
-                      <i class="bi bi-currency-bitcoin text-xl"></i>
-                      <span class="fw-semibold text-xs">Crypto</span>
-                    </span>
-                  </label>
-                </div>
-                <div class="form-item-checkable">
-                  <input class="form-item-check" type="radio" name="asset-type" id="asset-type-stock">
-                  <label class="form-item cursor-pointer" for="asset-type-stock">
-                    <span class="form-item-click d-inline-flex flex-column gap-3 align-items-center justify-content-center form-control w-rem-24 h-rem-24 text-center text-muted">
-                      <i class="bi bi-diagram-3 text-xl"></i>
-                      <span class="fw-semibold text-xs">Stock</span>
-                    </span>
-                  </label>
-                </div>
-                <div class="form-item-checkable">
-                  <input class="form-item-check" type="radio" name="asset-type" id="asset-type-currency">
-                  <label class="form-item cursor-pointer" for="asset-type-currency">
-                    <span class="form-item-click d-inline-flex flex-column gap-3 align-items-center justify-content-center form-control w-rem-24 h-rem-24 text-center text-muted">
-                      <i class="bi bi-coin text-xl"></i>
-                      <span class="fw-semibold text-xs">Currency</span>
-                    </span>
-                  </label>
-                </div>
-                <div class="form-item-checkable">
-                  <input class="form-item-check" type="radio" name="asset-type" id="asset-type-commodity">
-                  <label class="form-item cursor-pointer" for="asset-type-commodity">
-                    <span class="form-item-click d-inline-flex flex-column gap-3 align-items-center justify-content-center form-control w-rem-24 h-rem-24 text-center text-muted">
-                      <i class="bi bi-gem text-xl"></i>
-                      <span class="fw-semibold text-xs">Commodity</span>
-                    </span>
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr class="my-6" />
-          <div class="row align-items-center g-3 align-items-center">
-            <div class="col-md-2">
-              <label class="form-label mb-0">Icon</label>
-            </div>
-            <div class="col-md-8 col-xl-5">
-              <div class="">
-                <div class="d-flex align-items-center">
-                  <a href="#" class="avatar avatar-lg bg-warning rounded-circle text-white">
-                    <img src="../../img/crypto/color/ada.svg" alt="..." />
-                  </a>
-                  <div class="hstack gap-2 ms-5">
-                    <label for="file_upload" class="btn btn-sm btn-neutral">
-                      <span>Upload</span>
-                      <input type="file" name="file_upload" id="file_upload" class="visually-hidden">
-                    </label>
-                    <a href="#" class="btn d-inline-flex btn-sm btn-neutral text-danger">
-                      <span>
-                        <i class="bi bi-trash"></i>
-                      </span>
-                      <span class="d-none d-sm-block ms-2">Remove</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr class="my-6" />
-          <div class="row align-items-center g-3 align-items-center">
-            <div class="col-md-2">
-              <label class="form-label mb-0">Category</label>
-            </div>
-            <div class="col-md-8 col-xl-5">
-              <label class="visually-hidden">Category</label>
-              <select class="form-select">
-                <option>Webpixels</option>
-                <option>Apple</option>
-                <option>Elrond</option>
-              </select>
-            </div>
-          </div>
-          <hr class="my-6" />
-          <div class="row align-items-center g-3">
-            <div class="col-md-2">
-              <label class="form-label mb-0">Publishing options</label>
-            </div>
-            <div class="col-md-8 col-xl-5">
-              <div>
-                <label class="form-label">Start date</label>
-                <div class="input-group input-group-inline datepicker">
-                  <span class="input-group-text pe-2">
-                    <i class="bi bi-calendar"></i>
-                  </span>
-                  <input type="text" class="form-control" placeholder="Select date" data-input="data-input">
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr class="my-6" />
-          <div class="row align-items-center g-3">
-            <div class="col-md-2">
-              <label class="form-label mb-0">Options</label>
-            </div>
-            <div class="col-md-8 col-xl-5">
-              <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" name="switch_make_public" id="switch_make_public">
-                <label class="form-check-label ms-2" for="switch_make_public">
-                  Make the asset public
-                </label>
-              </div>
-            </div>
-          </div>
-          <hr class="my-6 d-md-none" />
-          <div class="d-flex d-md-none justify-content-end gap-2">
-            <button type="button" class="btn btn-sm btn-neutral">Cancel</button>
-            <button type="submit" class="btn btn-sm btn-primary">Save</button>
+          <div class="d-flex justify-content-end gap-2">
+            <button type="button" class="btn btn-sm btn-neutral">취소</button>
+            <button type="submit" class="btn btn-sm btn-primary">등록</button>
           </div>
         </main>
       </div>
         </div>
     </div>
 </template>
-
 <script setup>
-
+import Editor from '@/components/editor/Editor.vue';
 </script>
 <style scoped>
 .result-container {
