@@ -4,13 +4,13 @@
     <!-- 분석 결과 -->
     <Result />
     <!-- 추천위치 -->
-    <location />
+    <Location />
     <!-- 그래프 -->
     <Bar />
     <!-- 교육정보 -->
-    <education />
+    <Education />
     <!-- 대출 -->
-    <loan />
+    <Loan />
   </div>
 </template>
 

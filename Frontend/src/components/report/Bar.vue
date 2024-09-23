@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <div class="title">상권분석</div>
     <div class="row">
       <div class="col-6">
         <canvas id="bar-chart" style="height: 200px"></canvas>
@@ -72,5 +73,11 @@ onMounted(() => {
 canvas {
   max-width: 100%;
   height: auto;
+}
+
+.title {
+  top: 5%;
+  font-size: 25px;
+  font-weight: bold;
 }
 </style>

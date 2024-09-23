@@ -6,7 +6,14 @@
       <div class="result-text2">패션 · 뷰티</div>
     </div>
     <div class="overlay">
-      <div class="overlay-text">패션 · 뷰티</div>
+      <div class="overlay-text">
+        <!-- ||안의 text는 db에서 가져오는 거임 -->
+        자금 3~5억 | 지역 서울 강남구 | 대분류 유통 | 중분류 편의점 | 프랜차이즈
+        <br />
+        월세 1000만원 이하 | 보증금 1000만원 이하 | 거주지 인근 30km 교육
+        <br />
+        필요함| 대출 계획 있음
+      </div>
     </div>
   </div>
 </template>
@@ -69,8 +76,7 @@
 
 .overlay-text {
   color: black; /* 텍스트 색상 */
-
-  font-size: 24px; /* 텍스트 크기 조정 */
-  margin: 10% 0; /* 위아래에 10%의 여백 추가 */
+  font-size: 28px; /* 텍스트 크기 조정 */
+  margin: 2% 2%; /* 위아래에 10%의 여백 추가 */
 }
 </style>
