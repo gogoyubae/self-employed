@@ -1,6 +1,6 @@
 <template>
   <div class="result-container">
-    <img src="@/assets/img/report/clothes.png" class="result-image" />
+    <img src="@/assets/img/report/clothes.png" class="result-image mb-10" />
     <div class="container">
       <div class="result-text">분석 결과</div>
       <div class="result-text2-container">
@@ -10,13 +10,23 @@
         <div class="overlay-text">
           <!-- ||안의 text는 db에서 가져오는 거임 -->
           <div class="d-flex">
-            자금 3~5억 | 지역 서울 강남구 | 대분류 유통 | 중분류 편의점 |
-            프랜차이즈 |
-            <div class="question">교육</div>
-            <div class="answer">필요함</div>
+            <div class="question">자금</div>
+            <div class="answer">3~5억</div>
+            <div class="question">지역</div>
+            <div class="answer">서울 강남구</div>
+            <div class="question">대분류</div>
+            <div class="answer">유통</div>
+            <div class="question">중분류</div>
+            <div class="answer">편의점</div>
+            <div class="question">프랜차이즈</div>
           </div>
           <div class="d-flex">
-            월세 1000만원 이하 | 보증금 1000만원 이하 | 거주지 인근 30km 교육 |
+            <div class="question">월세</div>
+            <div class="answer">1000만원 이하</div>
+            <div class="question">보증금</div>
+            <div class="answer">1000만원 이하</div>
+            <div class="question">거주지 인근</div>
+            <div class="answer">30km 교육</div>
             <div class="question">대출 계획</div>
             <div class="answer">있음</div>
           </div>
@@ -89,11 +99,6 @@
   position: relative; /* 자식 요소의 절대 위치 기준 설정 */
   z-index: 3; /* 테이블이 overlay 위에 위치하도록 설정 */
   margin-top: 20px; /* 테이블이 overlay와 겹치지 않도록 여백 추가 */
-}
-
-.blank {
-  width: 100px;
-  height: 100px;
 }
 
 .container {

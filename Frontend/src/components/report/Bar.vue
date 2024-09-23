@@ -1,14 +1,12 @@
 <template>
   <div class="container">
-    <div class="asdf">
-      <div class="title">상권분석</div>
-      <div class="row">
-        <div class="col-6">
-          <canvas id="bar-chart" style="height: 200px"></canvas>
-        </div>
-        <div class="col-6">
-          <canvas id="doughnut-chart" style="height: 200px"></canvas>
-        </div>
+    <div class="title">상권분석</div>
+    <div class="row">
+      <div class="col-6">
+        <canvas id="bar-chart" style="height: 200px"></canvas>
+      </div>
+      <div class="col-6">
+        <canvas id="doughnut-chart" style="height: 200px"></canvas>
       </div>
     </div>
     <div class="row">
