@@ -1,16 +1,16 @@
 <template>
   <div class="container">
-    <div class="title">상권분석</div>
-    <div class="row">
-      <div class="col-6">
-        <canvas id="bar-chart" style="height: 200px"></canvas>
-      </div>
-      <div class="col-6">
-        <canvas id="doughnut-chart" style="height: 200px"></canvas>
+    <div class="asdf">
+      <div class="title">상권분석</div>
+      <div class="row">
+        <div class="col-6">
+          <canvas id="bar-chart" style="height: 200px"></canvas>
+        </div>
+        <div class="col-6">
+          <canvas id="doughnut-chart" style="height: 200px"></canvas>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="container">
     <div class="row">
       <div class="col-6">
         <canvas id="bar-chart2" style="height: 200px"></canvas>
@@ -79,5 +79,9 @@ canvas {
   top: 5%;
   font-size: 25px;
   font-weight: bold;
+}
+
+.container {
+  padding: 0px 80px;
 }
 </style>
