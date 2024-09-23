@@ -13,7 +13,7 @@ export default {
   name: 'MyStore',
   components: {
     StoreInfo,
-    MyAsset
+    MyAsset,
   },
   setup() {
     return {
