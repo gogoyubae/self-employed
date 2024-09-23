@@ -6,7 +6,7 @@
         <div class="card image-card w-100 d-flex flex-column"> <!-- 카드가 세로로 늘어날 수 있도록 설정 -->
           <div class="card-body pb-5 flex-grow-1">
             <div class="d-flex justify-content-between align-items-center">
-              <img src="https://www.jumpoline.com/_file/jumpo/jumpoline_202406121654211156.jpg">
+              <img src="https://www.jumpoline.com/_file/jumpo/jumpoline_202406121654211156.jpg" class="card-img-top rounded">
             </div>
           </div>
         </div>
