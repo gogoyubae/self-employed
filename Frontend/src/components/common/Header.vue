@@ -36,7 +36,7 @@
               <li class="nav-item">
                 <a
                   class="fw-bold nav-link rounded-pill"
-                  href="/pages/dashboard.html"
+                  href="/asset"
                   >가계관리</a
                 >
               </li>
