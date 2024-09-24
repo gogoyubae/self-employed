@@ -16,9 +16,7 @@
                 >
               </div>
               <div class="flex-item">
-                <RouterLink to="/infoPlaza/FloatPopular"
-                  ><h4>가게 정보</h4></RouterLink
-                >
+                <a href="/infoPlaza/floatpopular"><h4>상권 정보</h4></a>
               </div>
               <div class="flex-item">
                 <RouterLink to="/infoPlaza/education"
