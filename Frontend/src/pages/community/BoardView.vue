@@ -26,18 +26,78 @@
           </div>
           </div>
         </div>
+        
         <div class="d-flex align-items-end justify-content-between">
           <div>
-            <h4 class="fw-semibold mb-1">Marketing Preferences</h4>
-            <p class="text-sm text-muted">
-              By filling your data you get a much better experience using our website.
+            <h3 class="fw-semibold mb-5">제목제목제목제목제목</h3>
+            <p class="text-m text-muted mb-5">
+              내용내용내용내용내용내용<br/>
+              내용내용<br/>
+              내용내용내용내용<br/>
+              내용내용내용내용내용내용내용내용내용내용<br/>
+              내용내용내용내용내용내용내용내용내용내용<br/>
+              내용내용내용내용내용내용내용내용내용내용<br/>
             </p>
           </div>
-          <div class="d-none d-md-flex gap-2">
-            <button type="button" class="btn btn-sm btn-neutral">목록</button>
-            <button type="button" class="btn btn-sm btn-neutral">추천</button>
-          </div>
+          
         </div>
+        <div class="text-center gap-2 mb-5">
+          <button type="button" class="btn btn-sm btn-neutral mx-1">👍 추천</button>
+          <button type="button" class="btn btn-sm btn-neutral mx-1">👎 비추천</button>
+        </div>
+
+        <div class="text-center gap-2">
+          <button type="button" class="btn btn-sm btn-neutral mb-5 mt-1">목록</button>
+        </div>
+
+
+        <!-- List group with custom content -->
+      <div class="list-group mt-5 mb-5">
+        <h4 class="fw-semibold mb-5">댓글 100</h4>
+        <div class="list-group-item py-3">
+          <div class="d-flex flex-wrap w-100 justify-content-between py-2">
+            <h6>작성자1</h6>
+          </div>
+          <p class="fs-sm font-weight-normal text-body py-2">댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글
+            댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글</p>
+          <small class="text-muted">2014-01-23</small>
+        </div>
+        <div class="list-group-item py-3">
+          <div class="d-flex flex-wrap w-100 justify-content-between py-2">
+            <h6>작성자2</h6>
+          </div>
+          <p class="fs-sm font-weight-normal text-body">댓글댓글댓글댓글댓글댓글댓글댓글댓글댓
+            댓글댓글댓글댓댓댓댓댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글</p>
+          <small class="text-muted">2015-01-25</small>
+        </div>
+        <div class="list-group-item py-2">
+          <div class="d-flex flex-wrap w-100 justify-content-between py-2">
+            <h6>작성자3</h6>
+          </div>
+          <p class="fs-sm font-weight-normal text-body">댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글
+            댓글댓글댓글댓글댓글댓글댓글댓글댓맷글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글</p>
+          <small class="text-muted">2017-03-23</small>
+        </div>
+      </div>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center pagination-spaced gap-1">
+          <li class="page-item">
+            <a class="page-link" href="#">
+              <i class="bi bi-chevron-left"></i>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item"><a class="page-link" href="#">5</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">
+              <i class="bi bi-chevron-right"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </div>
 </template>
