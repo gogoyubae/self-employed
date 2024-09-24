@@ -34,9 +34,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a
-                  class="fw-bold nav-link rounded-pill"
-                  href="/asset"
+                <a class="fw-bold nav-link rounded-pill" href="/asset"
                   >가계관리</a
                 >
               </li>
@@ -53,10 +51,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a
-                  class="fw-bold nav-link rounded-pill"
-                  href="/pages/page-table-listing.html"
-                >
+                <a class="fw-bold nav-link rounded-pill" href="/mypage">
                   마이페이지
                 </a>
               </li>

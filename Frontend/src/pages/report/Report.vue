@@ -1,5 +1,4 @@
 <template>
-  simul!!!
   <!-- 분석 결과 -->
   <Result />
   <!-- 추천위치 -->
