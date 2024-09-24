@@ -1,5 +1,5 @@
 <template>
-  <section ref="editor"></section>
+  <section ref="editor" style="height: 500px"></section>
 </template>
 
 <script>
