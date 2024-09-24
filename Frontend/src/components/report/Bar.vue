@@ -1,20 +1,44 @@
 <template>
-  <div class="container">
-    <div class="title">상권분석</div>
-    <div class="row">
-      <div class="col-6">
-        <canvas id="bar-chart" style="height: 200px"></canvas>
+  <div style="background-color: #f6f4f9; height: 580px">
+    <div class="container">
+      <div class="title">상권분석</div>
+      <div class="row">
+        <div class="col-6">
+          <div class="chart-container">
+            <div class="text-cont">
+              <div class="chart-text">도와줘</div>
+            </div>
+            <div class="p-5">
+              <canvas id="bar-chart" style="height: 200px"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="chart-container">
+            <div class="text-cont">
+              <div class="chart-text">윤희에몽!</div>
+            </div>
+            <div class="p-5">
+              <canvas id="doughnut-chart" style="height: 200px"></canvas>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-6">
-        <canvas id="doughnut-chart" style="height: 200px"></canvas>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-6">
-        <canvas id="bar-chart2" style="height: 200px"></canvas>
-      </div>
-      <div class="col-6">
-        <canvas id="bar-chart3" style="height: 200px"></canvas>
+      <div class="row">
+        <div class="col-6">
+          <div class="chart-container">
+            <div class="p-5">
+              <canvas id="bar-chart2" style="height: 200px"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="chart-container">
+            <div class="p-5">
+              <canvas id="bar-chart3" style="height: 200px"></canvas>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -74,12 +98,20 @@ canvas {
 }
 
 .title {
-  top: 5%;
-  font-size: 25px;
-  font-weight: bold;
+  padding: 5px 0px 1px 0px;
 }
 
 .container {
   padding: 0px 80px;
+}
+.chart-container {
+  background-color: white;
+  margin: 5px;
+}
+.text-cont {
+  padding: 4% 15% 0%;
+}
+.chart-text {
+  background-color: gray;
 }
 </style>

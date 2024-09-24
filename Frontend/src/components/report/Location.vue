@@ -6,7 +6,7 @@
         <div id="map" style="height: 400px"></div>
       </div>
       <div class="col-6" style="width: 40%">
-        <div style="height: 400px; border: solid 1px"></div>
+        <div style="height: 400px; border: solid 1px">빈칸 입니다</div>
       </div>
     </div>
   </div>
@@ -36,10 +36,11 @@ export default {
 
 <style scoped>
 .container {
-  padding: 0% 80px;
+  padding: 0px 80px 15px 80px;
 }
 
 .title {
+  margin: -14px 0px -14px 0px;
   position: relative;
   top: -18px;
   font-size: 25px;
