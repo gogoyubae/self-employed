@@ -1,6 +1,9 @@
 <template>
   <div>
-    <img src="@/assets/img/infoplaza/infoplaza.png" class="result-image mb-10" />
+    <img
+      src="@/assets/img/infoplaza/infoplaza.png"
+      class="result-image mb-10"
+    />
     <div class="container">
       <div class="result-text">정보광장</div>
       <div class="overlay">
@@ -8,19 +11,27 @@
           <div class="text-center d-flex justify-content-center">
             <div class="d-flex w-100" style="max-width: 1000px">
               <div class="flex-item">
-                <a href="infoPlaza/industry"><h4>인기 업종</h4></a>
+                <RouterLink to="/infoPlaza/industry"
+                  ><h4>인기 업종</h4></RouterLink
+                >
               </div>
               <div class="flex-item">
-                <a href="/infoPlaza/FloatPopular"><h4>가게 정보</h4></a>
+                <RouterLink to="/infoPlaza/FloatPopular"
+                  ><h4>가게 정보</h4></RouterLink
+                >
               </div>
               <div class="flex-item">
-                <a href="/infoPlaza/education"><h4>교육 정보</h4></a>
+                <RouterLink to="/infoPlaza/education"
+                  ><h4>교육 정보</h4></RouterLink
+                >
               </div>
               <div class="flex-item">
-                <a href="/infoPlaza/loanInfo"><h4>대출 정보</h4></a>
+                <RouterLink to="/infoPlaza/loanInfo"
+                  ><h4>대출 정보</h4></RouterLink
+                >
               </div>
               <div class="flex-item">
-                <a href="/infoPlaza/news"><h4>뉴스</h4></a>
+                <RouterLink to="/infoPlaza/news"><h4>뉴스</h4></RouterLink>
               </div>
             </div>
           </div>
@@ -43,7 +54,6 @@
   object-fit: cover;
   z-index: 1; /* 이미지가 아래에 위치하도록 설정 */
   opacity: 0.5;
-
 }
 
 .result-text {
@@ -68,7 +78,7 @@
 }
 
 .result-text2 {
-  color: rgb(0, 0, 0); /* 텍스트 색상 */  
+  color: rgb(0, 0, 0); /* 텍스트 색상 */
   padding: 10px; /* 여백 추가 */
   font-size: 50px;
   flex-grow: 1; /* 오른쪽 영역이 늘어나도록 설정 */
