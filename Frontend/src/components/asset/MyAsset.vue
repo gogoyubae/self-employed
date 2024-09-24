@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="container">
+  <div>
     <h2 class="mb-2">현재 자산</h2>
     <h4 class="mt-2 mb-2">등록한 계좌 정보</h4>
     <div class="row g-3 g-xl-6">

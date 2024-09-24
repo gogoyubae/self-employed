@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="container">
+  <div>
     <h2 class="mb-2">내 가게</h2>
     <div class="row g-3 g-xl-6">
       <div class="col-xl-6 col-sm-6 d-flex"> <!-- 왼쪽 카드의 부모 -->
