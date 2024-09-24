@@ -1,4 +1,5 @@
 <template>
+  <div>
   <InfoPlazaHeader />
   <div class="container mw-screen-xl">
     <h2>검색 옵션</h2>
@@ -312,10 +313,11 @@
       </div>
     </div>
   </div>
+</div>
 </template>
 
 <script setup>
-import InfoPlazaHeader from './InfoPlazaHeader.vue';
+import InfoPlazaHeader from '@/components/infoplaza/InfoPlazaHeader.vue';
 function toggleAll(source) {
   const checkboxes = document.querySelectorAll(
     '.form-check-input:not(#cycleCheckAll)'

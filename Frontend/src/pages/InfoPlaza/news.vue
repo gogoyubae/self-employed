@@ -1,10 +1,11 @@
 <template>
-  <div class="container">
+  <div>
     <InfoPlazaHeader />
     뉴스
   </div>
 </template>
 
 <script setup>
-import InfoPlazaHeader from './InfoPlazaHeader.vue';
+import InfoPlazaHeader from '@/components/infoplaza/InfoPlazaHeader.vue';
+
 </script>

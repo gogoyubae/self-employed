@@ -6,5 +6,5 @@
 </template>
 
 <script setup>
-import InfoPlazaHeader from './InfoPlazaHeader.vue';
+import InfoPlazaHeader from '@/components/infoplaza/InfoPlazaHeader.vue';
 </script>

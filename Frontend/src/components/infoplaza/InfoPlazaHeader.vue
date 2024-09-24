@@ -1,58 +1,32 @@
 <template>
-  <img src="@/assets/img/infoplaza/infoplaza.png" class="result-image mb-10" />
-  <div class="container">
-    <div class="result-text">정보광장</div>
-    <div class="overlay">
-      <div class="overlay-text">
-        <div class="text-center d-flex justify-content-center">
-          <div class="d-flex w-100" style="max-width: 1000px">
-            <div class="flex-item">
-              <a href="#"><h4>음식/음료</h4></a>
-            </div>
-            <div class="flex-item">
-              <a href="#"><h4>유통</h4></a>
-            </div>
-            <div class="flex-item">
-              <a href="#"><h4>패션/뷰티</h4></a>
-            </div>
-            <div class="flex-item">
-              <a href="#"><h4>의료</h4></a>
-            </div>
-            <div class="flex-item">
-              <a href="#"><h4>여가/오락</h4></a>
+  <div>
+    <img src="@/assets/img/infoplaza/infoplaza.png" class="result-image mb-10" />
+    <div class="container">
+      <div class="result-text">정보광장</div>
+      <div class="overlay">
+        <div class="overlay-text">
+          <div class="text-center d-flex justify-content-center">
+            <div class="d-flex w-100" style="max-width: 1000px">
+              <div class="flex-item">
+                <a href="infoPlaza/industry"><h4>인기 업종</h4></a>
+              </div>
+              <div class="flex-item">
+                <a href="/infoPlaza/FloatPopular"><h4>가게 정보</h4></a>
+              </div>
+              <div class="flex-item">
+                <a href="/infoPlaza/education"><h4>교육 정보</h4></a>
+              </div>
+              <div class="flex-item">
+                <a href="/infoPlaza/loanInfo"><h4>대출 정보</h4></a>
+              </div>
+              <div class="flex-item">
+                <a href="/infoPlaza/news"><h4>뉴스</h4></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="container">
-    <h1>정보광장</h1>
-    <ul class="nav nav-tabs">
-      <li class="nav-item">
-        <RouterLink class="nav-link" to="/infoPlaza/industry"
-          >인기 업종</RouterLink
-        >
-      </li>
-      <li class="nav-item">
-        <RouterLink class="nav-link" to="/infoPlaza/storeInfo"
-          >가게 정보</RouterLink
-        >
-      </li>
-      <li class="nav-item">
-        <RouterLink class="nav-link" to="/infoPlaza/education"
-          >교육 정보</RouterLink
-        >
-      </li>
-      <li class="nav-item">
-        <RouterLink class="nav-link" to="/infoPlaza/loanInfo"
-          >대출 정보</RouterLink
-        >
-      </li>
-      <li class="nav-item">
-        <RouterLink class="nav-link" to="/infoPlaza/news">뉴스</RouterLink>
-      </li>
-    </ul>
   </div>
 </template>
 
@@ -68,6 +42,8 @@
   height: 300px; /* 비율 유지 */
   object-fit: cover;
   z-index: 1; /* 이미지가 아래에 위치하도록 설정 */
+  opacity: 0.5;
+
 }
 
 .result-text {
@@ -79,8 +55,7 @@
   padding: 10px; /* 여백 추가 */
   border-radius: 5px; /* 모서리 둥글게 */
   z-index: 2; /* 텍스트가 이미지 위에 위치하도록 설정 */
-  font-size: 36px;
-  font-weight: 600;
+  font-size: 30px;
 }
 
 .result-text2-container {
@@ -93,7 +68,7 @@
 }
 
 .result-text2 {
-  color: rgb(0, 0, 0); /* 텍스트 색상 */
+  color: rgb(0, 0, 0); /* 텍스트 색상 */  
   padding: 10px; /* 여백 추가 */
   font-size: 50px;
   flex-grow: 1; /* 오른쪽 영역이 늘어나도록 설정 */
@@ -115,15 +90,8 @@
   color: black; /* 텍스트 색상 */
   width: 100%;
 
-  font-size: 16px; /* 텍스트 크기 조정 */
+  font-size: 24px; /* 텍스트 크기 조정 */
   margin: 2% 0; /* 위아래에 10%의 여백 추가 */
-  font-weight: 200;
-}
-
-.table-container {
-  position: relative; /* 자식 요소의 절대 위치 기준 설정 */
-  z-index: 3; /* 테이블이 overlay 위에 위치하도록 설정 */
-  margin-top: 20px; /* 테이블이 overlay와 겹치지 않도록 여백 추가 */
 }
 
 .container {
