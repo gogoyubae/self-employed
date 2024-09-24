@@ -45,7 +45,7 @@
                         3
                       </td>
                       <td>
-                        <a href="#">제목공간제목공간</a>
+                        <a href="community/view/">제목공간제목공간</a>
                       </td>
                       <td>
                         누구
@@ -125,6 +125,7 @@
                             <i class="bi bi-chevron-right"></i>
                           </a>
                         </li>
+                        <a href="community/create"><button type="button" class="btn btn-sm btn-neutral">작성</button></a>
                       </ul>
                     </nav>
                   </div>
