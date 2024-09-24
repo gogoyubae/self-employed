@@ -5,27 +5,15 @@
         <div class="result-text">커뮤니티</div>
         <div class="overlay">
           <div class="overlay-text">
-              <div class="text-center d-flex justify-content-center">
-                  <div class="d-flex w-100" style="max-width: 1000px;">
-                      <div class="flex-item">
-                          <a href="#"><h4>음식/음료</h4></a>
-                      </div>
-                      <div class="flex-item">
-                          <a href="#"><h4>유통</h4></a>
-                      </div>
-                      <div class="flex-item">
-                          <a href="#"><h4>패션/뷰티</h4></a>
-                      </div>
-                      <div class="flex-item">
-                          <a href="#"><h4>의료</h4></a>
-                      </div>
-                      <div class="flex-item">
-                          <a href="#"><h4>여가/오락</h4></a>
-                      </div>
-                  </div>
+            <div class="text-center d-flex justify-content-center">
+              <div class="d-flex w-100" style="max-width: 1000px;">
+                <div class="flex-item" v-for="category in categories" :key="category.name">
+                  <a :href="category.link"><h4>{{ category.name }}</h4></a>
+                </div>
               </div>
+            </div>
           </div>
-      </div>
+        </div>
           <div class="border-top">
               <div class="table-responsive">
                 <table class="table table-nowrap text-center">
@@ -40,65 +28,15 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <tr v-for="post in posts" :key="post.id">
+                      <td>{{ post.id }}</td>
                       <td>
-                        3
+                        <a :href="'community/view/' + post.id">{{ post.title }}</a>
                       </td>
-                      <td>
-                        <a href="community/view/">제목공간제목공간</a>
-                      </td>
-                      <td>
-                        누구
-                      </td>
-                      <td>
-                        1234
-                      </td>
-                      <td>
-                        4
-                      </td>
-                      <td>
-                        2024-07-29
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        2
-                      </td>
-                      <td>
-                        <a href="#">제목공간제목공간</a>
-                      </td>
-                      <td>
-                        누구
-                      </td>
-                      <td>
-                        1234
-                      </td>
-                      <td>
-                        2
-                      </td>
-                      <td>
-                        2024-07-29
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        1
-                      </td>
-                      <td>
-                        <a href="#">제목공간제목공간</a>
-                      </td>
-                      <td>
-                        누구
-                      </td>
-                      <td>
-                        1234
-                      </td>
-                      <td>
-                        4
-                      </td>
-                      <td>
-                        2024-07-29
-                      </td>
+                      <td>{{ post.author }}</td>
+                      <td>{{ post.views }}</td>
+                      <td>{{ post.likes }}</td>
+                      <td>{{ post.date }}</td>
                     </tr>
                   </tbody>
                 </table>
@@ -137,7 +75,22 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
 
+const posts = ref([
+  { id: 3, title: '제목공간제목공간', author: '누구1', views: 1234, likes: 3, date: '2024-07-28' },
+  { id: 2, title: '제목공간제목공간', author: '누구2', views: 1234, likes: 2, date: '2024-07-29' },
+  { id: 1, title: '제목공간제목공간제목', author: '누구3', views: 1234, likes: 5, date: '2024-08-29' },
+]);
+
+// 카테고리
+const categories = ref([
+  { name: '음식/음료', link: '#' },
+  { name: '유통', link: '#' },
+  { name: '패션/뷰티', link: '#' },
+  { name: '의료', link: '#' },
+  { name: '여가/오락', link: '#' },
+]);
 </script>
 <style scoped>
 .result-container {

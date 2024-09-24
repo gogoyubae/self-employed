@@ -2,83 +2,47 @@
   <div>
     <img src="@/assets/img/community/talking.png" class="result-image mb-10">
     <div class="container">
-        <div class="result-text">커뮤니티</div>
-        <div class="overlay">
-          <div class="overlay-text">
-            <div class="text-center d-flex justify-content-center">
-              <div class="d-flex w-100" style="max-width: 1000px;">
-                  <div class="flex-item">
-                      <a href="#"><h4>음식/음료</h4></a>
-                  </div>
-                  <div class="flex-item">
-                      <a href="#"><h4>유통</h4></a>
-                  </div>
-                  <div class="flex-item">
-                      <a href="#"><h4>패션/뷰티</h4></a>
-                  </div>
-                  <div class="flex-item">
-                      <a href="#"><h4>의료</h4></a>
-                  </div>
-                  <div class="flex-item">
-                      <a href="#"><h4>여가/오락</h4></a>
-                  </div>
+      <div class="result-text">커뮤니티</div>
+      <div class="overlay">
+        <div class="overlay-text">
+          <div class="text-center d-flex justify-content-center">
+            <div class="d-flex w-100" style="max-width: 1000px;">
+              <div class="flex-item" v-for="category in categories" :key="category.name">
+                <a :href="category.link"><h4>{{ category.name }}</h4></a>
               </div>
+            </div>
           </div>
-          </div>
-        </div>
-        
-        <div class="d-flex align-items-end justify-content-between">
-          <div>
-            <h3 class="fw-semibold mb-5">제목제목제목제목제목</h3>
-            <p class="text-m text-muted mb-5">
-              내용내용내용내용내용내용<br/>
-              내용내용<br/>
-              내용내용내용내용<br/>
-              내용내용내용내용내용내용내용내용내용내용<br/>
-              내용내용내용내용내용내용내용내용내용내용<br/>
-              내용내용내용내용내용내용내용내용내용내용<br/>
-            </p>
-          </div>
-          
-        </div>
-        <div class="text-center gap-2 mb-5">
-          <button type="button" class="btn btn-sm btn-neutral mx-1">👍 추천</button>
-          <button type="button" class="btn btn-sm btn-neutral mx-1">👎 비추천</button>
-        </div>
-
-        <div class="text-center gap-2">
-          <button type="button" class="btn btn-sm btn-neutral mb-5 mt-1">목록</button>
-        </div>
-
-
-        <!-- List group with custom content -->
-      <div class="list-group mt-5 mb-5">
-        <h4 class="fw-semibold mb-5">댓글 100</h4>
-        <div class="list-group-item py-3">
-          <div class="d-flex flex-wrap w-100 justify-content-between py-2">
-            <h6>작성자1</h6>
-          </div>
-          <p class="fs-sm font-weight-normal text-body py-2">댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글
-            댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글</p>
-          <small class="text-muted">2014-01-23</small>
-        </div>
-        <div class="list-group-item py-3">
-          <div class="d-flex flex-wrap w-100 justify-content-between py-2">
-            <h6>작성자2</h6>
-          </div>
-          <p class="fs-sm font-weight-normal text-body">댓글댓글댓글댓글댓글댓글댓글댓글댓글댓
-            댓글댓글댓글댓댓댓댓댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글</p>
-          <small class="text-muted">2015-01-25</small>
-        </div>
-        <div class="list-group-item py-2">
-          <div class="d-flex flex-wrap w-100 justify-content-between py-2">
-            <h6>작성자3</h6>
-          </div>
-          <p class="fs-sm font-weight-normal text-body">댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글
-            댓글댓글댓글댓글댓글댓글댓글댓글댓맷글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글</p>
-          <small class="text-muted">2017-03-23</small>
         </div>
       </div>
+      
+      <div class="d-flex align-items-end justify-content-between">
+        <div>
+          <h3 class="fw-semibold mb-5">{{ post.title }}</h3>
+          <p class="text-m text-muted mb-5">
+            {{ post.content }}
+          </p>
+        </div>
+      </div>
+      <div class="text-center gap-2 mb-5">
+        <button type="button" class="btn btn-sm btn-neutral mx-1">👍 추천</button>
+        <button type="button" class="btn btn-sm btn-neutral mx-1">👎 비추천</button>
+      </div>
+
+      <div class="text-center gap-2">
+        <button type="button" class="btn btn-sm btn-neutral mb-5 mt-1">목록</button>
+      </div>
+
+      <div class="list-group mt-5 mb-5">
+        <h4 class="fw-semibold mb-5">댓글 {{ comments.length }}</h4>
+        <div class="list-group-item py-3" v-for="comment in comments" :key="comment.author">
+          <div class="d-flex flex-wrap w-100 justify-content-between py-2">
+            <h6>{{ comment.author }}</h6>
+          </div>
+          <p class="fs-sm font-weight-normal text-body py-2">{{ comment.content }}</p>
+          <small class="text-muted">{{ comment.date }}</small>
+        </div>
+      </div>
+
       <nav aria-label="Page navigation example">
         <ul class="pagination justify-content-center pagination-spaced gap-1">
           <li class="page-item">
@@ -86,11 +50,9 @@
               <i class="bi bi-chevron-left"></i>
             </a>
           </li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item"><a class="page-link" href="#">4</a></li>
-          <li class="page-item"><a class="page-link" href="#">5</a></li>
+          <li class="page-item" v-for="page in totalPages" :key="page">
+            <a class="page-link" href="#">{{ page }}</a>
+          </li>
           <li class="page-item">
             <a class="page-link" href="#">
               <i class="bi bi-chevron-right"></i>
@@ -101,7 +63,36 @@
     </div>
   </div>
 </template>
+
 <script setup>
+import { ref } from 'vue';
+
+// 카테고리
+const categories = ref([
+  { name: '음식/음료', link: '#' },
+  { name: '유통', link: '#' },
+  { name: '패션/뷰티', link: '#' },
+  { name: '의료', link: '#' },
+  { name: '여가/오락', link: '#' },
+]);
+
+const post = ref({
+  title: '제목제목제목제목제목',
+  content: `내용내용내용내용내용내용
+            내용내용
+            내용내용내용내용
+            내용내용내용내용내용내용내용내용내용내용
+            내용내용내용내용내용내용내용내용내용내용
+            내용내용내용내용내용내용내용내용내용내용`
+});
+
+const comments = ref([
+  { author: '작성자1', content: '댓글댓글댓글댓글댓글...', date: '2014-01-23' },
+  { author: '작성자2', content: '댓글댓글댓글댓글...', date: '2015-01-25' },
+  { author: '작성자3', content: '댓글댓글댓글댓글...', date: '2017-03-23' },
+]);
+
+const totalPages = ref(5); // 페이지네이션
 </script>
 <style scoped>
 .result-container {
