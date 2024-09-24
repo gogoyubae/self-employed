@@ -1,14 +1,20 @@
 <template>
   <div>
-    <img src="@/assets/img/community/talking.png" class="result-image mb-10">
+    <img src="@/assets/img/community/talking.png" class="result-image mb-10" />
     <div class="container">
       <div class="result-text">커뮤니티</div>
       <div class="overlay">
         <div class="overlay-text">
           <div class="text-center d-flex justify-content-center">
-            <div class="d-flex w-100" style="max-width: 1000px;">
-              <div class="flex-item" v-for="category in categories" :key="category.name">
-                <a :href="category.link"><h4>{{ category.name }}</h4></a>
+            <div class="d-flex w-100" style="max-width: 1000px">
+              <div
+                class="flex-item"
+                v-for="category in categories"
+                :key="category.name"
+              >
+                <a :href="category.link"
+                  ><h4>{{ category.name }}</h4></a
+                >
               </div>
             </div>
           </div>
@@ -28,7 +34,6 @@ const categories = ref([
   { name: '의료', link: '#' },
   { name: '여가/오락', link: '#' },
 ]);
-
 </script>
 
 <style scoped>
@@ -42,7 +47,6 @@ const categories = ref([
   object-fit: cover;
   z-index: 1; /* 이미지가 아래에 위치하도록 설정 */
   opacity: 0.5;
-
 }
 
 .result-text {
@@ -67,7 +71,7 @@ const categories = ref([
 }
 
 .result-text2 {
-  color: rgb(0, 0, 0); /* 텍스트 색상 */  
+  color: rgb(0, 0, 0); /* 텍스트 색상 */
   padding: 10px; /* 여백 추가 */
   font-size: 50px;
   flex-grow: 1; /* 오른쪽 영역이 늘어나도록 설정 */

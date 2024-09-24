@@ -9,7 +9,7 @@
             <img :src="card.imgSrc" class="card-img-top" :alt="card.imgAlt" />
             <div class="card-body">
               <h5 class="card-title">{{ card.title }}</h5>
-              <p class="card-text fs-sm">
+              <p class="card-text fs-sm p-5">
                 {{ card.text }}
               </p>
               <a :href="card.link" class="btn btn-sm btn-primary"
@@ -102,9 +102,5 @@ export default {
 
 .title {
   padding: 5px 0px;
-}
-
-.card-text {
-  height: 104px;
 }
 </style>
