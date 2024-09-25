@@ -9,6 +9,7 @@ import BoardView from '@/pages/community/BoardView.vue';
 import PopularIndustry from '@/pages/InfoPlaza/PopularIndustry.vue';
 import StoreInfo from '@/pages/InfoPlaza/StoreInfo.vue';
 import Education from '@/pages/InfoPlaza/Education.vue';
+import Video from '@/pages/InfoPlaza/Video.vue';
 import LoanInfo from '@/pages/InfoPlaza/LoanInfo.vue';
 import news from '@/pages/InfoPlaza/news.vue';
 import Report from '@/pages/report/Report.vue';
@@ -30,10 +31,15 @@ const router = createRouter({
       component: PopularIndustry,
     },
     { path: '/infoPlaza/storeInfo', name: 'storeInfo', component: StoreInfo },
-    { path: '/infoPlaza/floatpopular', name: 'FloatPopular', component: FloatPopular },
+    {
+      path: '/infoPlaza/floatpopular',
+      name: 'FloatPopular',
+      component: FloatPopular,
+    },
     { path: '/infoPlaza/education', name: 'education', component: Education },
     { path: '/infoPlaza/loanInfo', name: 'loanInfo', component: LoanInfo },
     { path: '/infoPlaza/news', name: 'news', component: news },
+    { path: '/infoPlaza/education/video', name: 'video', component: Video },
     { path: '/report', name: 'Report', component: Report },
     { path: '/asset', name: 'MyStore', component: MyStore },
     { path: '/mypage', name: 'Mypage', component: Mypage },
