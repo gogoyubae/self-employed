@@ -48,26 +48,31 @@ def get_interior_cost(brand_info, brand_mnno, year):
 
 # 서울 지역 브랜드 매출 비용
 def get_brand_frc_bzmn_avrgsls(year, brand_mnno):
-    brand_frc_bzmn_avrgsls_params = {
-        "serviceKey": API_KEY,
-        "pageNo": 1,
-        "numOfRows": 1,
-        "resultType": 'json',
-        "jngBizCrtraYr": year,
-        "brandMnno": brand_mnno
-    }
+    current_year = datetime.now().year
+    for i in range(10):
+        brand_frc_bzmn_avrgsls_params = {
+            "serviceKey": API_KEY,
+            "pageNo": 1,
+            "numOfRows": 1,
+            "resultType": 'json',
+            "jngBizCrtraYr": current_year - i,
+            "brandMnno": brand_mnno
+        }
 
-    try:
-        response = requests.get(BRAND_FRC_BZMN_AVRGSLS, params=brand_frc_bzmn_avrgsls_params)
-        data = response.json()
+        try:
+            response = requests.get(BRAND_FRC_BZMN_AVRGSLS, params=brand_frc_bzmn_avrgsls_params)
+            data = response.json()
 
-        if response.status_code != 200 or not ('items' in data and data['items']):
-            return 0
+            if response.status_code != 200 or not ('items' in data and data['items']):
+                continue
 
-        items = data["items"]
-        return items[0]['fyerAvrgSlsAmtScopeVal']
-    except requests.exceptions.RequestException as e:
-        print(f"Error: {e}")
+            items = data["items"]
+            if items[0]['fyerAvrgSlsAmtScopeVal'] == 'null' or items[0]['fyerAvrgSlsAmtScopeVal'] == 0:
+                continue
+            return items[0]['fyerAvrgSlsAmtScopeVal']
+        except requests.exceptions.RequestException as e:
+            print(f"Error: {e}")
+    return None
 
 
 # 브랜드별 창업 비용
