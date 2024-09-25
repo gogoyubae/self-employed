@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import AssetHeader from '@/components/asset/AssetHeader2.vue';
+import AssetHeader from '@/components/asset/AssetHeader.vue';
 export default {
   components: {
     AssetHeader,

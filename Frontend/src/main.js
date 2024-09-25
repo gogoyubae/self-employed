@@ -11,7 +11,7 @@ import { createPinia } from 'pinia';
 import VueAwesomePaginate from 'vue-awesome-paginate';
 
 import App from './App.vue';
-import router from './router/index2';
+import router from './router/index';
 
 const app = createApp(App);
 

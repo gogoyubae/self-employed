@@ -11,7 +11,7 @@
 import StoreInfo from '@/components/asset/StoreInfo.vue';
 import MyAsset from '@/components/asset/MyAsset.vue';
 import MyGraph from '@/components/asset/MyGraph.vue';
-import AssetHeader from '@/components/asset/AssetHeader2.vue';
+import AssetHeader from '@/components/asset/AssetHeader.vue';
 
 export default {
   name: 'MyStore',
