@@ -14,7 +14,7 @@
                 <RouterLink to="/infoPlaza/industry"><h4>메뉴1</h4></RouterLink>
               </div>
               <div class="flex-item">
-                <a href="#"><h4>메뉴2</h4></a>
+                <a href="/storereg"><h4>메뉴2</h4></a>
               </div>
             </div>
           </div>

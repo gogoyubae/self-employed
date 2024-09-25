@@ -15,6 +15,7 @@ import news from '@/pages/InfoPlaza/news.vue';
 import Report from '@/pages/report/Report.vue';
 import MyStore from '@/pages/asset/MyStore.vue';
 import Mypage from '@/pages/mypage/Mypage.vue';
+import StoreReg from '@/pages/asset/StoreReg.vue';
 
 const router = createRouter({
   history: createWebHistory(),
@@ -43,6 +44,7 @@ const router = createRouter({
     { path: '/report', name: 'Report', component: Report },
     { path: '/asset', name: 'MyStore', component: MyStore },
     { path: '/mypage', name: 'Mypage', component: Mypage },
+    { path: '/storereg', name: 'StoreReg', component: StoreReg },
     // { path: '/input', name: "Input", component: Input },
     // { path: '/input2', name: "Input2", component: Input2 },
     // { path: '/update', name: "Update", component: Update },

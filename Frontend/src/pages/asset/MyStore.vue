@@ -1,7 +1,7 @@
 <template lang="">
-  <AssetHeader/>
+  <AssetHeader />
   <div class="container">
-    <StoreInfo class="mb-5"/>
+    <StoreInfo class="mb-5" />
     <MyAsset class="mb-5" />
     <MyGraph class="mb-5" />
   </div>
@@ -11,7 +11,7 @@
 import StoreInfo from '@/components/asset/StoreInfo.vue';
 import MyAsset from '@/components/asset/MyAsset.vue';
 import MyGraph from '@/components/asset/MyGraph.vue';
-import AssetHeader from '@/components/asset/AssetHeader.vue';
+import AssetHeader from '@/components/asset/AssetHeader2.vue';
 
 export default {
   name: 'MyStore',
@@ -22,9 +22,8 @@ export default {
     AssetHeader,
   },
   setup() {
-    return {
-    };
-  }
+    return {};
+  },
 };
 </script>
 
