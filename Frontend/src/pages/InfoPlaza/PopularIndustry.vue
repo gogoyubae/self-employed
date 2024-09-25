@@ -217,11 +217,11 @@
                   <div class="d-flex align-items-center mb-2">
                     <!--begin::Title-->
                     <span class="fs-2hx fw-bold text-gray-800 lh-1 ls-n2">
-                      전체 지역에서 핫한 사업 아이템
+                      Best 인기 업종 - 전체
                     </span>
                     <!--end::Title-->
                     <router-link
-                      to="/infoPlaza/industry/TotalTrendingBusinessItems"
+                      to="/infoPlaza/industry/totalTrendingBusinessItems"
                       class="ms-auto"
                       style="font-size: 13px"
                     >
@@ -493,13 +493,10 @@
                   <div class="d-flex align-items-center mb-2">
                     <!--begin::Title-->
                     <span class="fs-2hx fw-bold text-gray-800 lh-1 ls-n2">
-                      최근 리포트에서 선정하신 지역에서
-                      <span style="margin-bottom: 5px; display: block"></span>
-                      <!-- 원하는 여백으로 조정 -->
-                      핫한 사업 아이템
+                      Best 인기 업종 - My 위치
                     </span>
                     <router-link
-                      to="/infoPlaza/industry/TotalTrendingBusinessItems"
+                      to="/infoPlaza/industry/mylocationTrending"
                       class="ms-auto"
                       style="font-size: 13px"
                     >

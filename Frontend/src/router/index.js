@@ -7,6 +7,7 @@ import BoardCreate from '@/pages/community/BoardCreate.vue';
 import BoardView from '@/pages/community/BoardView.vue';
 import PopularIndustry from '@/pages/InfoPlaza/PopularIndustry.vue';
 import TotalTrendingBusinessItems from '@/pages/InfoPlaza/TotalTrendingBusinessItems.vue';
+import MylocationTrending from '@/pages/InfoPlaza/MyLocatinTrending.vue';
 import StoreInfo from '@/pages/InfoPlaza/StoreInfo.vue';
 import Education from '@/pages/InfoPlaza/Education.vue';
 import Video from '@/pages/InfoPlaza/Video.vue';
@@ -31,9 +32,14 @@ const router = createRouter({
       component: PopularIndustry,
     },
     {
-      path: '/infoPlaza/industry/TotalTrendingBusinessItems',
+      path: '/infoPlaza/industry/totalTrendingBusinessItems',
       name: 'totalTrendingBusinessItems',
       component: TotalTrendingBusinessItems,
+    },
+    {
+      path: '/infoPlaza/industry/mylocationTrending',
+      name: 'nylocationTrending',
+      component: MylocationTrending,
     },
 
     { path: '/infoPlaza/storeInfo', name: 'storeInfo', component: StoreInfo },

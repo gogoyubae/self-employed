@@ -9,38 +9,12 @@
             class="h3 position-relative pb-sm-2 pb-md-3 mb-5"
             style="z-index: 1021"
           >
-            Best 인기 업종 - 전체
+            Best 인기 업종 - My 위치
           </h1>
         </div>
 
         <!-- 필터링 -->
         <div class="row mb-14">
-          <!-- 지역 검색(구) -->
-          <div class="col-md-2">
-            <select
-              class="form-select round-corner"
-              aria-label="Default select example"
-            >
-              <option selected disabled hidden>구 선택</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-
-          <!-- 지역 검색(동) -->
-          <div class="col-md-2">
-            <select
-              class="form-select round-corner"
-              aria-label="Default select example"
-            >
-              <option selected disabled hidden>동 선택</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-
           <!-- 상위 서비스 업종 -->
           <div class="col-md-2">
             <select
@@ -66,6 +40,9 @@
               <option value="3">Three</option>
             </select>
           </div>
+
+          <div class="col-md-2"></div>
+          <div class="col-md-2"></div>
 
           <!-- 검색창 -->
           <div class="col-md-4">
