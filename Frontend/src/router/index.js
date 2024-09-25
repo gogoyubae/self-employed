@@ -18,6 +18,7 @@ import Report from '@/pages/report/Report.vue';
 import MyStore from '@/pages/asset/MyStore.vue';
 import Mypage from '@/pages/mypage/Mypage.vue';
 import StoreReg from '@/pages/asset/StoreReg.vue';
+import InfoAgree from '@/pages/asset/InfoAgree.vue';
 
 const router = createRouter({
   history: createWebHistory(),
@@ -60,6 +61,7 @@ const router = createRouter({
     { path: '/infoPlaza/education/video', name: 'video', component: Video },
     { path: '/report', name: 'Report', component: Report },
     { path: '/asset', name: 'MyStore', component: MyStore },
+    { path: '/asset/infoagree', name: 'InfoAgree', component: InfoAgree },
     { path: '/mypage', name: 'Mypage', component: Mypage },
     { path: '/storereg', name: 'StoreReg', component: StoreReg },
     // { path: '/input', name: "Input", component: Input },
