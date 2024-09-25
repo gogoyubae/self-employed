@@ -5,7 +5,7 @@
       class="result-image mb-10"
     />
     <div class="container">
-      <div class="result-text">정보광장</div>
+      <div class="result-text"><h1 style="color: white">정보광장</h1></div>
       <div class="overlay">
         <div class="overlay-text">
           <div class="text-center d-flex justify-content-center">
@@ -63,23 +63,7 @@
   border-radius: 5px; /* 모서리 둥글게 */
   z-index: 2; /* 텍스트가 이미지 위에 위치하도록 설정 */
   font-size: 30px;
-}
-
-.result-text2-container {
-  position: absolute; /* 절대 위치 설정 */
-  top: 23%; /* 컨테이너의 중간 */
-  left: 9.3%; /* 고정 위치 */
-  z-index: 2; /* 텍스트가 이미지 위에 위치하도록 설정 */
-
-  display: flex; /* 플렉스 박스 사용 */
-}
-
-.result-text2 {
-  color: rgb(0, 0, 0); /* 텍스트 색상 */
-  padding: 10px; /* 여백 추가 */
-  font-size: 50px;
-  flex-grow: 1; /* 오른쪽 영역이 늘어나도록 설정 */
-  margin-left: 10px; /* 텍스트 간격 */
+  font-weight: 600;
 }
 
 .overlay {

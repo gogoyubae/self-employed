@@ -2,7 +2,7 @@
   <div>
     <InfoPlazaHeader />
     <div class="container mw-screen-xl">
-      <h2>검색 옵션</h2>
+      <h2 style="font-weight: 600">검색 옵션</h2>
       <form class="form-horizontal">
         <div class="row mb-3">
           <!-- 사업주기별 -->
@@ -238,9 +238,13 @@
           </div>
         </div>
 
-        <div class="justify-content-end row">
+        <div class="row mb-3">
+          <label class="col-2 col-form-label"></label>
+          <!-- 빈 라벨로 타이틀 공간 맞춤 -->
           <div class="col-9">
-            <button type="submit" class="btn btn-info">검색하기</button>
+            <div class="mt-2">
+              <button type="submit" class="btn btn-primary">검색하기</button>
+            </div>
           </div>
         </div>
       </form>
@@ -333,10 +337,10 @@
 </template>
 
 <script setup>
-import InfoPlazaHeader from "@/components/infoplaza/InfoPlazaHeader.vue";
+import InfoPlazaHeader from '@/components/infoplaza/InfoPlazaHeader.vue';
 function toggleAll(source) {
   const checkboxes = document.querySelectorAll(
-    ".form-check-input:not(#cycleCheckAll)"
+    '.form-check-input:not(#cycleCheckAll)'
   );
   checkboxes.forEach((checkbox) => {
     checkbox.checked = source.checked;
