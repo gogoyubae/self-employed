@@ -10,6 +10,8 @@ import TotalTrendingBusinessItems from '@/pages/InfoPlaza/TotalTrendingBusinessI
 import MylocationTrending from '@/pages/InfoPlaza/MyLocatinTrending.vue';
 import CloseRatio from '@/pages/InfoPlaza/CloseRatio.vue';
 import StoreInfo from '@/pages/InfoPlaza/StoreInfo.vue';
+import PersonalLoan from '@/pages/InfoPlaza/PersonalLoan.vue';
+import EnterpriseLoan from '@/pages/InfoPlaza/EnterpriseLoan.vue';
 import Education from '@/pages/InfoPlaza/Education.vue';
 import Video from '@/pages/InfoPlaza/Video.vue';
 import LoanInfo from '@/pages/InfoPlaza/LoanInfo.vue';
@@ -50,6 +52,16 @@ const router = createRouter({
       path: '/infoPlaza/industry/closeRatio',
       name: 'closeRatio',
       component: CloseRatio,
+    },
+    {
+      path: '/infoPlaza/loanInfo/personalLoan',
+      name: 'personalLoan',
+      component: PersonalLoan,
+    },
+    {
+      path: '/infoPlaza/loanInfo/enterpriseLoan',
+      name: 'enterpriseLoan',
+      component: EnterpriseLoan,
     },
 
     { path: '/infoPlaza/storeInfo', name: 'storeInfo', component: StoreInfo },

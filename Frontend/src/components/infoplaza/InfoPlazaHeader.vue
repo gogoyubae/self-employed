@@ -23,10 +23,16 @@
                   ><h4>교육 정보</h4></RouterLink
                 >
               </div>
-              <div class="flex-item">
-                <RouterLink to="/infoPlaza/loanInfo"
-                  ><h4>대출 정보</h4></RouterLink
-                >
+              <div class="flex-item loan-info-container">
+                <h4 class="loan-info-title">대출 정보</h4>
+                <div class="loan-info-dropdown">
+                  <RouterLink to="/infoPlaza/loanInfo/personalLoan"
+                    ><h5>개인</h5></RouterLink
+                  >
+                  <RouterLink to="/infoPlaza/loanInfo/enterpriseLoan"
+                    ><h5>기업</h5></RouterLink
+                  >
+                </div>
               </div>
               <div class="flex-item">
                 <RouterLink to="/infoPlaza/news"><h4>뉴스</h4></RouterLink>
@@ -42,47 +48,48 @@
 <script setup></script>
 
 <style>
+/* Existing styles */
 .result-container {
-  position: relative; /* 자식 요소의 절대 위치 기준 설정 */
+  position: relative;
 }
 
 .result-image {
-  width: 100%; /* 이미지가 컨테이너 너비에 맞게 조정 */
-  height: 300px; /* 비율 유지 */
+  width: 100%;
+  height: 300px;
   object-fit: cover;
-  z-index: 1; /* 이미지가 아래에 위치하도록 설정 */
+  z-index: 1;
 }
 
 .result-text {
-  position: absolute; /* 절대 위치 설정 */
-  top: 30%; /* 컨테이너의 중간 */
-  left: 15%; /* 컨테이너의 중간 */
-  transform: translate(-50%, -50%); /* 중앙 정렬 */
-  color: white; /* 텍스트 색상 */
-  padding: 10px; /* 여백 추가 */
-  border-radius: 5px; /* 모서리 둥글게 */
-  z-index: 2; /* 텍스트가 이미지 위에 위치하도록 설정 */
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 2;
   font-size: 30px;
   font-weight: 600;
 }
 
 .overlay {
-  position: absolute; /* 절대 위치 설정 */
-  top: 35%; /* user-info의 하단에 위치 */
-  left: 50%; /* 가운데 정렬을 위해 left를 50%로 설정 */
-  transform: translateX(-50%); /* 가운데 정렬 조정 */
-  width: 80%; /* 너비를 60%로 설정하여 양쪽 20% 여백을 만듭니다 */
-  background-color: rgba(255, 255, 255); /* 흰색 반투명 배경 */
-  border-radius: 40px; /* 모서리 둥글게 */
-  z-index: 1; /* 이미지 아래에 위치하도록 설정 */
-  box-sizing: border-box; /* 패딩을 포함하여 전체 너비를 계산 */
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  background-color: rgba(255, 255, 255);
+  border-radius: 40px;
+  z-index: 1;
+  box-sizing: border-box;
 }
-.overlay-text {
-  color: black; /* 텍스트 색상 */
-  width: 100%;
 
-  font-size: 24px; /* 텍스트 크기 조정 */
-  margin: 2% 0; /* 위아래에 10%의 여백 추가 */
+.overlay-text {
+  color: black;
+  width: 100%;
+  font-size: 24px;
+  margin: 2% 0;
 }
 
 .container {
@@ -92,5 +99,43 @@
 .flex-item {
   flex: 1;
   text-align: center;
+}
+
+/* Dropdown styles for loan info */
+.loan-info-container {
+  position: relative;
+}
+
+.loan-info-title {
+  cursor: pointer;
+  /* Add hover or click styles if needed */
+}
+
+.loan-info-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.loan-info-container:hover .loan-info-dropdown,
+.loan-info-container:focus-within .loan-info-dropdown {
+  display: block;
+}
+
+.loan-info-dropdown h5 {
+  margin: 0;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  color: black;
+}
+
+.loan-info-dropdown h5:hover {
+  background-color: #f0f0f0;
 }
 </style>
