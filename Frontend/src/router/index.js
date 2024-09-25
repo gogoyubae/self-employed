@@ -2,11 +2,11 @@ import { createRouter, createWebHistory } from 'vue-router';
 import Home from '@/pages/Home.vue';
 import Shop from '@/pages/Shop.vue';
 import Community from '@/pages/community/Community.vue';
-import InfoPlaza from '@/pages/InfoPlaza/InfoPlaza.vue';
 import FloatPopular from '@/pages/InfoPlaza/FloatPopular.vue';
 import BoardCreate from '@/pages/community/BoardCreate.vue';
 import BoardView from '@/pages/community/BoardView.vue';
 import PopularIndustry from '@/pages/InfoPlaza/PopularIndustry.vue';
+import TotalTrendingBusinessItems from '@/pages/InfoPlaza/TotalTrendingBusinessItems.vue';
 import StoreInfo from '@/pages/InfoPlaza/StoreInfo.vue';
 import Education from '@/pages/InfoPlaza/Education.vue';
 import Video from '@/pages/InfoPlaza/Video.vue';
@@ -25,12 +25,17 @@ const router = createRouter({
     { path: '/community', name: 'Community', component: Community },
     { path: '/community/create', name: 'BoardCreate', component: BoardCreate },
     { path: '/community/view', name: 'BoardView', component: BoardView },
-    { path: '/infoPlaza', name: 'InfoPlaza', component: InfoPlaza },
     {
       path: '/infoPlaza/industry',
       name: 'Industry',
       component: PopularIndustry,
     },
+    {
+      path: '/infoPlaza/industry/TotalTrendingBusinessItems',
+      name: 'totalTrendingBusinessItems',
+      component: TotalTrendingBusinessItems,
+    },
+
     { path: '/infoPlaza/storeInfo', name: 'storeInfo', component: StoreInfo },
     {
       path: '/infoPlaza/floatpopular',
