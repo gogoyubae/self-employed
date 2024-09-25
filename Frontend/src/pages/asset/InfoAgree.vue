@@ -31,7 +31,7 @@
       <span>본 금융기관은 본인의 개인정보를 안전하게 보호하며, 관련 법령에 따라 개인정보 보호에 최선을 다할 것을 약속합니다.
       </span>
       </div>
-        <button type="button" class="btn btn-sm btn-primary mb-5 mt-5 col-12 m-0">동의하고 진행하기</button>
+      <router-link to="/asset/AssetSelect"><button type="button" class="btn btn-sm btn-primary mb-5 mt-5 col-12 m-0">동의하고 진행하기</button></router-link>
     </div>
   </div>
 </template>

@@ -6,7 +6,7 @@
         <h4 class="mb-2">등록한 계좌 정보</h4>
       </div>
       <div class="d-flex align-items-center gap-2">
-        <button type="button" class="btn btn-sm btn-warning mb-3 mt-3">자산 등록</button>
+        <router-link to="/asset/assetreg"><button type="button" class="btn btn-sm btn-primary mb-5 mt-5 col-12 m-0">자산 등록</button></router-link>
       </div>
     </div>
     
