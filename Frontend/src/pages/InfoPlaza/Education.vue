@@ -2,9 +2,11 @@
   <div>
     <InfoPlazaHeader />
     <div class="container mw-screen-xl">
-      <h2 style="font-weight: 600">검색 옵션</h2>
-      <form class="form-horizontal">
-        <div class="row mb-3">
+      <form class="form-horizontal card">
+        <div class="col-12 d-flex justify-content-center mt-4">
+          <h4>검색 옵션</h4>
+        </div>
+        <div class="row m-3">
           <!-- 사업주기별 -->
           <label for="inputEmail3" class="col-2 col-form-label"
             >사업주기별</label
@@ -236,70 +238,76 @@
               </form>
             </div>
           </div>
-        </div>
-
-        <div class="row mb-3">
-          <label class="col-2 col-form-label"></label>
-          <!-- 빈 라벨로 타이틀 공간 맞춤 -->
-          <div class="col-9">
-            <div class="mt-2">
-              <button type="submit" class="btn btn-primary">검색하기</button>
-            </div>
+          <div class="col-12 d-flex justify-content-center mt-4">
+            <button type="submit" class="btn btn-primary mb-4">검색하기</button>
           </div>
         </div>
       </form>
+
       <div class="cards">
+        <h3 class="mb-5" style="font-weight: 600">영상 목록</h3>
         <!-- Row to contain 4 cards in a single row -->
         <div class="row">
           <div class="col-3">
-            <div class="card">
+            <div class="card" style="cursor: pointer">
               <img
-                src="@/assets/img/people/img-12.jpg"
+                src="@/assets/img/media/img-1.jpg"
                 class="card-img-top"
                 alt="Card image"
               />
               <div class="card-body">
-                <h5 class="card-title">Card title 1</h5>
-                <p class="card-text fs-sm">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-sm btn-primary">Go somewhere</a>
+                <h5 class="card-title">
+                  [카페창업] 다같이 자영업!! 영상 제목입니다 #영상 #제목
+                </h5>
+
+                <div class="d-flex align-items-center">
+                  <a href="#" class="btn btn-sm btn-primary mt-2">시청하기</a>
+                  <router-link
+                    to="/infoplaza/education/video"
+                    href="#"
+                    class="btn btn-sm btn-primary mt-2 ms-2"
+                    >상세보기</router-link
+                  >
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="col-3">
-            <div class="card">
-              <img
-                src="@/assets/img/people/img-12.jpg"
-                class="card-img-top"
-                alt="Card image"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title 2</h5>
-                <p class="card-text fs-sm">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-sm btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-
           <div class="col-3">
             <div class="card" style="cursor: pointer">
               <img
-                src="@/assets/img/people/img-12.jpg"
+                src="@/assets/img/media/img-1.jpg"
                 class="card-img-top"
                 alt="Card image"
               />
               <div class="card-body">
-                <h5 class="card-title">Card title 3</h5>
-                <p class="card-text fs-sm">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
+                <h5 class="card-title">
+                  [카페창업] 다같이 자영업!! 영상 제목입니다 #영상 #제목
+                </h5>
+
+                <div class="d-flex align-items-center">
+                  <a href="#" class="btn btn-sm btn-primary mt-2">시청하기</a>
+                  <router-link
+                    to="/infoplaza/education/video"
+                    href="#"
+                    class="btn btn-sm btn-primary mt-2 ms-2"
+                    >상세보기</router-link
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="cursor: pointer">
+              <img
+                src="@/assets/img/media/img-1.jpg"
+                class="card-img-top"
+                alt="Card image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  [카페창업] 다같이 자영업!! 영상 제목입니다 #영상 #제목
+                </h5>
+
                 <div class="d-flex align-items-center">
                   <a href="#" class="btn btn-sm btn-primary mt-2">시청하기</a>
                   <router-link
@@ -314,19 +322,26 @@
           </div>
 
           <div class="col-3">
-            <div class="card">
+            <div class="card" style="cursor: pointer">
               <img
-                src="@/assets/img/people/img-12.jpg"
+                src="@/assets/img/media/img-1.jpg"
                 class="card-img-top"
                 alt="Card image"
               />
               <div class="card-body">
-                <h5 class="card-title">Card title 4</h5>
-                <p class="card-text fs-sm">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-sm btn-primary">Go somewhere</a>
+                <h5 class="card-title">
+                  [카페창업] 다같이 자영업!! 영상 제목입니다 #영상 #제목
+                </h5>
+
+                <div class="d-flex align-items-center">
+                  <a href="#" class="btn btn-sm btn-primary mt-2">시청하기</a>
+                  <router-link
+                    to="/infoplaza/education/video"
+                    href="#"
+                    class="btn btn-sm btn-primary mt-2 ms-2"
+                    >상세보기</router-link
+                  >
+                </div>
               </div>
             </div>
           </div>

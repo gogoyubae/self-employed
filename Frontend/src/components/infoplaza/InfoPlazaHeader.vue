@@ -5,7 +5,7 @@
       class="result-image mb-10"
     />
     <div class="container">
-      <div class="result-text"><h1 style="color: white">정보광장</h1></div>
+      <div class="result-text" style="color: white">정보광장</div>
       <div class="overlay">
         <div class="overlay-text">
           <div class="text-center d-flex justify-content-center">

@@ -3,103 +3,115 @@
     <InfoPlazaHeader />
     <div class="container mw-screen-xl">
       <!-- Title  -->
-      <div class="row">
-        <h2 style="font-weight: 700">
+      <!-- <div class="row text-center">
+        <h2 style="font-weight: 600">
           <i class="fa-solid fa-fire"></i> BEST 인기 업종
         </h2>
-      </div>
+      </div> -->
       <br />
 
       <div class="row">
-        <!-- 성별 연령대 1등 카드 -->
+        <div class="col-xl-3 col-md-6 mb-4">
+          <div class="card border-left-primary shadow h-100 position-relative">
+            <img
+              src="@/assets/img/medals/Frame 9.png"
+              alt=""
+              style="
+                width: 100%;
+                height: auto;
+                border-radius: 0.35rem 0.35rem 0 0;
+              "
+            />
+            <div
+              class="card-body d-flex flex-column justify-content-center align-items-center text-overlay"
+            >
+              <h1 class="text-white">BEST</h1>
+              <h1 class="text-white">인기 업종</h1>
+            </div>
+          </div>
+        </div>
+
+        <!-- 1등 카드 -->
         <div class="col-xl-3 col-md-6 mb-4">
           <div class="card border-left-primary shadow h-100 py-2">
             <div
               class="card-body d-flex flex-column justify-content-center align-items-center"
             >
+              <div class="text-center">
+                <img
+                  src="@/assets/img/medals/first_place_medal.png"
+                  style="max-width: 50%; height: auto"
+                  alt="..."
+                />
+              </div>
               <div
                 class="row no-gutters align-items-center justify-content-center"
               >
                 <div class="col text-center">
-                  <div class="h4 mb-3 text-gray-300">강남구 압구정동</div>
-                  <div class="h4 mb-4 text-gray-300">압구정로데오사거리</div>
-                  <div
-                    class="h3 mb-5 font-weight-bold text-success text-gray-800"
-                  >
+                  <div class="h3 m-5 font-weight-bold text-success">
                     음식 음료
                   </div>
+                  <div class="h4 mb-3 text-gray-300">
+                    <h4>강남구 압구정동</h4>
+                  </div>
+                  <p>압구정로데오사거리</p>
                 </div>
-              </div>
-              <!-- 아이콘을 새로운 div로 감싸서 중앙 정렬 -->
-              <div class="text-center mt-3">
-                <i class="fa-solid fa-trophy" style="font-size: 100px"></i>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- 성별 연령대 2등 카드 -->
-        <div class="col-xl-2 col-md-6 mb-4">
-          <div class="card border-left-primary shadow h-70 py-2 mt-16">
-            <div
-              class="card-body d-flex flex-column justify-content-center align-items-center"
-            >
-              <div
-                class="row no-gutters align-items-center justify-content-center"
-              >
-                <div class="col text-center">
-                  <div class="h6 mb-3 text-gray-300">강남구 압구정동</div>
-                  <div class="h6 mb-4 text-gray-300">압구정로데오사거리</div>
-                  <div
-                    class="h5 mb-5 font-weight-bold text-success text-gray-800"
-                  >
-                    음식 음료
-                  </div>
-                </div>
-              </div>
-              <!-- 아이콘을 새로운 div로 감싸서 중앙 정렬 -->
-              <div class="text-center mt-3">
-                <i class="fa-solid fa-trophy" style="font-size: 50px"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 성별 연령대 3등 카드 -->
-        <div class="col-xl-2 col-md-6 mb-4 me">
-          <div class="card border-left-primary shadow h-70 py-2 mt-16">
-            <div
-              class="card-body d-flex flex-column justify-content-center align-items-center"
-            >
-              <div
-                class="row no-gutters align-items-center justify-content-center"
-              >
-                <div class="col text-center">
-                  <div class="h6 mb-3 text-gray-300">강남구 압구정동</div>
-                  <div class="h6 mb-4 text-gray-300">압구정로데오사거리</div>
-                  <div
-                    class="h5 mb-5 font-weight-bold text-success text-gray-800"
-                  >
-                    음식 음료
-                  </div>
-                </div>
-              </div>
-              <!-- 아이콘을 새로운 div로 감싸서 중앙 정렬 -->
-              <div class="text-center mt-3">
-                <i class="fa-solid fa-trophy" style="font-size: 50px"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xl-1 col-md-6 mb-4"></div>
-        <!-- 필터링 -->
-        <div class="col-xl-4 col-md-6 mb-4">
-          <!-- 성별 -->
-          <label for="inputEmail3" class="fw-bold" style="font-size: 1rem">
-            성별</label
+        <!-- 2등, 3등 카드 -->
+        <div class="col-xl-3 col-md-6 d-flex flex-column">
+          <!-- 2등 카드 -->
+          <div
+            class="card border-left-primary shadow py-2 mb-2"
+            style="flex: 1"
           >
+            <div class="card-body d-flex align-items-center">
+              <div class="text-left">
+                <img
+                  src="@/assets/img/medals/second_place_medal.png"
+                  style="max-width: 50px; height: auto"
+                  alt="2nd place medal"
+                />
+              </div>
+              <div class="ml-3">
+                <div class="h5 font-weight-bold text-success">음식 음료</div>
+                <div class="h6 text-gray-300">강남구 압구정동</div>
+                <p class="text-gray-300">압구정로데오사거리</p>
+              </div>
+            </div>
+          </div>
 
+          <!-- 3등 카드 -->
+          <div class="card border-left-primary shadow py-2" style="flex: 1">
+            <div class="card-body d-flex align-items-center">
+              <div class="text-left">
+                <img
+                  src="@/assets/img/medals/third_place_medal.png"
+                  style="max-width: 50px; height: auto"
+                  alt="3rd place medal"
+                />
+              </div>
+              <div class="ml-3">
+                <div class="h5 font-weight-bold text-success">음식 음료</div>
+                <div class="h6 text-gray-300">강남구 압구정동</div>
+                <p class="text-gray-300">압구정로데오사거리</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 필터링 -->
+        <div class="col-xl-3 col-md-6 mb-4 card">
+          <!-- 성별 필터링 -->
+          <label
+            for="inputEmail3"
+            class="fw-bold text-center w-50"
+            style="font-size: 1rem"
+            >성별</label
+          >
           <div class="mt-2">
             <div class="form-check form-check-inline">
               <input
@@ -127,8 +139,11 @@
             </div>
           </div>
 
-          <!-- 연령대 checkbox -->
-          <label for="inputEmail3" class="fw-bold mt-20" style="font-size: 1rem"
+          <!-- 연령대 필터링 -->
+          <label
+            for="inputEmail3"
+            class="fw-bold mt-5 text-center w-50"
+            style="font-size: 1rem"
             >연령대</label
           >
           <div class="col-9">
@@ -1064,5 +1079,22 @@ import InfoPlazaHeader from '@/components/infoplaza/InfoPlazaHeader.vue';
 .badge-light-danger {
   background-color: rgba(220, 53, 69, 0.1); /* 연한 빨간색 배경 */
   color: #dc3545; /* 빨간색 텍스트 */
+}
+.card {
+  overflow: hidden; /* 카드가 내부 내용을 벗어나지 않도록 설정 */
+  border-radius: 0.35rem; /* 카드의 모서리 라운드 설정 */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 60%;
+  left: 14%;
+  z-index: 1; /* 텍스트가 이미지 위에 표시되도록 설정 */
+  text-align: left; /* 왼쪽 정렬 */
+}
+
+.text-white {
+  color: white; /* 텍스트 색상 설정 */
+  margin: 0; /* 기본 여백 제거 */
 }
 </style>
