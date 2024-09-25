@@ -1,7 +1,7 @@
 <template>
-  <div style="background-color: #f6f4f9; height: 580px">
-    <div class="container">
-      <div class="title">교육 정보</div>
+  <div style="background-color: #f6f4f9">
+    <div class="container pb-7">
+      <div class="title">대출 정보</div>
       <div class="con-card">
         <!-- Row to contain 4 cards in a single row -->
         <div class="row">

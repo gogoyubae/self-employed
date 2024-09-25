@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container pb-7">
     <div class="title">교육 정보</div>
     <div class="con-card">
       <!-- Row to contain 4 cards in a single row -->
