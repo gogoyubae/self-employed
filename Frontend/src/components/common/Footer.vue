@@ -1,6 +1,6 @@
 <template>
     <footer class="pt-24 pb-10">
-        <div class="container mw-screen-xl">
+        <div class="container ">
           <div class="row">
             <div class="col">
               <div class="pe-5">
