@@ -1,6 +1,14 @@
 <template lang="">
   <div>
-    <h2 class="mb-2">내 가게</h2>
+    <div class="d-flex justify-content-between  gap-2">
+      <div>
+        <h2 class="mb-2">내 가게</h2>
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <button type="button" class="btn btn-sm btn-neutral mb-3 mt-3">수정</button>
+        <button type="button" class="btn btn-sm btn-warning mb-3 mt-3">가게 등록</button>
+      </div>
+    </div>
     <div class="row g-3 g-xl-6">
       <div class="col-xl-6 col-sm-6 d-flex"> <!-- 왼쪽 카드의 부모 -->
         <div class="card image-card w-100 d-flex flex-column"> <!-- 카드가 세로로 늘어날 수 있도록 설정 -->

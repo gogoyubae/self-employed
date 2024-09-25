@@ -6,20 +6,6 @@
     />
     <div class="container">
       <div class="result-text">가계관리</div>
-      <div class="overlay">
-        <div class="overlay-text">
-          <div class="text-center d-flex justify-content-center">
-            <div class="d-flex w-100" style="max-width: 1000px">
-              <div class="flex-item">
-                <RouterLink to="/infoPlaza/industry"><h4>메뉴1</h4></RouterLink>
-              </div>
-              <div class="flex-item">
-                <a href="/storereg"><h4>메뉴2</h4></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </template>
