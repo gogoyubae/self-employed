@@ -11,14 +11,11 @@
           <div class="text-center d-flex justify-content-center">
             <div class="d-flex w-100" style="max-width: 1000px">
               <div class="flex-item">
-                <RouterLink to="/infoPlaza/industry"
-                  ><h4>메뉴1</h4></RouterLink
-                >
+                <RouterLink to="/infoPlaza/industry"><h4>메뉴1</h4></RouterLink>
               </div>
               <div class="flex-item">
                 <a href="#"><h4>메뉴2</h4></a>
               </div>
-              
             </div>
           </div>
         </div>
@@ -39,7 +36,6 @@
   height: 300px; /* 비율 유지 */
   object-fit: cover;
   z-index: 1; /* 이미지가 아래에 위치하도록 설정 */
-  opacity: 0.5;
 }
 
 .result-text {

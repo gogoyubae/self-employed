@@ -46,7 +46,6 @@ const categories = ref([
   height: 300px; /* 비율 유지 */
   object-fit: cover;
   z-index: 1; /* 이미지가 아래에 위치하도록 설정 */
-  opacity: 0.5;
 }
 
 .result-text {
