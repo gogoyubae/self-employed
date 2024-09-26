@@ -55,7 +55,7 @@ const router = createRouter({
     },
     {
       path: '/infoPlaza/personalLoan',
-      name: 'personalLoan',
+      name: 'ersonalLoan',
       component: PersonalLoan,
     },
     {
