@@ -24,6 +24,7 @@ import InfoAgree from '@/pages/asset/InfoAgree.vue';
 import AssetSelect from '@/pages/asset/AssetSelect.vue';
 import AssetReg from '@/pages/asset/AssetReg.vue';
 import AssetFin from '@/pages/asset/AssetFin.vue';
+import Simul from '@/pages/simul/Simul.vue';
 
 const router = createRouter({
   history: createWebHistory(),
@@ -82,6 +83,7 @@ const router = createRouter({
     { path: '/asset/assetreg', name: 'AssetReg', component: AssetReg },
     { path: '/mypage', name: 'Mypage', component: Mypage },
     { path: '/storereg', name: 'StoreReg', component: StoreReg },
+    { path: '/simul', name: 'Simul', component: Simul },
     // { path: '/input', name: "Input", component: Input },
     // { path: '/input2', name: "Input2", component: Input2 },
     // { path: '/update', name: "Update", component: Update },

@@ -1,7 +1,7 @@
 <template>
   <header>
     <div
-      class="mx-2 mx-lg-auto position-relative z-2 px-lg-3 py-0 rounded-3 rounded-lg-pill bg-white"
+      class="mx-2 mx-lg-auto position-relative z-2 px-lg-3 py-0 rounded-3 rounded-lg-pill bg-white he-visible"
       style="width: 90%"
     >
       <nav class="navbar navbar-expand-lg navbar-black p-0" id="navbar">
