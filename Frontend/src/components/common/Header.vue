@@ -31,10 +31,12 @@
                 </a>
                 <div class="header-info-dropdown">
                   <RouterLink to="/simul"><span>시작하기</span></RouterLink>
-                  <RouterLink to="/simul/report"><span>결과보기</span></RouterLink>
+                  <RouterLink to="/simul/report"
+                    ><span>결과보기</span></RouterLink
+                  >
                 </div>
               </li>
-              
+
               <li class="nav-item">
                 <a class="fw-bold nav-link rounded-pill" href="/asset"
                   >가계관리</a
@@ -45,23 +47,42 @@
                   커뮤니티
                 </a>
                 <div class="header-info-dropdown">
-                  <RouterLink to="/community"><span>음식/음료</span></RouterLink>
+                  <RouterLink to="/community"
+                    ><span>음식/음료</span></RouterLink
+                  >
                   <RouterLink to="/community"><span>유통</span></RouterLink>
-                  <RouterLink to="/community"><span>패션/뷰티</span></RouterLink>
+                  <RouterLink to="/community"
+                    ><span>패션/뷰티</span></RouterLink
+                  >
                   <RouterLink to="/community"><span>의료</span></RouterLink>
-                  <RouterLink to="/community"><span>여가/오락</span></RouterLink>
+                  <RouterLink to="/community"
+                    ><span>여가/오락</span></RouterLink
+                  >
                 </div>
               </li>
               <li class="nav-item flex-item header-info-container">
-                <a class="fw-bold nav-link rounded-pill" href="/infoPlaza/industry">
+                <a
+                  class="fw-bold nav-link rounded-pill"
+                  href="/infoPlaza/industry"
+                >
                   정보광장
                 </a>
                 <div class="header-info-dropdown">
-                  <RouterLink to="/infoPlaza/industry"><span>인기업종</span></RouterLink>
-                  <RouterLink to="/infoPlaza/floatpopular"><span>상권정보</span></RouterLink>
-                  <RouterLink to="/infoPlaza/education"><span>교육정보</span></RouterLink>
-                  <RouterLink to="/infoPlaza/loanInfo"><span>대출정보</span></RouterLink>
-                  <RouterLink to="/infoPlaza/news"><span>뉴스</span></RouterLink>
+                  <RouterLink to="/infoPlaza/industry"
+                    ><span>인기업종</span></RouterLink
+                  >
+                  <RouterLink to="/infoPlaza/floatpopular"
+                    ><span>상권정보</span></RouterLink
+                  >
+                  <RouterLink to="/infoPlaza/education"
+                    ><span>교육정보</span></RouterLink
+                  >
+                  <RouterLink to="/infoPlaza/personalLoan"
+                    ><span>대출정보</span></RouterLink
+                  >
+                  <RouterLink to="/infoPlaza/news"
+                    ><span>뉴스</span></RouterLink
+                  >
                 </div>
               </li>
               <li class="nav-item">
@@ -91,9 +112,7 @@
   </header>
 </template>
 
-<script setup>
-
-</script>
+<script setup></script>
 
 <style>
 /* Dropdown styles for loan info */
