@@ -10,7 +10,11 @@
       <hr />
       <div class="row">
         <div class="col-6">
-          <img src="../../assets/img/report/clothes.png" alt="" />
+          <img
+            src="../../assets/img/report/clothes.png"
+            style="border-radius: 20px"
+            alt=""
+          />
         </div>
         <div class="col-6">
           <div>asdf</div>

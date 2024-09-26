@@ -30,7 +30,7 @@
       alt="Leaf"
       class="leaf-animation5"
     />
-    
+
     <img
       v-if="showSpeechBubble"
       src="@/assets/img/simul/speech_bubble.png"
@@ -43,19 +43,31 @@
       alt="Speech Bubble No"
       class="speech-bubble"
     />
-    
+
     <!-- 텍스트 고정 -->
     <div class="main_text_animation">
       <p class="text-line" v-html="typedTextLine1"></p>
-      <p class="text-line" v-html="typedTextLine2" v-show="typedTextLine2.length > 0"></p>
+      <p
+        class="text-line"
+        v-html="typedTextLine2"
+        v-show="typedTextLine2.length > 0"
+      ></p>
     </div>
 
     <!-- 선택지 버튼 추가 -->
     <div v-if="showChoices" class="choices_2">
-      <button @mouseover="isHovered = 'yes'" @mouseleave="isHovered = ''" @click="selectAnswer('yes')">
+      <button
+        @mouseover="isHovered = 'yes'"
+        @mouseleave="isHovered = ''"
+        @click="selectAnswer('yes')"
+      >
         {{ isHovered === 'yes' ? '▶ 네' : '네' }}
       </button>
-      <button @mouseover="isHovered = 'no'" @mouseleave="isHovered = ''" @click="selectAnswer('no')">
+      <button
+        @mouseover="isHovered = 'no'"
+        @mouseleave="isHovered = ''"
+        @click="selectAnswer('no')"
+      >
         {{ isHovered === 'no' ? '▶ 아니요' : '아니요' }}
       </button>
     </div>
@@ -65,8 +77,8 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 
-const fullTextLine1 = "이 도시에서 가장 성공적인";
-const fullTextLine2 = "자영업자가 될 준비가 되셨나요?";
+const fullTextLine1 = '이 도시에서 가장 성공적인';
+const fullTextLine2 = '자영업자가 될 준비가 되셨나요?';
 const typedTextLine1 = ref('');
 const typedTextLine2 = ref('');
 const showSpeechBubble = ref(false); // Speech bubble 표시 여부
@@ -132,7 +144,6 @@ onMounted(() => {
   position: absolute; /* 절대 위치 지정 */
   white-space: nowrap; /* 텍스트가 줄바꿈되지 않도록 설정 */
 }
-
 
 .text-line:nth-child(1) {
   bottom: 60px; /* 첫 번째 줄의 위치 */
@@ -237,8 +248,9 @@ onMounted(() => {
 .choices_2 {
   position: absolute;
   bottom: 200px; /* Adjust position as needed */
-  left: 70%; /* Center horizontally */
+  left: 73%; /* Center horizontally */
   transform: translateX(-50%); /* Centering adjustment */
+  width: 150px;
 }
 
 .choices_2 button {
@@ -246,14 +258,14 @@ onMounted(() => {
   cursor: pointer; /* 마우스 포인터 변경 */
   display: block;
   font-size: 20px;
-  background-color: #FEE9B4;
+  background-color: #fee9b4;
   border-radius: 25px;
   color: black;
   border: none; /* 보더 제거 */
 }
 
 .choices_2 button:hover {
-  background-color: #BE9788;
+  background-color: #be9788;
   border-radius: 25px;
   font-size: 20px;
   font-weight: bold;
