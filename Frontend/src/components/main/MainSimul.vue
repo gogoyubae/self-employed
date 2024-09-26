@@ -58,7 +58,6 @@
       <Location/>
       <Bar/>
       <Loan/>
-      <h3>시뮬레이션</h3>
     </div>
   </div>
 </template>
