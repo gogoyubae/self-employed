@@ -38,20 +38,40 @@
         class="speech-bubble"
       />
       <div class="answer-box">
-        <!-- 각 버튼을 감싸는 div에 v-for 추가 -->
+        <!-- 선택지 버튼 추가 -->
         <div v-if="showChoices" class="choices_2">
-          <div v-for="(choice, index) in choices" :key="index">
-            <button
-              @mouseover="isHovered = choice.text"
-              @mouseleave="isHovered = ''"
-              @click="selectAnswer(choice.value)"
-            >
-              <span class="arrow">{{
-                isHovered === choice.text ? '▶' : ''
-              }}</span>
-              <span class="text">{{ choice.text }}</span>
-            </button>
-          </div>
+          <button
+            @mouseover="isHovered = 'yes'"
+            @mouseleave="isHovered = ''"
+            @click="selectAnswer('yes')"
+          >
+            <span class="arrow">{{ isHovered === 'yes' ? '▶' : '' }}</span>
+            <span class="text">네</span>
+          </button>
+          <button
+            @mouseover="isHovered = 'no'"
+            @mouseleave="isHovered = ''"
+            @click="selectAnswer('no')"
+          >
+            <span class="arrow">{{ isHovered === 'no' ? '▶' : '' }}</span>
+            <span class="text">아니요</span>
+          </button>
+          <button
+            @mouseover="isHovered = 'no'"
+            @mouseleave="isHovered = ''"
+            @click="selectAnswer('no')"
+          >
+            <span class="arrow">{{ isHovered === 'no' ? '▶' : '' }}</span>
+            <span class="text">아니요</span>
+          </button>
+          <button
+            @mouseover="isHovered = 'no'"
+            @mouseleave="isHovered = ''"
+            @click="selectAnswer('no')"
+          >
+            <span class="arrow">{{ isHovered === 'no' ? '▶' : '' }}</span>
+            <span class="text">아니요</span>
+          </button>
         </div>
       </div>
     </div>
@@ -77,28 +97,13 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 
-const fullTexts = [
-  {
-    line1: '이 도시에서 가장 성공적인',
-    line2: '자영업자가 될 준비가 되셨나요?',
-  },
-  {
-    line1: '다음 단계로 나아가고 싶으신가요?',
-    line2: '더 많은 정보를 원하십니까?',
-  },
-];
-
-const choices = [
-  { text: '네', value: 'yes' },
-  { text: '아니요', value: 'no' },
-  { text: '더 알아보기', value: 'more_info' },
-];
-
+const fullTextLine1 = '이 도시에서 가장 성공적인';
+const fullTextLine2 = '자영업자가 될 준비가 되셨나요?';
 const typedTextLine1 = ref('');
 const typedTextLine2 = ref('');
-const showSpeechBubble = ref(false);
-const showChoices = ref(false);
-const isHovered = ref('');
+const showSpeechBubble = ref(false); // Speech bubble 표시 여부
+const showChoices = ref(false); // 선택지 표시 여부
+const isHovered = ref(''); // 버튼 호버 상태
 
 const typeText = (text, typedText, delay = 0) => {
   const letters = text.split('');
@@ -111,26 +116,34 @@ const typeText = (text, typedText, delay = 0) => {
     } else {
       clearInterval(interval);
       if (typedText === typedTextLine1) {
+        // 첫 번째 줄이 끝난 후 두 번째 줄 애니메이션 시작
         setTimeout(() => {
-          typeText(fullTexts[1].line2, typedTextLine2, 500);
-        }, 500);
+          typeText(fullTextLine2, typedTextLine2, 500);
+        }, 500); // 약간의 딜레이 후 시작
       } else {
+        // 두 번째 줄이 끝난 후 speech bubble 표시
         setTimeout(() => {
-          showSpeechBubble.value = true;
-          showChoices.value = true;
+          showSpeechBubble.value = true; // Speech bubble 표시
+          showChoices.value = true; // 선택지 표시
         }, 500);
       }
     }
-  }, 100);
+  }, 100); // 타자 속도 (밀리초)
 };
 
 const selectAnswer = (answer) => {
-  console.log(`선택한 응답: ${answer}`);
-  // 선택한 응답에 따른 추가 로직 구현
+  // 선택지에 대한 응답 처리
+  if (answer === 'yes') {
+    console.log('네를 선택했습니다.');
+    // 네 선택 후 추가 로직
+  } else {
+    console.log('아니요를 선택했습니다.');
+    // 아니요 선택 후 추가 로직
+  }
 };
 
 onMounted(() => {
-  typeText(fullTexts[0].line1, typedTextLine1);
+  typeText(fullTextLine1, typedTextLine1);
 });
 </script>
 
@@ -257,42 +270,40 @@ onMounted(() => {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  width: 117px;
   margin: 5px 0px 5px 0px;
 }
 
-.choices_2 div {
-  margin-bottom: -5px; /* 버튼 간 간격을 줄이기 */
-}
-
 .choices_2 button {
-  padding: 10px 15px; /* 수직 패딩과 수평 패딩 설정 */
+  padding: 10px 20px;
   cursor: pointer;
-  display: flex; /* 플렉스 박스를 사용하여 정렬 */
-  align-items: center; /* 세로 중앙 정렬 */
-  font-size: 20px; /* 폰트 크기 */
-  background-color: transparent; /* 기본 배경 색상 */
-  border-radius: 25px; /* 둥근 모서리 */
-  color: black; /* 텍스트 색상 */
-  border: none; /* 테두리 없음 */
-  text-align: left; /* 텍스트 왼쪽 정렬 */
-  transition: background-color 0.3s ease; /* 배경 색상 전환 효과 */
+  display: block;
+  font-size: 20px;
+  background-color: transparent;
+  border-radius: 25px;
+  color: black;
+  border: none;
+  position: relative;
+  text-align: left;
 }
 
 .choices_2 button span.arrow {
+  position: absolute;
+  left: 15px; /* 화살표를 버튼 왼쪽에 고정 */
+  top: 50%;
+  transform: translateY(-50%); /* 세로 가운데 정렬 */
   width: 20px; /* 화살표 크기 고정 */
-  font-size: 14px;
 }
 
 .choices_2 button:hover {
-  background-color: #fcd752; /* 호버 시 배경 색상 */
+  background-color: #be9788;
   border-radius: 25px;
   font-weight: bold;
-  padding: 10px 20px; /* 여백을 다시 설정하여 안정성 확보 */
 }
 
 /* 선택지 텍스트가 밀리지 않도록 고정 */
 .choices_2 button span.text {
-  padding-left: 5px; /* 화살표를 위한 여백 추가 */
+  padding-left: 15px; /* 화살표를 위한 여백 추가 */
 }
 
 .answer-box {
