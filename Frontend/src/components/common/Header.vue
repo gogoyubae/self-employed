@@ -2,17 +2,18 @@
   <header>
     <div
       class="mx-2 mx-lg-auto position-relative z-2 px-lg-3 py-0 rounded-3 rounded-lg-pill bg-white"
-      style="width: 90%"
+      style="width: 80%"
     >
       <nav class="navbar navbar-expand-lg navbar-black p-0" id="navbar">
         <div class="container px-sm-0">
           <a class="navbar-brand d-inline-block" href="/"
             ><img
-              src="@/assets/img/logos/main_logo.png"
+              src="@/assets/img/logos/Logo-hr-h-40.png"
               class=""
               alt="..."
-            /> </a
-          ><button
+            />
+          </a>
+          <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
