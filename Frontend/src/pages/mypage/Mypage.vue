@@ -1,4 +1,6 @@
 <template>
+  <div>
+  <MypageHeader />
   <div class="container">
     <h1>개인정보 설정</h1>
     <hr />
@@ -115,79 +117,77 @@
       </table>
     </div>
   </div>
+</div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      reports: [
-        {
-          id: 1,
-          title: '7번째 리포트',
-          capital: '5억',
-          category: '편의점',
-          location: '강남',
-          date: '2024-09-13',
-        },
-        {
-          id: 'id2',
-          title: '6번째 리포트',
-          capital: '3억',
-          category: '카페',
-          location: '신촌',
-          date: '2024-08-12',
-          status: '',
-        },
-        {
-          id: 'id3',
-          title: '5번째 리포트',
-          capital: '4억',
-          category: '식당',
-          location: '이태원',
-          date: '2024-08-25',
-          status: '',
-        },
-        {
-          id: 'id4',
-          title: '4번째 리포트',
-          capital: '6억',
-          category: '헬스장',
-          location: '홍대',
-          date: '2024-09-01',
-          status: '',
-        },
-        {
-          id: 'id5',
-          title: '3번째 리포트',
-          capital: '2억',
-          category: '서점',
-          location: '여의도',
-          date: '2024-09-05',
-          status: '',
-        },
-        {
-          id: 'id6',
-          title: '2번째 리포트',
-          capital: '7억',
-          category: '영화관',
-          location: '종로',
-          date: '2024-09-10',
-          status: '',
-        },
-        {
-          id: 'id6',
-          title: '1번째 리포트',
-          capital: '7억',
-          category: '영화관',
-          location: '종로',
-          date: '2024-09-10',
-          status: '',
-        },
-      ],
-    };
+<script setup>
+import MypageHeader from '@/components/mypage/MypageHeader.vue';
+import { ref } from 'vue';
+const reports = ref([
+  {
+    id: 1,
+    title: '7번째 리포트',
+    capital: '5억',
+    category: '편의점',
+    location: '강남',
+    date: '2024-09-13',
   },
-};
+  {
+    id: 'id2',
+    title: '6번째 리포트',
+    capital: '3억',
+    category: '카페',
+    location: '신촌',
+    date: '2024-08-12',
+    status: '',
+  },
+  {
+    id: 'id3',
+    title: '5번째 리포트',
+    capital: '4억',
+    category: '식당',
+    location: '이태원',
+    date: '2024-08-25',
+    status: '',
+  },
+  {
+    id: 'id4',
+    title: '4번째 리포트',
+    capital: '6억',
+    category: '헬스장',
+    location: '홍대',
+    date: '2024-09-01',
+    status: '',
+  },
+  {
+    id: 'id5',
+    title: '3번째 리포트',
+    capital: '2억',
+    category: '서점',
+    location: '여의도',
+    date: '2024-09-05',
+    status: '',
+  },
+  {
+    id: 'id6',
+    title: '2번째 리포트',
+    capital: '7억',
+    category: '영화관',
+    location: '종로',
+    date: '2024-09-10',
+    status: '',
+  },
+  {
+    id: 'id6',
+    title: '1번째 리포트',
+    capital: '7억',
+    category: '영화관',
+    location: '종로',
+    date: '2024-09-10',
+    status: '',
+  },
+]);
+
 </script>
 
 <style>

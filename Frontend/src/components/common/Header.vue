@@ -6,7 +6,7 @@
     >
       <nav class="navbar navbar-expand-lg navbar-black p-0" id="navbar">
         <div class="container px-sm-0">
-          <a class="navbar-brand d-inline-block" href="#"
+          <a class="navbar-brand d-inline-block" href="/"
             ><img
               src="@/assets/img/logos/main_logo.png"
               class=""
