@@ -4,14 +4,14 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
-API_KEY = os.environ.get('API_KEY')
+OPEN_DATA_API_KEY = os.environ.get('OPEN_DATA_API_KEY')
 
 BRAND_FRCS_BZM_INTRRCTINFO_URL = "http://apis.data.go.kr/1130000/FftcBrandFrcsIntInfo2_Service/getbrandFrcsBzmnIntrrctinfo"
 
 # 인테리어 비용
 def find_interior_cost(brand_info, year):
     brand_frcs_bzm_intrrctinfo_params = {
-        "serviceKey": API_KEY,
+        "serviceKey": OPEN_DATA_API_KEY,
         "pageNo": 1,
         "numOfRows": 1,
         "resultType": "json",

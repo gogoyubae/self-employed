@@ -5,7 +5,6 @@ from brand_startup_cost import get_brand_fntn_stats
 from brand_info import get_brand_info
 
 load_dotenv()
-API_KEY = os.environ.get('API_KEY')
 
 brand_fntn_info = {} # 창업 비용 정보
 for year in range(datetime.now().year - 1, 2017, -1):

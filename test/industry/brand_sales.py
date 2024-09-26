@@ -4,7 +4,7 @@ import os
 from datetime import datetime
 
 load_dotenv()
-API_KEY = os.environ.get('API_KEY')
+OPEN_DATA_API_KEY = os.environ.get('OPEN_DATA_API_KEY')
 
 BRAND_FRC_BZMN_AVRGSLS="http://apis.data.go.kr/1130000/FftcBrandFrcsUnitAvrSalInfo2_Service/getbrandFrcsBzmnAvrgsls"
 
@@ -13,7 +13,7 @@ def get_brand_frc_bzmn_avrgsls(brand_mnno):
     current_year = datetime.now().year
     for i in range(10):
         brand_frc_bzmn_avrgsls_params = {
-            "serviceKey": API_KEY,
+            "serviceKey": OPEN_DATA_API_KEY,
             "pageNo": 1,
             "numOfRows": 1, # page의 첫 번째 데이터 -> 서울
             "resultType": 'json',

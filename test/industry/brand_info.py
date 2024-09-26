@@ -5,7 +5,7 @@ from brand_interrior import find_interior_cost
 from brand_sales import get_brand_frc_bzmn_avrgsls
 
 load_dotenv()
-API_KEY = os.environ.get('API_KEY')
+OPEN_DATA_API_KEY = os.environ.get('OPEN_DATA_API_KEY')
 
 BRAND_INFO_URL = "http://apis.data.go.kr/1130000/FftcBrandRlsInfo2_Service/getBrandinfo"
 
@@ -14,7 +14,7 @@ def get_brand_info(brand_fntn_info, year):
     industry_classification = {}
 
     brand_info_params = {
-        "serviceKey": API_KEY,
+        "serviceKey": OPEN_DATA_API_KEY,
         "pageNo": 1,
         "numOfRows": 1,
         "resultType": "json",
@@ -27,7 +27,7 @@ def get_brand_info(brand_fntn_info, year):
     # int(total_count / 100 + 2)
     for i in range(1, 10):
         brand_info_params = {
-            "serviceKey": API_KEY,
+            "serviceKey": OPEN_DATA_API_KEY,
             "pageNo": i,
             "numOfRows": 100,
             "resultType": "json",

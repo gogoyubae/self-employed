@@ -3,14 +3,14 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
-API_KEY = os.environ.get('API_KEY')
+OPEN_DATA_API_KEY = os.environ.get('OPEN_DATA_API_KEY')
 
 FFTC_BRAND_FNTN_STATS_URL = "http://apis.data.go.kr/1130000/FftcBrandFntnStatsService/getBrandFntnStats"
 
 # 브랜드별 창업 비용
 def get_brand_fntn_stats(brand_fntn_info, year):
     brand_fntn_stats_params = {
-        "serviceKey": API_KEY,
+        "serviceKey": OPEN_DATA_API_KEY,
         "pageNo": 1,
         "numOfRows": 1,
         "resultType": "json",
@@ -22,7 +22,7 @@ def get_brand_fntn_stats(brand_fntn_info, year):
     
     for i in range(1, int(total_count / 100 + 2)): # 100개씩 저장
         brand_fntn_stats_params = {
-            "serviceKey": API_KEY,
+            "serviceKey": OPEN_DATA_API_KEY,
             "pageNo": i,
             "numOfRows": 100,
             "resultType": "json",
