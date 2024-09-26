@@ -31,12 +31,34 @@
       class="leaf-animation5"
     />
 
-    <img
-      v-if="showSpeechBubble"
-      src="@/assets/img/simul/speech_bubble.png"
-      alt="Speech Bubble"
-      class="speech-bubble"
-    />
+    <div v-if="showSpeechBubble">
+      <img
+        src="@/assets/img/simul/speech_bubble_no.png"
+        alt="Speech Bubble"
+        class="speech-bubble"
+      />
+      <div class="answer-box">
+        <!-- 선택지 버튼 추가 -->
+        <div v-if="showChoices" class="choices_2">
+          <button
+            @mouseover="isHovered = 'yes'"
+            @mouseleave="isHovered = ''"
+            @click="selectAnswer('yes')"
+          >
+            <span class="arrow">{{ isHovered === 'yes' ? '▶' : '' }}</span>
+            <span class="text">네</span>
+          </button>
+          <button
+            @mouseover="isHovered = 'no'"
+            @mouseleave="isHovered = ''"
+            @click="selectAnswer('no')"
+          >
+            <span class="arrow">{{ isHovered === 'no' ? '▶' : '' }}</span>
+            <span class="text">아니요</span>
+          </button>
+        </div>
+      </div>
+    </div>
     <img
       v-else
       src="@/assets/img/simul/speech_bubble_no.png"
@@ -52,24 +74,6 @@
         v-html="typedTextLine2"
         v-show="typedTextLine2.length > 0"
       ></p>
-    </div>
-
-    <!-- 선택지 버튼 추가 -->
-    <div v-if="showChoices" class="choices_2">
-      <button
-        @mouseover="isHovered = 'yes'"
-        @mouseleave="isHovered = ''"
-        @click="selectAnswer('yes')"
-      >
-        {{ isHovered === 'yes' ? '▶ 네' : '네' }}
-      </button>
-      <button
-        @mouseover="isHovered = 'no'"
-        @mouseleave="isHovered = ''"
-        @click="selectAnswer('no')"
-      >
-        {{ isHovered === 'no' ? '▶ 아니요' : '아니요' }}
-      </button>
     </div>
   </div>
 </template>
@@ -246,28 +250,55 @@ onMounted(() => {
 }
 
 .choices_2 {
-  position: absolute;
-  bottom: 200px; /* Adjust position as needed */
-  left: 73%; /* Center horizontally */
-  transform: translateX(-50%); /* Centering adjustment */
-  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 117px;
+  margin: 5px 0px 5px 0px;
 }
 
 .choices_2 button {
-  padding: 10px 20px; /* 버튼 크기 조정 */
-  cursor: pointer; /* 마우스 포인터 변경 */
+  margin: -5px 0px;
+  padding: 10px 20px;
+  cursor: pointer;
   display: block;
   font-size: 20px;
-  background-color: #fee9b4;
+  background-color: transparent;
   border-radius: 25px;
   color: black;
-  border: none; /* 보더 제거 */
+  border: none;
+  position: relative;
+  text-align: left;
+}
+
+.choices_2 button span.arrow {
+  position: absolute;
+  left: 15px; /* 화살표를 버튼 왼쪽에 고정 */
+  top: 50%;
+  transform: translateY(-50%); /* 세로 가운데 정렬 */
+  width: 20px; /* 화살표 크기 고정 */
 }
 
 .choices_2 button:hover {
   background-color: #be9788;
   border-radius: 25px;
-  font-size: 20px;
   font-weight: bold;
+}
+
+/* 선택지 텍스트가 밀리지 않도록 고정 */
+.choices_2 button span.text {
+  padding-left: 15px; /* 화살표를 위한 여백 추가 */
+}
+
+.answer-box {
+  background-color: #fee9b4;
+  position: absolute;
+  bottom: 185px; /* Adjust position as needed */
+  left: 74%; /* Center horizontally */
+  transform: translateX(-50%); /* Centering adjustment */
+  width: 200px;
+  border-radius: 80px;
+  padding: 15px 15px 15px 25px;
 }
 </style>
