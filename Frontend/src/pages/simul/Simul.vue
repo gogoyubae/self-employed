@@ -26,22 +26,122 @@
       class="leaf-animation4"
     />
     <img
-    src="@/assets/img/simul/leaf1.png"
-    alt="Leaf"
-    class="leaf-animation5"
-  />
-  <img
+      src="@/assets/img/simul/leaf1.png"
+      alt="Leaf"
+      class="leaf-animation5"
+    />
+    
+    <img
+      v-if="showSpeechBubble"
       src="@/assets/img/simul/speech_bubble.png"
       alt="Speech Bubble"
       class="speech-bubble"
     />
+    <img
+      v-else
+      src="@/assets/img/simul/speech_bubble_no.png"
+      alt="Speech Bubble No"
+      class="speech-bubble"
+    />
+    
+    <!-- 텍스트 고정 -->
+    <div class="main_text_animation">
+      <p class="text-line" v-html="typedTextLine1"></p>
+      <p class="text-line" v-html="typedTextLine2" v-show="typedTextLine2.length > 0"></p>
+    </div>
+
+    <!-- 선택지 버튼 추가 -->
+    <div v-if="showChoices" class="choices_2">
+      <button @mouseover="isHovered = 'yes'" @mouseleave="isHovered = ''" @click="selectAnswer('yes')">
+        {{ isHovered === 'yes' ? '▶ 네' : '네' }}
+      </button>
+      <button @mouseover="isHovered = 'no'" @mouseleave="isHovered = ''" @click="selectAnswer('no')">
+        {{ isHovered === 'no' ? '▶ 아니요' : '아니요' }}
+      </button>
+    </div>
   </div>
 </template>
 
 <script setup>
+import { ref, onMounted } from 'vue';
+
+const fullTextLine1 = "이 도시에서 가장 성공적인";
+const fullTextLine2 = "자영업자가 될 준비가 되셨나요?";
+const typedTextLine1 = ref('');
+const typedTextLine2 = ref('');
+const showSpeechBubble = ref(false); // Speech bubble 표시 여부
+const showChoices = ref(false); // 선택지 표시 여부
+const isHovered = ref(''); // 버튼 호버 상태
+
+const typeText = (text, typedText, delay = 0) => {
+  const letters = text.split('');
+  let index = 0;
+
+  const interval = setInterval(() => {
+    if (index < letters.length) {
+      typedText.value += letters[index];
+      index++;
+    } else {
+      clearInterval(interval);
+      if (typedText === typedTextLine1) {
+        // 첫 번째 줄이 끝난 후 두 번째 줄 애니메이션 시작
+        setTimeout(() => {
+          typeText(fullTextLine2, typedTextLine2, 500);
+        }, 500); // 약간의 딜레이 후 시작
+      } else {
+        // 두 번째 줄이 끝난 후 speech bubble 표시
+        setTimeout(() => {
+          showSpeechBubble.value = true; // Speech bubble 표시
+          showChoices.value = true; // 선택지 표시
+        }, 500);
+      }
+    }
+  }, 100); // 타자 속도 (밀리초)
+};
+
+const selectAnswer = (answer) => {
+  // 선택지에 대한 응답 처리
+  if (answer === 'yes') {
+    console.log('네를 선택했습니다.');
+    // 네 선택 후 추가 로직
+  } else {
+    console.log('아니요를 선택했습니다.');
+    // 아니요 선택 후 추가 로직
+  }
+};
+
+onMounted(() => {
+  typeText(fullTextLine1, typedTextLine1);
+});
 </script>
 
 <style scoped>
+/* 타자 애니메이션 스타일 */
+.main_text_animation {
+  position: absolute;
+  bottom: 85px; /* Adjust position as needed */
+  left: 31%; /* 왼쪽에서 시작하도록 변경 */
+  color: #000; /* 텍스트 색상 */
+  text-align: left; /* 왼쪽 정렬 */
+}
+
+.text-line {
+  font-size: 35px; /* 텍스트 크기 */
+  font-weight: bold;
+  margin: 0; /* 기본 마진 제거 */
+  position: absolute; /* 절대 위치 지정 */
+  white-space: nowrap; /* 텍스트가 줄바꿈되지 않도록 설정 */
+}
+
+
+.text-line:nth-child(1) {
+  bottom: 60px; /* 첫 번째 줄의 위치 */
+}
+
+.text-line:nth-child(2) {
+  bottom: 0px; /* 두 번째 줄의 위치 (필요에 따라 조정) */
+}
+
 .animation-container {
   position: relative;
   width: 100%;
@@ -55,15 +155,14 @@
   object-fit: cover;
 }
 
-
 .speech-bubble {
   position: absolute;
   bottom: 5px; /* Adjust the distance from the bottom */
   left: 50%; /* Center horizontally */
-  transform: translateX(-45%); /* Centering adjustment */
-  width: 60%; /* Set the width to 70% */
-  /* Add additional styling if needed */
-
+  transform: translateX(-48%); /* Centering adjustment */
+  width: 77%; /* Set the width to 70% */
+  opacity: 1;
+  transition: opacity 0.5s ease; /* 자연스러운 등장 효과 */
 }
 
 .leaf-animation1,
@@ -101,6 +200,7 @@
   animation-duration: 8s;
   animation-delay: 1s;
 }
+
 .leaf-animation5 {
   left: 90%;
   animation-duration: 17s;
@@ -118,5 +218,44 @@
   }
 }
 
+/* 선택지 스타일 */
+.header-info-choices_2 {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
 
+.choices_2 {
+  position: absolute;
+  bottom: 200px; /* Adjust position as needed */
+  left: 70%; /* Center horizontally */
+  transform: translateX(-50%); /* Centering adjustment */
+}
+
+.choices_2 button {
+  padding: 10px 20px; /* 버튼 크기 조정 */
+  cursor: pointer; /* 마우스 포인터 변경 */
+  display: block;
+  font-size: 20px;
+  background-color: #FEE9B4;
+  border-radius: 25px;
+  color: black;
+  border: none; /* 보더 제거 */
+}
+
+.choices_2 button:hover {
+  background-color: #BE9788;
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: bold;
+}
 </style>
