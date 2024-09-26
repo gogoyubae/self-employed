@@ -45,4 +45,3 @@ def get_brand_fntn_stats(brand_fntn_info, year):
                     }
         except requests.exceptions.RequestException as e:
             print(f"Error: {e}")
-    return brand_fntn_info

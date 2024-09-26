@@ -66,7 +66,6 @@ def find_property_within_radius(result_list, current_location, radius):
         compare = (item.get('laCrd'), item.get('loCrd'))
         if haversine(current_location, compare, unit = 'm') > radius: # 미터 단위
             continue
-        print("거리:", haversine(current_location, compare, unit = 'm'))
 
         photo_list = item.get('photoList', [])
         image_data = photo_list[0].get('imageData') if photo_list else None # 썸네일 (https://newimg.serve.co.kr/article_photo/2024/09/12/14991786/20240912111323289.png)
@@ -98,6 +97,11 @@ offset = 10000
 
 # 매물 정보 가져오기
 property_by_dong = find_property_info_by_dong(1117013600)
+
 property_by_radius =find_property_within_radius(property_by_dong, (37.52687181000000, 127.00093640000000), 600) # 서울 용구 보광동, 600m 내 매물
-print("[서울 용구 보광동 600m 내 매물 목록] ->", len(property_by_radius))
-print(property_by_radius)
+# print("[서울 용구 보광동 600m 내 매물 목록] ->", len(property_by_radius))
+# print(property_by_radius)
+# print()
+# property_by_dong = find_property_info_by_dong(1168010500)
+# property_by_radius =find_property_within_radius(property_by_dong, (37.51396894000000, 127.05612160000000), 600) # 서울 강남구 삼성동, 600m 내 매물
+# print("[서울 강남구 삼성동 600m 내 매물 목록] ->", len(property_by_radius))

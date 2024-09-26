@@ -1,8 +1,7 @@
 import requests
 from dotenv import load_dotenv
 import os
-from datetime import datetime
-from test.industry.brand_interrior import find_interior_cost
+from brand_interrior import find_interior_cost
 from brand_sales import get_brand_frc_bzmn_avrgsls
 
 load_dotenv()
