@@ -1,14 +1,16 @@
 <template>
-  <!-- 분석 결과 -->
-  <Result />
-  <!-- 추천위치 -->
-  <Location />
-  <!-- 그래프 -->
-  <Bar />
-  <!-- 교육정보 -->
-  <Education />
-  <!-- 대출 -->
-  <Loan />
+  <div>
+    <!-- 분석 결과 -->
+    <Result />
+    <!-- 추천위치 -->
+    <Location />
+    <!-- 그래프 -->
+    <Bar />
+    <!-- 교육정보 -->
+    <Education />
+    <!-- 대출 -->
+    <Loan />
+  </div>
 </template>
 
 <script setup>

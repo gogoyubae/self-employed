@@ -16,7 +16,7 @@ import Education from '@/pages/InfoPlaza/Education.vue';
 import Video from '@/pages/InfoPlaza/Video.vue';
 import LoanInfo from '@/pages/InfoPlaza/LoanInfo.vue';
 import news from '@/pages/InfoPlaza/news.vue';
-import Report from '@/pages/report/Report.vue';
+import Report from '@/pages/simul/Report.vue';
 import MyStore from '@/pages/asset/MyStore.vue';
 import Mypage from '@/pages/mypage/Mypage.vue';
 import StoreReg from '@/pages/asset/StoreReg.vue';
@@ -75,7 +75,7 @@ const router = createRouter({
     { path: '/infoPlaza/loanInfo', name: 'loanInfo', component: LoanInfo },
     { path: '/infoPlaza/news', name: 'news', component: news },
     { path: '/infoPlaza/education/video', name: 'video', component: Video },
-    { path: '/report', name: 'Report', component: Report },
+    { path: '/simul/report', name: 'Report', component: Report },
     { path: '/asset', name: 'MyStore', component: MyStore },
     { path: '/asset/infoagree', name: 'InfoAgree', component: InfoAgree },
     { path: '/asset/assetselect', name: 'AssetSelect', component: AssetSelect },
