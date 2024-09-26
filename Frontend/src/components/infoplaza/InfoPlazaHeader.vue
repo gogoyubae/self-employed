@@ -6,7 +6,7 @@
     />
     <div class="container">
       <div class="result-text" style="color: white">정보광장</div>
-      <div class="overlay">
+      <!-- <div class="overlay">
         <div class="overlay-text">
           <div class="text-center d-flex justify-content-center">
             <div class="d-flex w-100" style="max-width: 1000px">
@@ -34,7 +34,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

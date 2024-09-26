@@ -1,9 +1,12 @@
 <template>
   <div>
-    <img src="@/assets/img/community/talking.png" class="result-image mb-10" />
+    <img
+      src="@/assets/img/headers/communityheader.jpg"
+      class="result-image mb-10"
+    />
     <div class="container">
       <div class="result-text">커뮤니티</div>
-      <div class="overlay">
+      <!-- <div class="overlay">
         <div class="overlay-text">
           <div class="text-center d-flex justify-content-center">
             <div class="d-flex w-100" style="max-width: 1000px">
@@ -19,7 +22,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

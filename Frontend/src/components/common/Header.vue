@@ -7,11 +7,7 @@
       <nav class="navbar navbar-expand-lg navbar-black p-0" id="navbar">
         <div class="container px-sm-0">
           <a class="navbar-brand d-inline-block" href="/"
-            ><img
-              src="@/assets/img/logos/Logo-hr-h-40.png"
-              class=""
-              alt="..."
-            />
+            ><img src="@/assets/img/logos/logo-gom.png" class="" alt="..." />
           </a>
           <button
             class="navbar-toggler"

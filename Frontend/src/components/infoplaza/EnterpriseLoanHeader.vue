@@ -1,5 +1,5 @@
 <template>
-  <ul class="nav nav-pills nav-fill">
+  <ul class="nav nav-underline nav-fill">
     <li class="nav-item">
       <router-link
         class="nav-link"

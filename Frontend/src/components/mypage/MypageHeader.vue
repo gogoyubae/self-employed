@@ -1,16 +1,16 @@
 <template>
   <div>
-    <img src="@/assets/img/community/talking.png" class="result-image mb-10" />
+    <img
+      src="@/assets/img/headers/mypageheader.jpg"
+      class="result-image mb-10"
+    />
     <div class="container">
       <div class="result-text">마이페이지</div>
-      
     </div>
   </div>
 </template>
 
-<script setup>
-
-</script>
+<script setup></script>
 
 <style scoped>
 .result-container {
