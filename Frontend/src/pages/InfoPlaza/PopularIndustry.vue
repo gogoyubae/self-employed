@@ -2,37 +2,30 @@
   <div>
     <InfoPlazaHeader />
     <div class="container mw-screen-xl">
-      <!-- Title  -->
-      <!-- <div class="row text-center">
-        <h2 style="font-weight: 600">
-          <i class="fa-solid fa-fire"></i> BEST 인기 업종
-        </h2>
-      </div> -->
-      <br />
-
-      <div class="row">
-        <div class="col-xl-3 col-md-6 mb-4">
-          <div class="card border-left-primary shadow h-100 position-relative">
-            <img
-              src="@/assets/img/medals/Frame 9.png"
-              alt=""
-              style="
-                width: 100%;
-                height: auto;
-                border-radius: 0.35rem 0.35rem 0 0;
-              "
-            />
+      <div class="row justify-content-center">
+        <div class="col-xl-3 col-md-6">
+          <div
+            class="card border-left-primary h-100 position-relative"
+            style="border: 0"
+          >
             <div
-              class="card-body d-flex flex-column justify-content-center align-items-center text-overlay"
+              class="card-body d-flex flex-column justify-content-center align-items-center"
             >
-              <h1 class="text-white">BEST</h1>
-              <h1 class="text-white">인기 업종</h1>
+              <img
+                src="@/assets/img/medals/leaf.png"
+                style="max-width: 70%; height: auto"
+                alt="..."
+              />
+              <div class="mt-5 d-flex flex-column text-overlay">
+                <h1>BEST</h1>
+                <h2>인기 업종</h2>
+              </div>
             </div>
           </div>
         </div>
 
         <!-- 1등 카드 -->
-        <div class="col-xl-3 col-md-6 mb-4">
+        <div class="col-xl-3 col-md-6">
           <div class="card border-left-primary shadow h-100 py-2">
             <div
               class="card-body d-flex flex-column justify-content-center align-items-center"
@@ -40,7 +33,7 @@
               <div class="text-center">
                 <img
                   src="@/assets/img/medals/first_place_medal.png"
-                  style="max-width: 50%; height: auto"
+                  style="max-width: 60%; height: auto"
                   alt="..."
                 />
               </div>
@@ -48,10 +41,10 @@
                 class="row no-gutters align-items-center justify-content-center"
               >
                 <div class="col text-center">
-                  <div class="h3 m-5 font-weight-bold text-success">
-                    음식 음료
+                  <div class="h3 mt-5 mb-2 font-weight-bold text-purple">
+                    패션/뷰티
                   </div>
-                  <div class="h4 mb-3 text-gray-300">
+                  <div class="h4 mb-1 text-gray-300">
                     <h4>강남구 압구정동</h4>
                   </div>
                   <p>압구정로데오사거리</p>
@@ -69,17 +62,17 @@
             style="flex: 1"
           >
             <div class="card-body d-flex align-items-center">
-              <div class="text-left">
+              <div class="text-left me-2">
                 <img
                   src="@/assets/img/medals/second_place_medal.png"
-                  style="max-width: 50px; height: auto"
+                  style="max-width: 60px; height: auto"
                   alt="2nd place medal"
                 />
               </div>
               <div class="ml-3">
-                <div class="h5 font-weight-bold text-success">음식 음료</div>
-                <div class="h6 text-gray-300">강남구 압구정동</div>
-                <p class="text-gray-300">압구정로데오사거리</p>
+                <div class="h4 font-weight-bold text-purple mb-1">유통</div>
+                <div class="h6 text-gray-300">광진구 화양동</div>
+                <p class="text-gray-300">세종대학교</p>
               </div>
             </div>
           </div>
@@ -87,134 +80,107 @@
           <!-- 3등 카드 -->
           <div class="card border-left-primary shadow py-2" style="flex: 1">
             <div class="card-body d-flex align-items-center">
-              <div class="text-left">
+              <div class="text-left me-2">
                 <img
                   src="@/assets/img/medals/third_place_medal.png"
-                  style="max-width: 50px; height: auto"
+                  style="max-width: 60px; height: auto"
                   alt="3rd place medal"
                 />
               </div>
               <div class="ml-3">
-                <div class="h5 font-weight-bold text-success">음식 음료</div>
-                <div class="h6 text-gray-300">강남구 압구정동</div>
-                <p class="text-gray-300">압구정로데오사거리</p>
+                <div class="h4 font-weight-bold text-purple mb-1">식음료</div>
+                <div class="h6 text-gray-300">종로구 세운동</div>
+                <p class="text-gray-300">세운상가</p>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- 필터링 -->
-        <div class="col-xl-3 col-md-6 mb-4 card">
-          <!-- 성별 필터링 -->
-          <label
-            for="inputEmail3"
-            class="fw-bold text-center w-50"
-            style="font-size: 1rem"
-            >성별</label
-          >
-          <div class="mt-2">
-            <div class="form-check form-check-inline">
-              <input
-                type="checkbox"
-                class="form-check-input"
-                id="cycleCheck1"
-              />
-              <label class="form-check-label" for="cycleCheck1">전체</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input
-                type="checkbox"
-                class="form-check-input"
-                id="cycleCheck2"
-              />
-              <label class="form-check-label" for="cycleCheck2">남성</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input
-                type="checkbox"
-                class="form-check-input"
-                id="cycleCheck3"
-              />
-              <label class="form-check-label" for="cycleCheck3">여성</label>
-            </div>
-          </div>
+        <!-- 필터링 카드 -->
+        <div class="col-xl-3 col-md-6">
+          <div class="card border-0 shadow h-100 py-4 text-center">
+            <div
+              class="card-body d-flex flex-column justify-content-center align-items-center"
+            >
+              <!-- 성별 필터링 -->
+              <label
+                for="genderFilter"
+                class="fw-bold"
+                style="font-size: 1.25rem"
+                >성별</label
+              >
+              <div class="d-flex justify-content-center mt-2">
+                <div class="form-check form-check-inline">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="genderAll"
+                  />
+                  <label class="form-check-label" for="genderAll">전체</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="genderMale"
+                  />
+                  <label class="form-check-label" for="genderMale">남성</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="genderFemale"
+                  />
+                  <label class="form-check-label" for="genderFemale"
+                    >여성</label
+                  >
+                </div>
+              </div>
 
-          <!-- 연령대 필터링 -->
-          <label
-            for="inputEmail3"
-            class="fw-bold mt-5 text-center w-50"
-            style="font-size: 1rem"
-            >연령대</label
-          >
-          <div class="col-9">
-            <div class="mt-2">
-              <div class="form-check form-check-inline">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="cycleCheck1"
-                />
-                <label class="form-check-label" for="cycleCheck1">전체</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="cycleCheck2"
-                />
-                <label class="form-check-label" for="cycleCheck2">10대</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="cycleCheck3"
-                />
-                <label class="form-check-label" for="cycleCheck3">20대</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="cycleCheck4"
-                />
-                <label class="form-check-label" for="cycleCheck4">30대</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="cycleCheck4"
-                />
-                <label class="form-check-label" for="cycleCheck4">40대</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="cycleCheck4"
-                />
-                <label class="form-check-label" for="cycleCheck4">50대</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="cycleCheck4"
-                />
-                <label class="form-check-label" for="cycleCheck4"
-                  >60대 이상</label
-                >
+              <!-- 연령대 필터링 -->
+              <label
+                for="ageFilter"
+                class="fw-bold mt-5"
+                style="font-size: 1.25rem"
+                >연령대</label
+              >
+              <div class="d-flex flex-wrap justify-content-center mt-2">
+                <div class="form-check form-check-inline mb-2">
+                  <input type="checkbox" class="form-check-input" id="ageAll" />
+                  <label class="form-check-label" for="ageAll">전체</label>
+                </div>
+                <div class="form-check form-check-inline mb-2">
+                  <input type="checkbox" class="form-check-input" id="age10" />
+                  <label class="form-check-label" for="age10">10대</label>
+                </div>
+                <div class="form-check form-check-inline mb-2">
+                  <input type="checkbox" class="form-check-input" id="age20" />
+                  <label class="form-check-label" for="age20">20대</label>
+                </div>
+                <div class="form-check form-check-inline mb-2">
+                  <input type="checkbox" class="form-check-input" id="age30" />
+                  <label class="form-check-label" for="age30">30대</label>
+                </div>
+                <div class="form-check form-check-inline mb-2">
+                  <input type="checkbox" class="form-check-input" id="age40" />
+                  <label class="form-check-label" for="age40">40대</label>
+                </div>
+                <div class="form-check form-check-inline mb-2">
+                  <input type="checkbox" class="form-check-input" id="age50" />
+                  <label class="form-check-label" for="age50">50대</label>
+                </div>
+                <div class="form-check form-check-inline mb-2">
+                  <input type="checkbox" class="form-check-input" id="age60" />
+                  <label class="form-check-label" for="age60">60대 이상</label>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div
-        class="row mt-20"
-        style="display: flex; justify-content: center; align-items: center"
-      >
+      <div class="row mt-20" style="display: flex; align-items: center">
         <div
           class="row"
           style="display: flex; justify-content: center; align-items: center"
@@ -1057,9 +1023,7 @@
                 </div>
                 <!--end::Items-->
               </div>
-              <!--end::Body-->
             </div>
-            <!--end::List widget 7-->
           </div>
         </div>
       </div>
@@ -1086,15 +1050,12 @@ import InfoPlazaHeader from '@/components/infoplaza/InfoPlazaHeader.vue';
 }
 
 .text-overlay {
-  position: absolute;
-  top: 60%;
-  left: 14%;
+  /* position: absolute; */
   z-index: 1; /* 텍스트가 이미지 위에 표시되도록 설정 */
   text-align: left; /* 왼쪽 정렬 */
+  font-weight: 600;
 }
-
-.text-white {
-  color: white; /* 텍스트 색상 설정 */
-  margin: 0; /* 기본 여백 제거 */
+.text-purple {
+  color: #fca3b9;
 }
 </style>
