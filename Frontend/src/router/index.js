@@ -11,6 +11,7 @@ import MylocationTrending from '@/pages/InfoPlaza/MyLocatinTrending.vue';
 import CloseRatio from '@/pages/InfoPlaza/CloseRatio.vue';
 import StoreInfo from '@/pages/InfoPlaza/StoreInfo.vue';
 import PersonalLoan from '@/pages/Infoplaza/PersonalLoan.vue';
+import LoanDetail from '@/pages/InfoPlaza/LoanDetail.vue';
 import EnterpriseLoan from '@/pages/Infoplaza/EnterpriseLoan.vue';
 import Education from '@/pages/InfoPlaza/Education.vue';
 import Video from '@/pages/InfoPlaza/Video.vue';
@@ -62,6 +63,11 @@ const router = createRouter({
       path: '/infoPlaza/enterpriseLoan',
       name: 'enterpriseLoan',
       component: EnterpriseLoan,
+    },
+    {
+      path: '/infoPlaza/personalLoan/loanDetail',
+      name: 'loanDetail',
+      component: LoanDetail,
     },
 
     { path: '/infoPlaza/storeInfo', name: 'storeInfo', component: StoreInfo },

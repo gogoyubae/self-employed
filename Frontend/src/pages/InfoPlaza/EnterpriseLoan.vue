@@ -187,7 +187,7 @@
                   <a
                     href="#"
                     class="stretched-link text-heading text-sm fw-bold"
-                    >개인신용대출</a
+                    >정책자금</a
                   >
                 </div>
               </div>
@@ -207,27 +207,7 @@
                   <a
                     href="#"
                     class="stretched-link text-heading text-sm fw-bold"
-                    >전세자금대출</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div
-              class="list-group-item gap-3 p-3 text-center bg-body-secondary-hover"
-            >
-              <div class="icon flex-none">
-                <img
-                  src="@/assets/img/infoplaza/add_business.png"
-                  class="w-rem-8 h-rem-8"
-                  alt="..."
-                />
-              </div>
-              <div class="align-items-center flex-fill">
-                <div>
-                  <a
-                    href="#"
-                    class="stretched-link text-heading text-sm fw-bold"
-                    >주택담보대출</a
+                    >국민은행</a
                   >
                 </div>
               </div>

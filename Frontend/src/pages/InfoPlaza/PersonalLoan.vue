@@ -64,11 +64,12 @@
 
                       <!-- Info (상세 보기 버튼) -->
                       <div class="d-flex justify-content-end pt-8">
-                        <a
-                          href="#"
+                        <router-link
+                          to="/infoPlaza/personalLoan/loanDetail"
                           class="btn btn-light btn-sm btn-color-muted fs-7 fw-bolder px-5"
-                          >상세 보기</a
                         >
+                          상세 보기
+                        </router-link>
                       </div>
                     </div>
                   </div>
