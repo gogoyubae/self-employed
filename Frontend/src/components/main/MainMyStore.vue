@@ -1,6 +1,6 @@
 
 <template lang="">
-<div class="container">
+<div class="container mb-10">
     <div style="display: flex; align-items: flex-end">
         <h2 style="font-weight: bold">가계관리</h2>
         <p style="margin-left: 20px">

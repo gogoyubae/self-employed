@@ -1,11 +1,14 @@
 <template>
-<div class="container">
+<div class="container mb-10">
     <div style=" align-items: flex-end">
-        <h2 style="font-weight: bold">커뮤니티</h2>
+        <h2 style="font-weight: bold" class="mb-5">커뮤니티</h2>
+    <hr/>
+
         <p style="">
         </p>
     </div>
     <BoardList/>
+
 </div>
 </template>
 

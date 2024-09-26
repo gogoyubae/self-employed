@@ -1,8 +1,8 @@
 <template>
-    <div class="container">
+    <div>
         <div class="row">
-            <CommercialHeader class="ms-10 me-5 col-1"/>
-            <div class="col-3 me-5 mt-3">
+            <CommercialHeader class="ms-10 me-5 col-1" />
+            <div v-if="showLocationInfo" class="col-3 me-5 mt-3">
                 <div class="mb-10">
                     <h4 class="mb-3">현위치</h4>
                     <div class=" mb-5">
@@ -42,6 +42,14 @@ import { onMounted, ref } from 'vue';
 
 const mapContainer = ref(null);
 
+// Prop to control the visibility of location info
+const props = defineProps({
+    showLocationInfo: {
+        type: Boolean,
+        default: true,
+    },
+});
+
 onMounted(() => {
     loadKakaoMap(mapContainer.value);
 });
@@ -57,7 +65,7 @@ const loadKakaoMap = (container) => {
             const options = {
                 center: new window.kakao.maps.LatLng(33.450701, 126.570667), // Center coordinates
                 level: 3, // Zoom level
-                maxLevel: 5 // Maximum zoom level
+                maxLevel: 5, // Maximum zoom level
             };
 
             const mapInstance = new window.kakao.maps.Map(container, options); // Create map instance

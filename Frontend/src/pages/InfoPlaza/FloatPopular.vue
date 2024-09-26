@@ -1,8 +1,10 @@
 <template>
-    <div>
-        <InfoPlazaHeader class="mb-5" />
-        <FloatPopularContent />
+<div>
+    <InfoPlazaHeader class="mb-5" />
+    <div class="container">
+    <FloatPopularContent />
     </div>
+</div>  
 </template>
 
 <script setup>
