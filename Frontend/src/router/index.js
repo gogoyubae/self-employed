@@ -10,11 +10,10 @@ import TotalTrendingBusinessItems from '@/pages/InfoPlaza/TotalTrendingBusinessI
 import MylocationTrending from '@/pages/InfoPlaza/MyLocatinTrending.vue';
 import CloseRatio from '@/pages/InfoPlaza/CloseRatio.vue';
 import StoreInfo from '@/pages/InfoPlaza/StoreInfo.vue';
-import PersonalLoan from '@/pages/InfoPlaza/PersonalLoan.vue';
-import EnterpriseLoan from '@/pages/InfoPlaza/EnterpriseLoan.vue';
+import PersonalLoan from '@/pages/Infoplaza/PersonalLoan.vue';
+import EnterpriseLoan from '@/pages/Infoplaza/EnterpriseLoan.vue';
 import Education from '@/pages/InfoPlaza/Education.vue';
 import Video from '@/pages/InfoPlaza/Video.vue';
-import LoanInfo from '@/pages/InfoPlaza/LoanInfo.vue';
 import news from '@/pages/InfoPlaza/news.vue';
 import Report from '@/pages/simul/Report.vue';
 import MyStore from '@/pages/asset/MyStore.vue';
@@ -55,12 +54,12 @@ const router = createRouter({
       component: CloseRatio,
     },
     {
-      path: '/infoPlaza/loanInfo/personalLoan',
+      path: '/infoPlaza/personalLoan',
       name: 'personalLoan',
       component: PersonalLoan,
     },
     {
-      path: '/infoPlaza/loanInfo/enterpriseLoan',
+      path: '/infoPlaza/enterpriseLoan',
       name: 'enterpriseLoan',
       component: EnterpriseLoan,
     },
@@ -72,7 +71,6 @@ const router = createRouter({
       component: FloatPopular,
     },
     { path: '/infoPlaza/education', name: 'education', component: Education },
-    { path: '/infoPlaza/loanInfo', name: 'loanInfo', component: LoanInfo },
     { path: '/infoPlaza/news', name: 'news', component: news },
     { path: '/infoPlaza/education/video', name: 'video', component: Video },
     { path: '/simul/report', name: 'Report', component: Report },

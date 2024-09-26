@@ -23,16 +23,10 @@
                   ><h4>교육 정보</h4></RouterLink
                 >
               </div>
-              <div class="flex-item loan-info-container">
-                <h4 class="loan-info-title">대출 정보</h4>
-                <div class="loan-info-dropdown">
-                  <RouterLink to="/infoPlaza/loanInfo/personalLoan"
-                    ><h5>개인</h5></RouterLink
-                  >
-                  <RouterLink to="/infoPlaza/loanInfo/enterpriseLoan"
-                    ><h5>기업</h5></RouterLink
-                  >
-                </div>
+              <div class="flex-item">
+                <RouterLink to="/infoPlaza/PersonalLoan"
+                  ><h4>대출 정보</h4></RouterLink
+                >
               </div>
               <div class="flex-item">
                 <RouterLink to="/infoPlaza/news"><h4>뉴스</h4></RouterLink>
