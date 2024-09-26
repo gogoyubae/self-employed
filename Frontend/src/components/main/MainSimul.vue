@@ -56,14 +56,14 @@
     </div>
       </div>
       <Location/>
-      <Bar/>
+      <ReportGraph/>
       <Loan/>
     </div>
   </div>
 </template>
 <script setup>
 import Location from '@/components/report/Location.vue';
-import Bar from '@/components/report/Bar.vue';
+import ReportGraph from '@/components/main/ReportGraph.vue';
 import Loan from '@/components/report/Loan.vue';
 
 </script>
