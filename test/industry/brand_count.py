@@ -7,16 +7,18 @@ KAKAO_REST_API_KEY = os.environ.get('KAKAO_REST_API_KEY')
 
 KEYWORD_SEARCH_URL = "https://dapi.kakao.com/v2/local/search/keyword.json"
 
-def count_brands_by_dong(lat, lng, brand_name, radius):
+def count_brands_by_radius(lat, lng, brand_name, radius):
     page = 1
 
     params = {
-        'y': lat, # 위도(Latitude)
-        'x': lng, # 경도(Longitude)
         'radius': radius, # (단위: 미터(m), 최소: 0, 최대: 20000)
         'query': brand_name,
         'page': page
     }
+    
+    if lat is not None and lng is not None:
+        params['y'] = lat  # 위도(Latitude)
+        params['x'] = lng  # 경도(Longitude)
 
     # 요청 헤더 설정
     headers = {
@@ -33,3 +35,6 @@ def count_brands_by_dong(lat, lng, brand_name, radius):
         return data['meta']['total_count']
     else:
         print(f"Error: {response.status_code} - {response.text}")
+
+# print(count_brands_by_radius(37.547913 , 127.07461, "CU", 1000))
+# print(count_brands_by_radius(0, 0, "광진구 능동 CU", 1000))

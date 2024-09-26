@@ -19,7 +19,6 @@ def get_brand_fntn_stats(brand_fntn_info, year):
 
     response = requests.get(FFTC_BRAND_FNTN_STATS_URL, params=brand_fntn_stats_params)
     total_count = response.json()["totalCount"]
-    print("total_count:", total_count)
     
     for i in range(1, int(total_count / 100 + 2)): # 100개씩 저장
         brand_fntn_stats_params = {

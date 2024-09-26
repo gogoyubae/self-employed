@@ -15,7 +15,7 @@ def get_brand_frc_bzmn_avrgsls(brand_mnno):
         brand_frc_bzmn_avrgsls_params = {
             "serviceKey": API_KEY,
             "pageNo": 1,
-            "numOfRows": 1,
+            "numOfRows": 1, # page의 첫 번째 데이터 -> 서울
             "resultType": 'json',
             "jngBizCrtraYr": current_year - i,
             "brandMnno": brand_mnno
