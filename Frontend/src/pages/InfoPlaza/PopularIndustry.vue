@@ -180,13 +180,13 @@
         </div>
       </div>
 
-      <div class="row mt-20" style="display: flex; align-items: center">
+      <div class="row mt-20" style="display: flex; align-items: start">
         <div
           class="row"
-          style="display: flex; justify-content: center; align-items: center"
+          style="display: flex; justify-content: center; align-items: start"
         >
           <!-- 전체 지역에서 핫한 사업 아이템 베스트 -->
-          <div class="col-xxl-4 mb-xxl-10">
+          <div class="col-4">
             <!--begin::List widget 7-->
             <div class="card card-flush h-md-100">
               <!--begin::Header-->
@@ -462,7 +462,7 @@
           </div>
 
           <!-- 최근 리포트에서 선정하신 지역에서 핫한 사업 아이템 베스트 -->
-          <div class="col-xxl-4 mb-xxl-10">
+          <div class="col-4">
             <!--begin::List widget 7-->
             <div class="card card-flush h-md-100">
               <!--begin::Header-->
@@ -738,7 +738,7 @@
           </div>
 
           <!-- 폐업률이 가장 높은 사업 아이템 -->
-          <div class="col-xxl-4 mb-xxl-10">
+          <div class="col-4">
             <!--begin::List widget 7-->
             <div class="card card-flush h-md-100">
               <!--begin::Header-->
