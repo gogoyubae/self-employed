@@ -1,9 +1,9 @@
 <template>
   <div
-    class="row g-0 justify-content-center gradient-bottom-right start-purple middle-indigo end-pink"
+    class="row g-0 justify-content-center gradient-bottom-right middle-indigo end-pink"
   >
     <div
-      class="col-md-6 col-lg-5 col-xl-5 position-fixed start-0 vh-100 overflow-y-hidden d-none d-lg-flex flex-lg-column back-img"
+      class="col-md-6 col-lg-5 col-xl-5 position-absolute start-0 vh-100 overflow-y-hidden d-none d-lg-flex flex-lg-column back-img"
     >
       <div class="p-12 py-xl-10 px-xl-20">
         <div class="mt-16">
@@ -16,16 +16,9 @@
           </p>
         </div>
       </div>
-      <div class="mt-auto ps-16 ps-xl-20">
-        <img
-          src="../../img/marketing/shot-1.png"
-          class="img-fluid rounded-top-start-4"
-          alt="..."
-        />
-      </div>
     </div>
     <div
-      class="col-12 col-md-12 col-lg-7 offset-lg-5 min-vh-100 overflow-y-auto d-flex flex-column justify-content-center position-relative bg-body rounded-top-start-lg-4 border-start-lg shadow-soft-5"
+      class="col-12 col-md-12 col-lg-7 offset-lg-5 min-vh-100 overflow-y-auto d-flex flex-column justify-content-center position-relative bg-body border-start-lg shadow-soft-5"
     >
       <div class="w-md-50 mx-auto px-10 px-md-0 py-10">
         <div class="mb-10">
@@ -35,38 +28,33 @@
               class="h-rem-10"
               alt="..."
           /></a>
-          <h1 class="ls-tight fw-bolder h3">Get started. It&#39;s free</h1>
+          <h1 class="ls-tight fw-bolder h3">맨트 뭘로 하지?</h1>
           <div class="mt-3 text-sm text-muted">
-            <span>Already have an account?</span>
-            <a href="/pages/login.html" class="fw-semibold">Sign in</a> to your
-            account.
+            <span>뭘로 할지 알려줘</span>
+            <a href="/pages/login.html" class="fw-semibold">윤희</a>에몽
           </div>
         </div>
         <form>
           <div class="row g-5">
-            <div class="col-sm-6">
-              <label class="form-label">First name</label>
-              <input type="text" class="form-control" />
-            </div>
-            <div class="col-sm-6">
-              <label class="form-label">Last name</label>
-              <input type="text" class="form-control" />
-            </div>
             <div class="col-sm-12">
-              <label class="form-label">Email address</label>
+              <label class="form-label">사용자 이메일</label>
               <input type="email" class="form-control" />
             </div>
             <div class="col-sm-12">
-              <label class="form-label">Password</label>
+              <label class="form-label">사용자 비밀번호</label>
               <input type="password" class="form-control" />
             </div>
             <div class="col-sm-12">
-              <label class="form-label">How did you hear about us?</label>
-              <select class="form-select" aria-label="Default select example">
-                <option value="1">Online search</option>
-                <option value="2">Social media</option>
-                <option value="3">Advertising</option>
-              </select>
+              <label class="form-label">비밀번호 확인</label>
+              <input type="password" class="form-control" />
+            </div>
+            <div class="col-sm-12">
+              <label class="form-label">사용자 이름</label>
+              <input type="email" class="form-control" />
+            </div>
+            <div class="col-sm-12">
+              <label class="form-label">사용자 전화번호</label>
+              <input type="email" class="form-control" />
             </div>
             <div class="col-sm-12">
               <a href="#" class="btn btn-dark w-100">Sign up</a>
