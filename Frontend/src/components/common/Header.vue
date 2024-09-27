@@ -109,10 +109,25 @@
   </header>
 </template>
 
-<script setup></script>
+<script setup>
+import { onMounted } from 'vue';
+
+onMounted(() => {
+  const headerInfoContainers = document.querySelectorAll('.header-info-container');
+
+  headerInfoContainers.forEach(container => {
+    container.addEventListener('mouseover', () => {
+      container.querySelector('.header-info-dropdown').classList.add('show');
+    });
+
+    container.addEventListener('mouseleave', () => {
+      container.querySelector('.header-info-dropdown').classList.remove('show');
+    });
+  });
+});
+</script>
 
 <style>
-/* Dropdown styles for loan info */
 .header-info-container {
   position: relative;
   flex: 1; /* Ensure it takes up available space */
@@ -121,7 +136,6 @@
 .header-info-title {
   cursor: pointer;
   font-size: small;
-  /* Add hover or click styles if needed */
 }
 
 .header-info-dropdown {
@@ -139,10 +153,8 @@
   transition: max-height 0.3s ease, opacity 0.3s ease;
 }
 
-.header-info-container:hover .header-info-dropdown,
-.header-info-container:focus-within .header-info-dropdown {
-  display: block;
-  max-height: 500px; /* Adjust as needed */
+.header-info-dropdown.show {
+  max-height: 500px;
   opacity: 1;
 }
 
