@@ -44,6 +44,7 @@
   z-index: 1; /* 이미지 아래에 위치하도록 설정 */
   box-sizing: border-box; /* 패딩을 포함하여 전체 너비를 계산 */
 }
+
 .overlay-text {
   color: black; /* 텍스트 색상 */
   width: 100%;
