@@ -1,10 +1,83 @@
 @font-face {
-  font-family: 'Pretendard-Regular';
-  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
-    format('woff');
-  font-weight: 400;
+  font-family: 'Pretendard';
   font-style: normal;
+  font-weight: 900;
+  src: local('Pretendard Black'), local('Pretendard-Black'),
+    url(../fonts/Pretendard-Black.woff) format('woff');
 }
+
+@font-face {
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Pretendard ExtraBold'), local('Pretendard-ExtraBold'),
+    url(../fonts/Pretendard-ExtraBold.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Pretendard ExtraBold'), local('Pretendard-ExtraBold'),
+    url(../fonts/Pretendard-ExtraBold.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Pretendard Bold'), local('Pretendard-Bold'),
+    url(../fonts/Pretendard-Bold.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Pretendard SemiBold'), local('Pretendard-SemiBold'),
+    url(../fonts/Pretendard-SemiBold.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Pretendard Medium'), local('Pretendard-Medium'),
+    url(../fonts/Pretendard-Medium.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pretendard Regular'), local('Pretendard-Regular'),
+    url(../fonts/Pretendard-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Pretendard Light'), local('Pretendard-Light'),
+    url(../fonts/Pretendard-Light.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Pretendard ExtraLight'), local('Pretendard-ExtraLight'),
+    url(../fonts/Pretendard-ExtraLight.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Pretendard Thin'), local('Pretendard-Thin'),
+    url(../fonts/Pretendard-Thin.woff) format('woff');
+}
+
 :root,
 [data-bs-theme='light'] {
   --x-blue: #09f;
@@ -72,7 +145,7 @@
   --x-dark-border-subtle: #64748b;
   --x-white-rgb: 255, 255, 255;
   --x-black-rgb: 0, 0, 0;
-  --x-font-sans-serif: 'Pretendard-Regular', -apple-system, 'Segoe UI', Roboto,
+  --x-font-sans-serif: 'Pretendard', -apple-system, 'Segoe UI', Roboto,
     'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --x-font-monospace: var(--x-font-monospace);
@@ -365,7 +438,7 @@ h1,
   color: var(--x-heading-color);
   margin-top: 0;
   margin-bottom: 0;
-  font-family: Pretendard-Regular, Satoshi, sans-serif;
+  font-family: Pretendard, Satoshi, sans-serif;
   font-weight: 600;
   line-height: 1.3;
 }
