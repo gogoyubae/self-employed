@@ -194,8 +194,8 @@
             <!-- 검색창 -->
             <div class="col-md-6">
               <div class="h-100">
-                <form class="form-group">
-                  <div class="input-group input-group-sm">
+                <form class="h-100 form-group">
+                  <div class="h-100 input-group input-group-sm">
                     <input
                       type="text"
                       class="rounded form-control ms-1"
