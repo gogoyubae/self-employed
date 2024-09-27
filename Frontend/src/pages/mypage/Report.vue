@@ -5,18 +5,18 @@
       <ul class="nav nav-underline nav-fill">
         <li class="nav-item">
           <router-link
-            class="nav-link active"
+            class="nav-link"
             aria-current="page"
-            to="mypagereport"
+            to="mypageupdate"
             style="font-size: 18px"
             >개인정보 수정</router-link
           >
         </li>
         <li class="nav-item">
           <router-link
-            class="nav-link"
+            class="nav-link active"
             aria-current="page"
-            to="mypageupdate"
+            to="mypagereport"
             style="font-size: 18px"
             >마이리포트 확인</router-link
           >

@@ -78,7 +78,7 @@
 <script setup>
 import { ref } from 'vue';
 
-import Mypage from '@/pages/mypage/Mypage.vue';
+import Mypage from '@/pages/mypage/Report.vue';
 
 const reports = ref([
   {

@@ -18,7 +18,7 @@ import Video from '@/pages/InfoPlaza/Video.vue';
 import news from '@/pages/InfoPlaza/news.vue';
 import Report from '@/pages/simul/Report.vue';
 import MyStore from '@/pages/asset/MyStore.vue';
-import Mypage from '@/pages/mypage/Mypage.vue';
+import Mypage from '@/pages/mypage/Report.vue';
 import StoreReg from '@/pages/asset/StoreReg.vue';
 import InfoAgree from '@/pages/asset/InfoAgree.vue';
 import AssetSelect from '@/pages/asset/AssetSelect.vue';

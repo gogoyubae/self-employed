@@ -47,5 +47,5 @@
 </template>
 
 <script setup>
-import Mypage from '@/pages/mypage/Mypage.vue';
+import Mypage from '@/pages/mypage/Update.vue';
 </script>
