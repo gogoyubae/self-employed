@@ -194,8 +194,8 @@
             <!-- 검색창 -->
             <div class="col-md-6">
               <div class="h-100">
-                <form class="h-100 form-group">
-                  <div class="h-100 input-group input-group-sm">
+                <form class="form-group">
+                  <div class="input-group input-group-sm">
                     <input
                       type="text"
                       class="rounded form-control ms-1"
@@ -206,47 +206,6 @@
                     </span>
                   </div>
                 </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xl-2"></div>
-        <!-- 필터링 및 검색 -->
-        <div class="col-xl-10">
-          <div class="col-xl-9 d-flex">
-            <!-- 지역 검색(구) -->
-            <div class="col-md-2">
-              <select
-                class="form-select round-corner"
-                aria-label="Default select example"
-              >
-                <option selected disabled hidden>구분</option>
-                <option value="1">직접대출</option>
-                <option value="2">대리대출</option>
-              </select>
-            </div>
-            <div class="col-md-8"></div>
-            <!-- 검색창 -->
-            <div class="col-md-6">
-              <div class="position-relative w-100">
-                <input
-                  type="search"
-                  class="form-control form-control-lg"
-                  placeholder="검색하기"
-                  aria-label="Search"
-                />
-                <button
-                  type="button"
-                  class="btn btn-icon btn-ghost fs-lg text-bo border-0 position-absolute top-0 end-0 rounded-circle mt-1 me-1"
-                  aria-label="Search button"
-                >
-                  <i
-                    class="me-5 fa-solid fa-magnifying-glass"
-                    style="height: 35px"
-                  ></i>
-                </button>
               </div>
             </div>
           </div>
