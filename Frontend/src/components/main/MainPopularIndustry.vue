@@ -269,4 +269,8 @@
 <script setup>
 </script>
 <style>
+.badge-light-success {
+    background-color: #d4edda !important; /* 밝은 녹색 배경색 */
+    color: #155724 !important; /* 진한 녹색 텍스트 */
+}
 </style>
