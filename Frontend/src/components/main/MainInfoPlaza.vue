@@ -10,12 +10,18 @@
                 <MainPopularIndustry class=""/>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-6">
+        <MainEducation/>
+    </div></div>
     </div>
 </template>
 
 <script setup>
 import FloatPopularContent from '@/components/infoplaza/FloatPopularContent.vue';
 import MainPopularIndustry from '@/components/main/MainPopularIndustry.vue';
+import MainEducation from '@/components/main/MainEducation.vue';
 </script>
 
 <style>
