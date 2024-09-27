@@ -52,4 +52,8 @@
 </script>
 
 <style scoped>
+.card-img-top {
+  height: 100px; /* 원하는 높이로 조정 */
+  object-fit: cover; /* 이미지 비율 유지하면서 잘리도록 설정 */
+}
 </style>
