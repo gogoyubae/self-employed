@@ -1,5 +1,5 @@
 <template>
-  <div class="container pb-7">
+  <div class="">
     <div class="title">추천 위치</div>
     <div class="row">
       <div class="col-6" style="width: 60%">

@@ -1,6 +1,6 @@
 <template>
   <div style="background-color: #f6f4f9">
-    <div class="container pb-7">
+    <div class="container">
       <div class="title">상권분석</div>
       <div class="row">
         <div class="col-6">

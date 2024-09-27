@@ -1,6 +1,6 @@
 <template>
-  <div style="background-color: #f6f4f9">
-    <div class="container pb-7">
+  <div class="loan-section">
+    <div class="container">
       <div class="title">대출 정보</div>
       <div class="con-card">
         <!-- Row to contain 4 cards in a single row -->
@@ -78,8 +78,7 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
+  </div></div>
 </template>
 
 <style>
@@ -91,6 +90,7 @@
   padding: 5px 0px;
 }
 
-.con-card {
+.loan-section {
+  background-color: #f6f4f9; /* 배경색을 이곳에 적용 */
 }
 </style>

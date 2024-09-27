@@ -1,15 +1,24 @@
 <template>
   <div>
-    <!-- 분석 결과 -->
+    <!-- 헤더 -->
     <Result />
-    <!-- 추천위치 -->
-    <Location />
-    <!-- 그래프 -->
+
+    <div class="container">
+      <!-- 추천 위치 -->
+      <Location />
+    </div>
+
+      <!-- 그래프 -->
     <Bar />
-    <!-- 교육정보 -->
-    <Education />
+
+      <!-- 교육정보 -->
+    <div class="container">
+        <Education  />
+    </div>
     <!-- 대출 -->
-    <Loan />
+    <div style="background-color: #f6f4f9; padding: 20px;"> <!-- 배경색과 패딩 추가 -->
+      <Loan />
+    </div>
   </div>
 </template>
 

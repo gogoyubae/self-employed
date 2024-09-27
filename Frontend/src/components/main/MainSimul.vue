@@ -57,7 +57,7 @@
       </div>
       <Location/>
       <ReportGraph/>
-      <Loan/>
+      <Loan class="p-0"/>
     </div>
   </div>
 </template>
