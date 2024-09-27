@@ -1,8 +1,8 @@
 <template>
-  <div class="container">
+  <div class="container mt-20">
     <div class="simul-area">
       <div class="container">
-        <div style="display: flex; align-items: flex-end">
+        <div class="mt-5" style="display: flex; align-items: flex-end">
           <h2 style="font-weight: bold">시뮬레이션</h2>
           <p style="margin-left: 20px">
             시뮬레이션을 완료하면 받을 수 있는 리포트의 견본입니다.
@@ -14,18 +14,18 @@
             <img src="@/assets/img/report/clothes.png" alt="" />
           </div>
           <div class="col-6">
-            <h1 class="mb-2">강남구 유통업</h1>
+            <h3 class="mb-2" style="font-weight: 600">강남구 유통업</h3>
             <div class="row">
               <div class="col-6">
                 <div
                   class="d-flex justify-content-between align-items-center mb-3"
                 >
-                  <h4 class="">보증금</h4>
-                  <h1 class="me-5">1억</h1>
+                  <h4 style="font-weight: 200">보증금</h4>
+                  <h2 class="me-5" style="font-weight: 600">1억</h2>
                 </div>
                 <div class="d-flex justify-content-between align-items-center">
-                  <h4 class="">월세</h4>
-                  <h1 class="me-5">600만</h1>
+                  <h4 style="font-weight: 200">월세</h4>
+                  <h2 class="me-5" style="font-weight: 600">600만</h2>
                 </div>
               </div>
               <div class="col-6">
