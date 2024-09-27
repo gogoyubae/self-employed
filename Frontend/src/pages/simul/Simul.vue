@@ -1,5 +1,10 @@
 <template>
   <div class="animation-container">
+    <!-- 진행도 바 -->
+    <div class="progress-container">
+      <div class="progress-bar" :style="{ width: progressBarWidth }"></div>
+    </div>
+
     <img
       src="@/assets/img/simul/sumul_cut.jpg"
       alt="Background Image"
@@ -75,7 +80,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, computed } from 'vue';
 
 const fullTexts = [
   {
@@ -99,6 +104,20 @@ const typedTextLine2 = ref('');
 const showSpeechBubble = ref(false);
 const showChoices = ref(false);
 const isHovered = ref('');
+const progress = ref(1); // 현재 진행 상태 (1/20)
+const totalSteps = 20; // 총 단계
+
+// 진행도 비율 계산
+const progressBarWidth = computed(() => {
+  return `${(progress.value / totalSteps) * 100}%`;
+});
+
+// 하드코딩으로 진행도 변경 함수
+const updateProgress = (step) => {
+  if (step >= 1 && step <= totalSteps) {
+    progress.value = 1;
+  }
+};
 
 const typeText = (text, typedText, nextText, delay = 0) => {
   const letters = text.split('');
@@ -112,7 +131,10 @@ const typeText = (text, typedText, nextText, delay = 0) => {
       clearInterval(interval);
       if (nextText) {
         setTimeout(() => {
-          typeText(nextText, typedText === typedTextLine1 ? typedTextLine2 : null);
+          typeText(
+            nextText,
+            typedText === typedTextLine1 ? typedTextLine2 : null
+          );
         }, 500);
       } else {
         setTimeout(() => {
@@ -131,6 +153,7 @@ const selectAnswer = (answer) => {
 
 onMounted(() => {
   typeText(fullTexts[0].line1, typedTextLine1, fullTexts[0].line2);
+  updateProgress(5); // 진행도를 5/20으로 설정
 });
 </script>
 
@@ -304,5 +327,25 @@ onMounted(() => {
   width: 200px;
   border-radius: 80px;
   padding: 15px 15px 15px 25px;
+}
+
+.progress-container {
+  position: absolute;
+  top: 9%;
+  bottom: 150px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 58%; /* 바의 전체 너비 */
+  height: 20px; /* 바의 높이 */
+  background-color: #e0e0e0; /* 배경 색상 */
+  border-radius: 10px; /* 둥근 모서리 */
+  overflow: hidden; /* 내부 바가 넘치지 않도록 설정 */
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #76c7c0; /* 진행도 색상 */
+  border-radius: 10px; /* 둥근 모서리 */
+  transition: width 0.3s ease; /* 자연스러운 전환 효과 */
 }
 </style>
