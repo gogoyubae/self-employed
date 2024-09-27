@@ -1,8 +1,21 @@
 import requests
+from dotenv import load_dotenv
+import os
+import pymysql
 
-# 기본 URL
+load_dotenv()
+
 GU_REQUEST_URL = "https://www.serve.co.kr/info/v1/address/getLdongFilter"
 DONG_REQUEST_URL = "https://www.serve.co.kr/info/v1/address/getLdongFilter"
+
+# DB 정보
+connection = pymysql.connect(
+    host=os.environ.get('HOST'),
+    user=os.environ.get('USER'),
+    password=os.environ.get('PASSWORD'), 
+    charset='utf8'
+)
+cursor = connection.cursor()
 
 def find_gu_code():
     gu_code_list = {}

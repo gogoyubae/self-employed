@@ -1,5 +1,8 @@
 import requests
 from haversine import haversine
+import pymysql
+import json
+import os
 
 # 기본 URL
 base_url = "https://www.serve.co.kr/good/v1/map/getAtclList"
@@ -13,6 +16,14 @@ deal_types = {
     "단기임대": "B3"
 }
 
+# DB 정보
+connection = pymysql.connect(
+    host=os.environ.get('HOST'),
+    user=os.environ.get('USER'),
+    password=os.environ.get('PASSWORD'), 
+    charset='utf8'
+)
+cursor = connection.cursor()
 
 # 선택한 거래 종류에 맞는 코드를 생성하는 함수
 def get_deal_kind_codes(selected_deal_types):
