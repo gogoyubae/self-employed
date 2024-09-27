@@ -23,7 +23,7 @@
           </div>
           <hr class="my-6" />
           <div class="d-flex justify-content-end gap-2">
-            <button type="button" class="btn btn-sm btn-neutral" @click="resetFields">취소</button>
+            <RouterLink to="/community" class="btn btn-sm btn-neutral">취소</RouterLink>            
             <button type="button" class="btn btn-sm btn-primary" @click="submitPost">등록</button>
           </div>
         </main>

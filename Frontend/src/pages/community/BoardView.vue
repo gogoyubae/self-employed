@@ -16,7 +16,7 @@
       </div>
 
       <div class="text-center gap-2">
-        <button type="button" class="btn btn-sm btn-neutral mb-5 mt-1">목록</button>
+        <RouterLink to="/community" class="btn btn-sm btn-neutral mb-5 mt-1">목록</RouterLink>            
       </div>
 
       <div class="list-group mt-5 mb-5">
