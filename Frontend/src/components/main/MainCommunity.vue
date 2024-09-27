@@ -2,7 +2,6 @@
 <div class="mb-10">
     <div class="container">
     <h2 style="font-weight: bold" class="mb-5">커뮤니티</h2>
-    <hr />
     </div>
     <BoardList :showPagination="false" :showSearch="false" :showCreateButton="false" />
 </div>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="d-flex align-items-center justify-content-between">
+    <div class="d-flex align-items-center justify-content-between mb-5">
       <h3>교육정보</h3>
         <router-link
         to="/infoplaza/education"
@@ -10,7 +10,6 @@
       </router-link>
       </div>
 
-        <hr/>
         <div class="row">
 
         <!-- Row to contain 4 cards in a single row -->

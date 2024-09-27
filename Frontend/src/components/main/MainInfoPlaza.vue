@@ -1,7 +1,6 @@
 <template>
 <div class="container mb-5">
     <h2 class="fw-bold mb-5">정보광장</h2>
-        <hr/>
         <div class="content-wrapper  mb-10">
             <div class="adjusted-float-popular">
                 <div class="custom-map-container">

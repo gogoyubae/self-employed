@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="d-flex align-items-center justify-content-between">
+    <div class="d-flex align-items-center justify-content-between mb-5">
       <h3>대출정보</h3>
         <router-link
         to="/infoplaza/personalLoan"
@@ -9,7 +9,6 @@
         더보기 &gt;
       </router-link>
       </div>
-<hr/>
       <!-- Best 금리상품 내용-->
       <div class="row">
         <!-- 카드 1개 -->
@@ -25,7 +24,7 @@
               >
                 <!--begin::Heading-->
                 <div class="d-flex flex-stack flex-wrap">
-                  <span class="fs-3 text-gray-500 fw-bolder pe-2"
+                  <span class="fs-3 text-gray-500 fw-bolder pe-2 pb-2"
                     >혁신성장촉진자금</span
                   >
                 </div>
@@ -40,7 +39,7 @@
                       >
                         <!-- 첫 번째 행: 신청기간 마감 -->
                         <div
-                          class="d-flex justify-content-between align-items-center"
+                          class="d-flex justify-content-between align-items-center mb-1"
                         >
                           <p class="fs-5 text-gray-600 fw-bolder">신청기간</p>
                           <p class="fs-5 text-gray-600">마감됨</p>
@@ -48,7 +47,7 @@
 
                         <!-- 두 번째 행: 구분 -->
                         <div
-                          class="d-flex justify-content-between align-items-center"
+                          class="d-flex justify-content-between align-items-center mb-1"
                         >
                           <p class="fs-5 text-gray-600 fw-bolder">구분</p>
                           <p class="fs-5 text-gray-600">
@@ -88,7 +87,7 @@
               >
                 <!--begin::Heading-->
                 <div class="d-flex flex-stack flex-wrap">
-                  <span class="fs-3 text-gray-500 fw-bolder pe-2"
+                  <span class="fs-3 text-gray-500 fw-bolder pe-2 pb-2"
                     >혁신성장촉진자금</span
                   >
                 </div>
@@ -103,7 +102,7 @@
                       >
                         <!-- 첫 번째 행: 신청기간 마감 -->
                         <div
-                          class="d-flex justify-content-between align-items-center"
+                          class="d-flex justify-content-between align-items-center mb-1"
                         >
                           <p class="fs-5 text-gray-600 fw-bolder">신청기간</p>
                           <p class="fs-5 text-gray-600">마감됨</p>
@@ -111,7 +110,7 @@
 
                         <!-- 두 번째 행: 구분 -->
                         <div
-                          class="d-flex justify-content-between align-items-center"
+                          class="d-flex justify-content-between align-items-center mb-1"
                         >
                           <p class="fs-5 text-gray-600 fw-bolder">구분</p>
                           <p class="fs-5 text-gray-600">

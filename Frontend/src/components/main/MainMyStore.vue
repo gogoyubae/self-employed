@@ -1,13 +1,12 @@
 
 <template lang="">
 <div class="container mb-10">
-    <div style="display: flex; align-items: flex-end">
+    <div style="display: flex; align-items: flex-end " class="mb-5">
         <h2 style="font-weight: bold">가계관리</h2>
         <p style="margin-left: 20px">
         회원님의 자산 현황을 확인해 보세요.
         </p>
     </div>
-    <hr />
     <div class="row">
     <div class="col-5">
         <!-- 왼쪽 카드의 부모 -->
