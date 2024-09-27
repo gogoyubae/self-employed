@@ -241,7 +241,10 @@
                       <!--begin::Content-->
                       <div class="me-auto">
                         <!--begin::Title-->
-                        <p style="color: black; font-size: 1rem">한식음식점</p>
+                        <p style="color: gray; font-size: 0.6rem">서대문역</p>
+                        <span style="color: black; font-size: 1rem"
+                          >한식음식점</span
+                        >
                         <!--end::Desc-->
                       </div>
                       <!--end::Content-->
@@ -288,7 +291,10 @@
                       <!--begin::Content-->
                       <div class="me-auto">
                         <!--begin::Title-->
-                        <p style="color: black; font-size: 1rem">한식음식점</p>
+                        <p style="color: gray; font-size: 0.6rem">서대문역</p>
+                        <span style="color: black; font-size: 1rem"
+                          >한식음식점</span
+                        >
                         <!--end::Desc-->
                       </div>
                       <!--end::Content-->
@@ -335,7 +341,10 @@
                       <!--begin::Content-->
                       <div class="me-auto">
                         <!--begin::Title-->
-                        <p style="color: black; font-size: 1rem">한식음식점</p>
+                        <p style="color: gray; font-size: 0.6rem">서대문역</p>
+                        <span style="color: black; font-size: 1rem"
+                          >한식음식점</span
+                        >
                         <!--end::Desc-->
                       </div>
                       <!--end::Content-->
@@ -382,7 +391,10 @@
                       <!--begin::Content-->
                       <div class="me-auto">
                         <!--begin::Title-->
-                        <p style="color: black; font-size: 1rem">한식음식점</p>
+                        <p style="color: gray; font-size: 0.6rem">서대문역</p>
+                        <span style="color: black; font-size: 1rem"
+                          >한식음식점</span
+                        >
                         <!--end::Desc-->
                       </div>
                       <!--end::Content-->
@@ -429,7 +441,10 @@
                       <!--begin::Content-->
                       <div class="me-auto">
                         <!--begin::Title-->
-                        <p style="color: black; font-size: 1rem">한식음식점</p>
+                        <p style="color: gray; font-size: 0.6rem">서대문역</p>
+                        <span style="color: black; font-size: 1rem"
+                          >한식음식점</span
+                        >
                         <!--end::Desc-->
                       </div>
                       <!--end::Content-->
@@ -517,7 +532,10 @@
                       <!--begin::Content-->
                       <div class="me-auto">
                         <!--begin::Title-->
-                        <p style="color: black; font-size: 1rem">한식음식점</p>
+                        <p style="color: gray; font-size: 0.6rem">서대문역</p>
+                        <span style="color: black; font-size: 1rem"
+                          >한식음식점</span
+                        >
                         <!--end::Desc-->
                       </div>
                       <!--end::Content-->
@@ -564,7 +582,10 @@
                       <!--begin::Content-->
                       <div class="me-auto">
                         <!--begin::Title-->
-                        <p style="color: black; font-size: 1rem">한식음식점</p>
+                        <p style="color: gray; font-size: 0.6rem">서대문역</p>
+                        <span style="color: black; font-size: 1rem"
+                          >한식음식점</span
+                        >
                         <!--end::Desc-->
                       </div>
                       <!--end::Content-->
@@ -611,7 +632,10 @@
                       <!--begin::Content-->
                       <div class="me-auto">
                         <!--begin::Title-->
-                        <p style="color: black; font-size: 1rem">한식음식점</p>
+                        <p style="color: gray; font-size: 0.6rem">서대문역</p>
+                        <span style="color: black; font-size: 1rem"
+                          >한식음식점</span
+                        >
                         <!--end::Desc-->
                       </div>
                       <!--end::Content-->
@@ -658,7 +682,10 @@
                       <!--begin::Content-->
                       <div class="me-auto">
                         <!--begin::Title-->
-                        <p style="color: black; font-size: 1rem">한식음식점</p>
+                        <p style="color: gray; font-size: 0.6rem">서대문역</p>
+                        <span style="color: black; font-size: 1rem"
+                          >한식음식점</span
+                        >
                         <!--end::Desc-->
                       </div>
                       <!--end::Content-->
@@ -705,7 +732,10 @@
                       <!--begin::Content-->
                       <div class="me-auto">
                         <!--begin::Title-->
-                        <p style="color: black; font-size: 1rem">한식음식점</p>
+                        <p style="color: gray; font-size: 0.6rem">서대문역</p>
+                        <span style="color: black; font-size: 1rem"
+                          >한식음식점</span
+                        >
                         <!--end::Desc-->
                       </div>
                       <!--end::Content-->
