@@ -100,7 +100,7 @@ const showSpeechBubble = ref(false);
 const showChoices = ref(false);
 const isHovered = ref('');
 
-const typeText = (text, typedText, delay = 0) => {
+const typeText = (text, typedText, nextText, delay = 0) => {
   const letters = text.split('');
   let index = 0;
 
@@ -110,9 +110,9 @@ const typeText = (text, typedText, delay = 0) => {
       index++;
     } else {
       clearInterval(interval);
-      if (typedText === typedTextLine1) {
+      if (nextText) {
         setTimeout(() => {
-          typeText(fullTexts[1].line2, typedTextLine2, 500);
+          typeText(nextText, typedText === typedTextLine1 ? typedTextLine2 : null);
         }, 500);
       } else {
         setTimeout(() => {
@@ -130,7 +130,7 @@ const selectAnswer = (answer) => {
 };
 
 onMounted(() => {
-  typeText(fullTexts[0].line1, typedTextLine1);
+  typeText(fullTexts[0].line1, typedTextLine1, fullTexts[0].line2);
 });
 </script>
 

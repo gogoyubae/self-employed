@@ -1,15 +1,41 @@
 <template>
   <div class="container">
-    <!-- 작성 버튼 추가 -->
-    <div v-if="showCreateButton" class="d-flex justify-content-end mb-3">
-      <a href="community/create">
-        <button type="button" class="btn btn-sm btn-neutral">
-          글쓰기
-        </button>
-      </a>
+    <!-- 검색 기능 -->
+    <div v-if="showSearch" class="row justify-content-center mb-10">
+      <div class="col-8">
+        <div class="d-flex justify-content-between align-items-center mt-2">
+          <form class="form-group flex-grow-1 me-2">
+            <div class="input-group input-group-sm">
+              <div class="btn-group dropdown">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>전체</option>
+                  <option value="1">작성자</option>
+                  <option value="2">제목</option>
+                  <option value="3">내용</option>
+                </select>
+              </div>
+              <input
+                type="text"
+                class="rounded form-control ms-1"
+                placeholder="검색어를 입력해 주세요."
+              />
+              <span class="ms-1 rounded input-group-text">
+                <i class="bi bi-search"></i>
+              </span>
+            </div>
+          </form>
+          <!-- 작성 버튼 추가 -->
+          <div v-if="showCreateButton">
+            <a href="community/create">
+              <button type="button" class="btn btn-sm btn-neutral">
+                글쓰기
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-      <div class="border-top">
-
+    <div class="border-top">
       <div class="table-responsive">
         <table class="table table-nowrap text-center">
           <thead>
@@ -58,34 +84,6 @@
             </li>
           </ul>
         </nav>
-      </div>
-
-      <!-- 검색 기능 -->
-      <div v-if="showSearch" class="row justify-content-center mb-10">
-        <div class="col-5">
-          <div class="mt-2">
-            <form class="form-group">
-              <div class="input-group input-group-sm">
-                <div class="btn-group dropdown">
-                  <select class="form-select" aria-label="Default select example">
-                    <option selected>전체</option>
-                    <option value="1">작성자</option>
-                    <option value="2">제목</option>
-                    <option value="3">내용</option>
-                  </select>
-                </div>
-                <input
-                  type="text"
-                  class="rounded form-control ms-1"
-                  placeholder="검색어를 입력해 주세요."
-                />
-                <span class="ms-1 rounded input-group-text">
-                  <i class="bi bi-search"></i>
-                </span>
-              </div>
-            </form>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -137,4 +135,6 @@ const posts = ref([
 ]);
 </script>
 
-<style scoped></style>
+<style scoped>
+
+</style>
