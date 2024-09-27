@@ -1,6 +1,6 @@
 <template>
   <div>
-    <MainHader />
+    <MainHeader />
     <MainSimul />
     <MainMyStore />
     <MainCommunity />
@@ -9,7 +9,7 @@
 </template>
 
 <script setup>
-import MainHader from '@/components/main/MainHader.vue';
+import MainHeader from '@/components/main/MainHeader.vue';
 import MainSimul from '@/components/main/MainSimul.vue';
 import MainMyStore from '@/components/main/MainMyStore.vue';
 import MainCommunity from '@/components/main/MainCommunity.vue';

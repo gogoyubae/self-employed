@@ -99,7 +99,7 @@
                 >
                 <a
                   class="fw-bold nav-item nav-link rounded-pill d-none d-lg-block"
-                  href="/pages/login.html"
+                  href="/login"
                   >로그인</a
                 >
               </div>
