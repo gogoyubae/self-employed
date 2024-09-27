@@ -231,8 +231,8 @@
                   </div>
                   <input
                     type="text"
-                    class="form-control ms-3"
-                    placeholder="Search query..."
+                    class="form-control ms-1 rounded"
+                    placeholder="검색어를 입력해 주세요."
                   />
                 </div>
               </form>
@@ -376,4 +376,5 @@ function toggleAll(source) {
 .col-form-label {
   font-weight: 500;
 }
+
 </style>

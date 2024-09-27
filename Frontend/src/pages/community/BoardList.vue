@@ -76,10 +76,10 @@
                 </div>
                 <input
                   type="text"
-                  class="form-control ms-3"
+                  class="rounded form-control ms-1"
                   placeholder="검색어를 입력해 주세요."
                 />
-                <span class="input-group-text">
+                <span class="ms-1 rounded input-group-text">
                   <i class="bi bi-search"></i>
                 </span>
               </div>
