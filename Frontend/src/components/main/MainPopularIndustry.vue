@@ -12,14 +12,6 @@
             Best 인기 업종 - 전체
         </span>
         <!--end::Title-->
-        <router-link
-            to="/infoPlaza/industry/totalTrendingBusinessItems"
-            class="ms-auto"
-            style="font-size: 13px"
-        >
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            더보기
-        </router-link>
         </div>
         <!--end::Heading-->
     </div>
