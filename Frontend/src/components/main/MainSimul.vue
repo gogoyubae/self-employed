@@ -17,15 +17,14 @@
             <h3 class="mb-2" style="font-weight: 600">강남구 유통업</h3>
             <div class="row">
               <div class="col-6">
-                <div
-                  class="d-flex justify-content-between align-items-center mb-3"
-                >
-                  <h4 style="font-weight: 200">보증금</h4>
-                  <h2 class="me-5" style="font-weight: 600">1억</h2>
+                <div class="d-flex justify-content-between align-content-end">
+                  <h4 style="font-weight: 400">보증금</h4>
+                  <h2 style="font-weight: 600; margin-bottom: 0">1억</h2>
                 </div>
-                <div class="d-flex justify-content-between align-items-center">
-                  <h4 style="font-weight: 200">월세</h4>
-                  <h2 class="me-5" style="font-weight: 600">600만</h2>
+
+                <div class="d-flex justify-content-between">
+                  <h4 style="font-weight: 400; margin-bottom: 0">월세</h4>
+                  <h2 style="font-weight: 600; margin-bottom: 0">600만</h2>
                 </div>
               </div>
               <div class="col-6">
