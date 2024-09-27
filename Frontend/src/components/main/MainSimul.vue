@@ -13,18 +13,19 @@
           <div class="col-6" style="display: flex; align-items: stretch;">
             <img src="@/assets/img/report/clothes.png" alt="" class="full-image" />
           </div>
-          <div class="col-6" style="display: flex; flex-direction: column; justify-content: space-between;">
-            <h2 class="mb-2" style="font-weight: 800">강남구 유통업</h2>
+          <div class="col-6">
+            <h3 class="mb-2" style="font-weight: 600">강남구 유통업</h3>
             <div class="row">
               <div class="col-6">
-                <div class="d-flex justify-content-between align-items-end">
-                  <h4 style="font-weight: 400" class="mb-2">보증금</h4>
-                  <h1 style="font-weight: 600;">1억</h1>
+                <div
+                  class="d-flex justify-content-between align-items-center mb-3"
+                >
+                  <h4 style="font-weight: 200">보증금</h4>
+                  <h2 class="me-5" style="font-weight: 600">1억</h2>
                 </div>
-
-                <div class="d-flex justify-content-between align-items-end">
-                  <h4 style="font-weight: 400;" class="mb-2">월세</h4>
-                  <h1 style="font-weight: 600;">600만</h1>
+                <div class="d-flex justify-content-between align-items-center">
+                  <h4 style="font-weight: 200">월세</h4>
+                  <h2 class="me-5" style="font-weight: 600">600만</h2>
                 </div>
               </div>
               <div class="col-6 mt-1">
