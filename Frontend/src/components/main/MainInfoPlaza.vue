@@ -45,12 +45,16 @@ flex: 1; /* 필요한 크기로 조정 */
 
 /* col-1, col-6에 대한 스타일 재정의 */
 .adjusted-float-popular .col-1 {
-flex: 0 0 15%; /* col-1을 20%로 설정 */
-max-width: 15%;
+flex: 0 0 20%; /* col-1을 20%로 설정 */
+max-width: 10%;
+position: relative;
+left: -3%; /* 왼쪽으로 5% 이동 */
+padding: 0px 0px 0px 0px;
 }
 
 .adjusted-float-popular .col-6 {
-flex: 0 0 60%; /* col-6을 50%로 설정 */
-max-width: 60%;
+
+left: -5%;
+flex: 0 0 55%;
 }
 </style>
