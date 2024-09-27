@@ -4,7 +4,9 @@
         <hr/>
         <div class="content-wrapper  mb-10">
             <div class="adjusted-float-popular">
+                <div class="custom-map-container">
                 <FloatPopularContent :showLocationInfo="false" />
+            </div>
             </div>
             <div class="adjusted-main-popular">
                 <MainPopularIndustry class=""/>
@@ -43,6 +45,11 @@ flex: 2; /* 필요한 크기로 조정 */
 flex: 1; /* 필요한 크기로 조정 */
 }
 
+.custom-map-container {
+    height: 50vh; /* 원하는 높이로 조정 */
+    overflow: hidden;
+}
+
 /* col-1, col-6에 대한 스타일 재정의 */
 .adjusted-float-popular .col-1 {
 flex: 0 0 20%; /* col-1을 20%로 설정 */
@@ -53,8 +60,8 @@ padding: 0px 0px 0px 0px;
 }
 
 .adjusted-float-popular .col-6 {
-
 left: -5%;
-flex: 0 0 55%;
+flex: 0 0 75%;
 }
+
 </style>

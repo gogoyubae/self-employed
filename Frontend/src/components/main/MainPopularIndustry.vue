@@ -1,12 +1,12 @@
 <template>
 <!--begin::List widget 7-->
-<div class="card card-flush h-md-100">
+<div class="card card-flush">
     <!--begin::Header-->
-    <div class="card-header py-7">
+    <div class="card-header p-5 ps-6">
     <!--begin::Statistics-->
     <div class="m-0">
         <!--begin::Heading-->
-        <div class="d-flex align-items-center mb-2">
+        <div class="d-flex align-items-center ">
         <!--begin::Title-->
         <span class="fs-2hx fw-bold text-gray-800 lh-1 ls-n2">
             Best 인기 업종 - 전체
@@ -22,11 +22,11 @@
     </div>
     <!--end::Header-->
     <!--begin::Body-->
-    <div class="card-body pt-0">
+    <div class="card-body pe-6 ps-6 pb-3 pt-1">
     <!--begin::Items-->
     <div class="mb-0">
         <!--begin::Item-->
-        <div class="d-flex flex-stack mt-3">
+        <div class="d-flex flex-stack mt-0">
         <!--begin::Section-->
         <div
             class="d-flex align-items-center me-5"
@@ -43,7 +43,8 @@
             </div>
             <!--end::Symbol-->
             <!--begin::Content-->
-            <div class="me-auto">
+            <div class="me-auto p-3">
+
             <!--begin::Title-->
             <p style="color: black; font-size: 1rem">한식음식점</p>
             <!--end::Desc-->
@@ -70,10 +71,10 @@
         </div>
         <!--end::Item-->
         <!--begin::Separator-->
-        <hr />
+        <hr  class="m-0"/>
         <!--end::Separator-->
         <!--begin::Item-->
-        <div class="d-flex flex-stack mt-3">
+        <div class="d-flex flex-stack mt-0">
         <!--begin::Section-->
         <div
             class="d-flex align-items-center me-5"
@@ -90,7 +91,7 @@
             </div>
             <!--end::Symbol-->
             <!--begin::Content-->
-            <div class="me-auto">
+            <div class="me-auto p-3">
             <!--begin::Title-->
             <p style="color: black; font-size: 1rem">한식음식점</p>
             <!--end::Desc-->
@@ -117,10 +118,10 @@
         </div>
         <!--end::Item-->
         <!--begin::Separator-->
-        <hr />
+        <hr class="m-0" />
         <!--end::Separator-->
         <!--begin::Item-->
-        <div class="d-flex flex-stack mt-3">
+        <div class="d-flex flex-stack mt-0">
         <!--begin::Section-->
         <div
             class="d-flex align-items-center me-5"
@@ -137,7 +138,7 @@
             </div>
             <!--end::Symbol-->
             <!--begin::Content-->
-            <div class="me-auto">
+            <div class="me-auto p-3">
             <!--begin::Title-->
             <p style="color: black; font-size: 1rem">한식음식점</p>
             <!--end::Desc-->
@@ -164,10 +165,10 @@
         </div>
         <!--end::Item-->
         <!--begin::Separator-->
-        <hr />
+        <hr  class="m-0"/>
         <!--end::Separator-->
         <!--begin::Item-->
-        <div class="d-flex flex-stack mt-3">
+        <div class="d-flex flex-stack mt-0">
         <!--begin::Section-->
         <div
             class="d-flex align-items-center me-5"
@@ -184,7 +185,7 @@
             </div>
             <!--end::Symbol-->
             <!--begin::Content-->
-            <div class="me-auto">
+            <div class="me-auto p-3">
             <!--begin::Title-->
             <p style="color: black; font-size: 1rem">한식음식점</p>
             <!--end::Desc-->
@@ -211,10 +212,10 @@
         </div>
         <!--end::Item-->
         <!--begin::Separator-->
-        <hr />
+        <hr class="m-0"/>
         <!--end::Separator-->
         <!--begin::Item-->
-        <div class="d-flex flex-stack mt-3">
+        <div class="d-flex flex-stack mt-0">
         <!--begin::Section-->
         <div
             class="d-flex align-items-center me-5"
@@ -231,7 +232,7 @@
             </div>
             <!--end::Symbol-->
             <!--begin::Content-->
-            <div class="me-auto">
+            <div class="me-auto p-3">
             <!--begin::Title-->
             <p style="color: black; font-size: 1rem">한식음식점</p>
             <!--end::Desc-->
