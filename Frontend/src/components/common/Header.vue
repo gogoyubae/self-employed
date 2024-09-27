@@ -84,7 +84,7 @@
                   </div>
                 </li>
                 <li class="nav-item">
-                  <a class="fw-bold nav-link rounded-pill" href="/mypage">
+                  <a class="fw-bold nav-link rounded-pill" href="/mypageupdate">
                     마이페이지
                   </a>
                 </li>

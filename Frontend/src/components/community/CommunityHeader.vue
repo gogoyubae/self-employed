@@ -63,15 +63,6 @@ const categories = ref([
   font-size: 30px;
 }
 
-.result-text2-container {
-  position: absolute; /* 절대 위치 설정 */
-  top: 23%; /* 컨테이너의 중간 */
-  left: 9.3%; /* 고정 위치 */
-  z-index: 2; /* 텍스트가 이미지 위에 위치하도록 설정 */
-
-  display: flex; /* 플렉스 박스 사용 */
-}
-
 .result-text2 {
   color: rgb(0, 0, 0); /* 텍스트 색상 */
   padding: 10px; /* 여백 추가 */

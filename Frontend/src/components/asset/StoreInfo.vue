@@ -37,10 +37,10 @@
           <!-- 카드가 세로로 늘어날 수 있도록 설정 -->
           <div class="card-body pb-5 flex-grow-1">
             <div class="">
-              <div class="d-block stretched-link h4 mb-2 fw-bold">
+              <div class="d-block stretched-link h4 mb-2 fw-bold fs-1">
                 {{ store.storeName }}
               </div>
-              <div class="d-block stretched-link h5 mb-2">
+              <div class="d-block stretched-link h5 mb-2 fs-3">
                 {{ store.location }}
               </div>
               <div class="d-flex justify-content-between gap-4">
