@@ -29,22 +29,25 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
     private Authentication getAuthentication(String token) {
         String username = jwtProcessor.getUsername(token);
-        UserDetails princiapl = userDetailsService.loadUserByUsername(username);
-        return new UsernamePasswordAuthenticationToken(princiapl, null, princiapl.getAuthorities());
+        UserDetails principal = userDetailsService.loadUserByUsername(username);
+        return new UsernamePasswordAuthenticationToken(principal, null, principal.getAuthorities());
     }
 
     @Override
-    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
+    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
+            throws ServletException, IOException {
         String bearerToken = request.getHeader(AUTHORIZATION_HEADER);
         if (bearerToken != null && bearerToken.startsWith(BEARER_PREFIX)) {
             String token = bearerToken.substring(BEARER_PREFIX.length());
-
+            // 토큰 유효성 검사
+            if (jwtProcessor.validateToken(token)) {
             // 토큰에서 사용자 정보 추출 및 Authentication 객체 구성 후 SecurityContext에 저장
-            Authentication authentication = getAuthentication(token);
-            SecurityContextHolder.getContext().setAuthentication(authentication);
+                Authentication authentication = getAuthentication(token);
+                SecurityContextHolder.getContext().setAuthentication(authentication);
+            } else {
+                log.warn("Invalid JWT token: {}", token);
+            }
         }
-
-        super.doFilter(request, response, filterChain);
+        filterChain.doFilter(request, response);
     }
-
 }

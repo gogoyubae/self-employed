@@ -14,7 +14,7 @@ import java.util.Date;
 public class JwtProcessor {
     static private final long TOKEN_VALID_MILISECOND = 1000L * 60 * 60 * 2; // 5 분
 
-    private String secretKey = "충분히 긴 임의의(랜덤한) 비밀키 문자열 배정 ";
+    private String secretKey = "9b42d3e2a206b52a7e9bede291602e0272d30e1821ff1ae1d786d08d2b650242";
     private Key key = Keys.hmacShaKeyFor(secretKey.getBytes(StandardCharsets.UTF_8));
 
     //    private Key key = Keys.secretKeyFor(SignatureAlgorithm.HS256);  -- 운영시 사용
