@@ -1,5 +1,6 @@
 package com.kb.security.filter;
 
+import com.kb.security.util.JwtProvider;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import com.kb.security.util.JwtProcessor;
@@ -25,10 +26,12 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     public static final String BEARER_PREFIX = "Bearer ";   // 끝에 공백 있음
 
     private final JwtProcessor jwtProcessor;
+    private final JwtProvider jwtProvider;
     private final UserDetailsService userDetailsService;
 
     private Authentication getAuthentication(String token) {
-        String username = jwtProcessor.getUsername(token);
+//        String username = jwtProcessor.getUsername(token);
+        String username = jwtProvider.getUsername(token);
         UserDetails principal = userDetailsService.loadUserByUsername(username);
         return new UsernamePasswordAuthenticationToken(principal, null, principal.getAuthorities());
     }
@@ -40,7 +43,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         if (bearerToken != null && bearerToken.startsWith(BEARER_PREFIX)) {
             String token = bearerToken.substring(BEARER_PREFIX.length());
             // 토큰 유효성 검사
-            if (jwtProcessor.validateToken(token)) {
+            if (jwtProvider.validateToken(token)) {
             // 토큰에서 사용자 정보 추출 및 Authentication 객체 구성 후 SecurityContext에 저장
                 Authentication authentication = getAuthentication(token);
                 SecurityContextHolder.getContext().setAuthentication(authentication);
