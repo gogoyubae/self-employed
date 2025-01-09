@@ -1,6 +1,7 @@
 package com.kb.member.dto;
 
 
+import com.kb.security.dto.JwtDTO;
 import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -30,7 +31,8 @@ public class Member implements UserDetails {
     private String message;
     private String gender;
 
-    private String token; // JWT 토큰값, DB로는 저장하지 않음
+    //private String token; // JWT 토큰값, DB로는 저장하지 않음
+    //private JwtDTO token;
 
     // 복수개의 권한을 관리
     // 문자열data("ROLE_USER", "ROLE_ADMIN")를 처리할 수 있는 GrantedAuthority의 하위클래스

@@ -22,7 +22,7 @@ public class JwtUsernamePasswordAuthenticationFilter extends UsernamePasswordAut
     // 스프링 생성자 주입을 통해 전달
     public JwtUsernamePasswordAuthenticationFilter(
             AuthenticationManager authenticationManager,
-            LoginSuccessHandler loginSuccessHandler,
+               LoginSuccessHandler loginSuccessHandler,
             LoginFailureHandler loginFailureHandler ) {
         super(authenticationManager);
 
@@ -35,10 +35,10 @@ public class JwtUsernamePasswordAuthenticationFilter extends UsernamePasswordAut
     @Override
     public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response)
             throws AuthenticationException {
-
+        log.info("Login attempt from: {}", request.getRemoteAddr());
         // 요청 BODY의 JSON에서 id, password  LoginDTO
         LoginDTO login = LoginDTO.of(request);
-
+        log.info("Login DTO: {}", login);
         // 인증 토큰(UsernamePasswordAuthenticationToken) 구성
         UsernamePasswordAuthenticationToken authenticationToken =
                 new UsernamePasswordAuthenticationToken(login.getId(), login.getPassword());

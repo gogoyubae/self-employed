@@ -25,7 +25,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     public static final String AUTHORIZATION_HEADER = "Authorization";
     public static final String BEARER_PREFIX = "Bearer ";   // 끝에 공백 있음
 
-    private final JwtProcessor jwtProcessor;
+    //private final JwtProcessor jwtProcessor;
     private final JwtProvider jwtProvider;
     private final UserDetailsService userDetailsService;
 
@@ -43,7 +43,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         if (bearerToken != null && bearerToken.startsWith(BEARER_PREFIX)) {
             String token = bearerToken.substring(BEARER_PREFIX.length());
             // 토큰 유효성 검사
-            if (jwtProvider.validateToken(token)) {
+            if (jwtProvider.validateAccessToken(token)) {
             // 토큰에서 사용자 정보 추출 및 Authentication 객체 구성 후 SecurityContext에 저장
                 Authentication authentication = getAuthentication(token);
                 SecurityContextHolder.getContext().setAuthentication(authentication);
